@@ -1,4 +1,4 @@
-package model
+package models
 
 type Education struct {
 	School     string
@@ -11,6 +11,7 @@ type Education struct {
 	Website    string
 	WebsiteUrl string
 	Price      int
+	Type       string
 	Courses    []Course
 }
 type Course struct {
