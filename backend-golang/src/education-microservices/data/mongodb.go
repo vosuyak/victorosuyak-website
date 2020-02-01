@@ -18,7 +18,6 @@ func init() {
 
 // GetClient - Connect to Client
 func GetClient() *mongo.Client {
-	fmt.Println("Connect")
 	cf := core.AppConfig
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	client, err := mongo.Connect(ctx, options.Client().ApplyURI("mongodb://"+cf.MgAddrs))
