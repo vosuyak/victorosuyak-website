@@ -116,7 +116,63 @@ func UpdateEducation(w http.ResponseWriter, r *http.Request) {
 	common.DisplaySuccess(w, nil, http.StatusCreated, &edu)
 }
 
+// UpdatePatchEducation - creation of a new Education
+func UpdatePatchEducation(w http.ResponseWriter, r *http.Request) {
+	fmt.Println("UpdatePatchEducation")
+	var edu models.Education
+
+	vars := mux.Vars(r)
+	_id, err := primitive.ObjectIDFromHex(vars["id"])
+	if err != nil {
+		common.DisplayError(w, err, http.StatusInternalServerError,
+			"error in retrieving id",
+		)
+		return
+	}
+
+	errEdu := json.NewDecoder(r.Body).Decode(&edu)
+	if errEdu != nil {
+		common.DisplayError(w, errEdu, http.StatusInternalServerError,
+			"error in decoding education",
+		)
+		return
+	}
+	fmt.Println(edu)
+	
+	repo := &EducationRepository{C: collection}
+	edu.ID = _id
+	result := repo.Update(edu)
+	if result != nil {
+		common.DisplayError(w, err, http.StatusInternalServerError,
+			"error in updating",
+		)
+		return
+	}
+	// show success message in response
+	common.DisplaySuccess(w, nil, http.StatusCreated, &edu)
+}
+
 // DeleteEducation - creation of a new Education
 func DeleteEducation(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("DeleteEducation")
+		// collect id from router
+		vars := mux.Vars(r)
+		_id, err := primitive.ObjectIDFromHex(vars["id"])
+		if err != nil {
+			common.DisplayError(w, err, http.StatusInternalServerError,
+				"error in retrieving id education path",
+			)
+			return
+		}
+
+		repo := &EducationRepository{C: collection}
+		errEdu := repo.Delete(_id)
+		if errEdu != nil {
+			common.DisplayError(w, errEdu, http.StatusInternalServerError,
+				"error in deleting id education db",
+			)
+			return
+		}
+		// show success message in response
+		common.DisplaySuccess(w, true, http.StatusOK, "deleted")
 }

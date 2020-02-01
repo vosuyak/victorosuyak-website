@@ -78,7 +78,7 @@ func (r *EducationRepository) Update(edu models.Education) error {
 	return err
 }
 
-// Patch - Patch Method
+// Patch - Patch Method takes in struct, *key name, and value to replace
 func (r *EducationRepository) Patch(edu models.Education, key string, val interface{}) error {
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
