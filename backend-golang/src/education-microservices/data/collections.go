@@ -8,7 +8,7 @@ import (
 func GetCollection(coll string) *mongo.Collection {
 	var services *mongo.Collection
 	switch coll {
-	case "victorosuyak":
+	case "education":
 		services = GetClient().Database("victorosuyak").Collection("education")
 	}
 	return services
