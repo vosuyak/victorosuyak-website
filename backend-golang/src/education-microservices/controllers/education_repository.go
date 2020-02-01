@@ -52,6 +52,32 @@ func (r *EducationRepository) GetAll() ([]models.Education, error) {
 	return educations, err
 }
 
+// MatchAndLookUp -  match the id and join two collections
+func (r *EducationRepository) MatchAndLookUp(id primitive.ObjectID) (*mongo.Cursor,error){
+	queryLookup := bson.D{
+		{"$lookup",
+			bson.M{
+			"from":"courses",
+			"localField":   "_id",
+			"foreignField": "education_id",
+			"as":           "courses",
+			},
+		},
+	}
+	queryMatch := bson.D{
+		{"$match",
+			bson.M{
+			"_id": id,
+			},
+		},
+	}
+	ctx, cancel := context.WithTimeout(context.Background(), 20*time.Second)
+	defer cancel()
+	opts := options.Aggregate().SetMaxTime(2 * time.Second)
+	cursor, err := r.C.Aggregate(ctx, mongo.Pipeline{queryMatch,queryLookup}, opts)
+	return cursor,err
+}
+
 // Update - Update Method
 func (r *EducationRepository) Update(edu models.Education) error {
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
@@ -71,22 +97,6 @@ func (r *EducationRepository) Update(edu models.Education) error {
 			"website_url": edu.WebsiteURL,
 			"price": edu.Price,
 			"type": edu.Type,
-		},
-	}
-	opts := options.FindOneAndUpdate().SetUpsert(true)
-	err := r.C.FindOneAndUpdate(ctx,filter,update,opts).Decode(&edu)
-	return err
-}
-
-// Patch - Patch Method takes in struct, *key name, and value to replace
-func (r *EducationRepository) Patch(edu models.Education, key string, val interface{}) error {
-	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
-	defer cancel()
-
-	filter := bson.M{"_id": edu.ID}
-	update := bson.M{
-		"$set":bson.M{
-			key : val,
 		},
 	}
 	opts := options.FindOneAndUpdate().SetUpsert(true)

@@ -7,8 +7,10 @@ import (
 	"education/models"
 	"encoding/json"
 	"go.mongodb.org/mongo-driver/bson/primitive"
+	"go.mongodb.org/mongo-driver/bson"
 	"github.com/gorilla/mux"
-
+	"context"
+	"time"
 )
 
 var (
@@ -78,43 +80,48 @@ func GetAllEducation(w http.ResponseWriter, r *http.Request) {
 	common.DisplaySuccess(w, true, http.StatusOK, educations)
 }
 
-// UpdateEducation - creation of a new Education
-func UpdateEducation(w http.ResponseWriter, r *http.Request) {
-	var edu models.Education
-
+// GetEducationAndCourses - add courses in education
+func GetEducationAndCourses(w http.ResponseWriter, r *http.Request){
 	vars := mux.Vars(r)
 	_id, err := primitive.ObjectIDFromHex(vars["id"])
 	if err != nil {
 		common.DisplayError(w, err, http.StatusInternalServerError,
-			"error in retrieving id",
+			"error in retrieving _id from path",
 		)
 		return
 	}
-
-	errEdu := json.NewDecoder(r.Body).Decode(&edu)
-	if errEdu != nil {
-		common.DisplayError(w, errEdu, http.StatusInternalServerError,
-			"error in decoding education",
+	// check if id exist
+	errEdID := data.CheckIfIDExist("educations", _id)
+	if errEdID != nil {
+		common.DisplayError(w, errEdID, http.StatusInternalServerError,
+			"error _id does not exist",
 		)
 		return
 	}
-
-
-	edu.ID = _id
-	repo := &EducationRepository{C: collectionEdu}
-	result := repo.Update(edu)
-	if result != nil {
+	// collection to get primary document
+	repo := &EducationRepository{C:collectionEdu}
+	cursor, err :=  repo.MatchAndLookUp(_id)
+	if err != nil {
 		common.DisplayError(w, err, http.StatusInternalServerError,
-			"error in updating",
-		)
-		return
+			"error in aggregating pipe",
+		)	
 	}
-	// show success message in response
-	common.DisplaySuccess(w, nil, http.StatusCreated, &edu)
+	
+	// get a list of all returned documents and print them out
+	var results []bson.M
+	ctx, cancel := context.WithTimeout(context.Background(), 20*time.Second)
+	defer cancel()
+	if err = cursor.All(ctx, &results); err != nil {
+		common.DisplayError(w, err, http.StatusInternalServerError,
+			"error in displaying results",
+		)	
+	}
+	// return success message
+	common.DisplaySuccess(w, nil, http.StatusOK, results)
 }
 
-// UpdatePatchEducation - creation of a new Education
-func UpdatePatchEducation(w http.ResponseWriter, r *http.Request) {
+// UpdateEducation - creation of a new Education
+func UpdateEducation(w http.ResponseWriter, r *http.Request) {
 	var edu models.Education
 
 	vars := mux.Vars(r)
