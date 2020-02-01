@@ -110,11 +110,11 @@ func (r *EducationRepository) Delete(id primitive.ObjectID) error {
 }
 
 // DeleteAll - DeleteAll Method
-func (r *EducationRepository) DeleteAll(id primitive.ObjectID) error {
+func (r *EducationRepository) DeleteAll(edu models.Education) error {
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
 
-	filter := bson.M{"_id": id}
+	filter := bson.M{"school": edu.School}
 	opts := options.Delete().SetCollation(&options.Collation{
 		Locale:    "en_US",
 		Strength:  1,

@@ -178,27 +178,3 @@ func DeleteEducation(w http.ResponseWriter, r *http.Request) {
 		common.DisplaySuccess(w, true, http.StatusOK, "deleted")
 }
 
-// DeleteAllEducation - creation of a new Education
-func DeleteAllEducation(w http.ResponseWriter, r *http.Request) {
-	fmt.Println("DeleteAllEducation")
-		// collect id from router
-		vars := mux.Vars(r)
-		_id, err := primitive.ObjectIDFromHex(vars["id"])
-		if err != nil {
-			common.DisplayError(w, err, http.StatusInternalServerError,
-				"error in retrieving id education path",
-			)
-			return
-		}
-
-	
-		errEdu := repo.DeleteAll()
-		if errEdu != nil {
-			common.DisplayError(w, errEdu, http.StatusInternalServerError,
-				"error in deleting id education db",
-			)
-			return
-		}
-		// show success message in response
-		common.DisplaySuccess(w, true, http.StatusOK, "deleted all")
-}
