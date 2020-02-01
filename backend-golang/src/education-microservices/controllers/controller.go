@@ -8,9 +8,13 @@ import (
 	"education/models"
 	"encoding/json"
 	"go.mongodb.org/mongo-driver/bson/primitive"
+	"github.com/gorilla/mux"
 
 )
 
+var (
+	collection = data.GetCollection("education")
+)
 // CreateEducation - creation of a new Education
 func CreateEducation(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("CreateEducation")
@@ -24,8 +28,7 @@ func CreateEducation(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	// Create Form
-	collection := data.GetCollection("education")
+	// link to Repository,define ID of education, pass struct into Create Method
 	repo := &EducationRepository{C: collection}
 	edu.ID = primitive.NewObjectID()
 	errEdu := repo.Create(edu)
@@ -42,16 +45,75 @@ func CreateEducation(w http.ResponseWriter, r *http.Request) {
 // GetEducation - creation of a new Education
 func GetEducation(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("GetEducation")
+	var edu models.Education
+	vars := mux.Vars(r)
+	_id, err := primitive.ObjectIDFromHex(vars["id"])
+	if err != nil {
+		common.DisplayError(w, err, http.StatusInternalServerError,
+			"err in retrieving id",
+		)
+		return
+	}
+	repo := &EducationRepository{C: collection}
+	edu, errEdu := repo.Get(_id)
+	if errEdu != nil {
+		common.DisplayError(w, errEdu, http.StatusInternalServerError,
+			"err in retrieving education after decoding",
+		)
+		return
+	}
+
+	common.DisplaySuccess(w, nil, http.StatusOK, edu)
 }
 
 // GetAllEducation - creation of a new Education
 func GetAllEducation(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("GetAllEducation")
+	repo := &EducationRepository{C: collection}
+	educations, err := repo.GetAll()
+	if err != nil {
+		common.DisplayError(w, err, http.StatusInternalServerError,
+			"error retrieving all educations",
+		)
+		return
+	}
+
+	common.DisplaySuccess(w, true, http.StatusOK, educations)
 }
 
 // UpdateEducation - creation of a new Education
 func UpdateEducation(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("UpdateEducation")
+	var edu models.Education
+
+	vars := mux.Vars(r)
+	_id, err := primitive.ObjectIDFromHex(vars["id"])
+	if err != nil {
+		common.DisplayError(w, err, http.StatusInternalServerError,
+			"error in retrieving id",
+		)
+		return
+	}
+
+	errEdu := json.NewDecoder(r.Body).Decode(&edu)
+	if errEdu != nil {
+		common.DisplayError(w, errEdu, http.StatusInternalServerError,
+			"error in decoding education",
+		)
+		return
+	}
+
+	repo := &EducationRepository{C: collection}
+	edu.ID = _id
+	result := repo.Update(edu)
+	if result != nil {
+		common.DisplayError(w, err, http.StatusInternalServerError,
+			"error in updating",
+		)
+		return
+	}
+	// show success message in response
+	common.DisplaySuccess(w, nil, http.StatusCreated, &edu)
 }
 
 // DeleteEducation - creation of a new Education
