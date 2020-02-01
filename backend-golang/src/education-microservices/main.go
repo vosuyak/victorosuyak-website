@@ -1,10 +1,9 @@
 package main
 
 import (
-	"net/http"
+	_ "education/data"
 	"education/routers"
-	_"education/data"
-
+	"net/http"
 )
 
 func main() {

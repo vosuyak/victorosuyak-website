@@ -1,23 +1,29 @@
 package models
 
+import (
+	"go.mongodb.org/mongo-driver/bson/primitive"
+)
+
 type Education struct {
-	School     string
-	StartDate  string
-	EndDate    string
-	Degree     string
-	City       string
-	State      string
-	Online     bool
-	Website    string
-	WebsiteUrl string
-	Price      int
-	Type       string
-	Courses    []Course
+	ID         primitive.ObjectID `json:"_id,omitempty" bson:"_id,omitempty"`
+	School     string             `json:"school" bson:"school"`
+	StartDate  string             `json:"start_date" bson:"start_date"`
+	EndDate    string             `json:"end_date" bson:"end_date"`
+	Degree     string             `json:"degree" bson:"degree"`
+	City       string             `json:"city" bson:"city"`
+	State      string             `json:"state" bson:"state"`
+	Online     bool               `json:"online" bson:"online"`
+	Website    string             `json:"website" bson:"website"`
+	WebsiteURL string             `json:"website_url" bson:"website_url"`
+	Price      int                `json:"price" bson:"price"`
+	Type       string             `json:"type" bson:"type"`
+	Courses    []Course           `json:"courses" bson:"courses"`
 }
 type Course struct {
-	Name        string
-	Title       string
-	Description string
-	Topic       string
-	Rating      string
+	ID          primitive.ObjectID `json:"_id,omitempty" bson:"_id,omitempty"`
+	Name        string             `json:"name" bson:"name"`
+	Title       string             `json:"title" bson:"title"`
+	Description string             `json:"description" bson:"description"`
+	Topic       string             `json:"topic" bson:"topic"`
+	Rating      string             `json:"rating" bson:"rating"`
 }
