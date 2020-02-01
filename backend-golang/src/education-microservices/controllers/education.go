@@ -1,7 +1,6 @@
 package controllers
 
 import (
-	"fmt"
 	"net/http"
 	"education/common"
 	"education/data"
@@ -13,12 +12,11 @@ import (
 )
 
 var (
-	collection = data.GetCollection("education")
-	repo = &EducationRepository{C: collection}
+	collectionEdu = data.GetCollection("educations")
 )
+
 // CreateEducation - creation of a new Education
 func CreateEducation(w http.ResponseWriter, r *http.Request) {
-	fmt.Println("CreateEducation")
 	var edu models.Education
 
 	err := json.NewDecoder(r.Body).Decode(&edu)
@@ -30,8 +28,8 @@ func CreateEducation(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// link to Repository,define ID of education, pass struct into Create Method
-
 	edu.ID = primitive.NewObjectID()
+	repo := &EducationRepository{C: collectionEdu}
 	errEdu := repo.Create(edu)
 	if errEdu != nil {
 		common.DisplayError(w, errEdu, http.StatusInternalServerError,
@@ -45,7 +43,6 @@ func CreateEducation(w http.ResponseWriter, r *http.Request) {
 
 // GetEducation - creation of a new Education
 func GetEducation(w http.ResponseWriter, r *http.Request) {
-	fmt.Println("GetEducation")
 	var edu models.Education
 	vars := mux.Vars(r)
 	_id, err := primitive.ObjectIDFromHex(vars["id"])
@@ -55,7 +52,7 @@ func GetEducation(w http.ResponseWriter, r *http.Request) {
 		)
 		return
 	}
-
+	repo := &EducationRepository{C: collectionEdu}
 	edu, errEdu := repo.Get(_id)
 	if errEdu != nil {
 		common.DisplayError(w, errEdu, http.StatusInternalServerError,
@@ -69,8 +66,7 @@ func GetEducation(w http.ResponseWriter, r *http.Request) {
 
 // GetAllEducation - creation of a new Education
 func GetAllEducation(w http.ResponseWriter, r *http.Request) {
-	fmt.Println("GetAllEducation")
-
+	repo := &EducationRepository{C: collectionEdu}
 	educations, err := repo.GetAll()
 	if err != nil {
 		common.DisplayError(w, err, http.StatusInternalServerError,
@@ -84,7 +80,6 @@ func GetAllEducation(w http.ResponseWriter, r *http.Request) {
 
 // UpdateEducation - creation of a new Education
 func UpdateEducation(w http.ResponseWriter, r *http.Request) {
-	fmt.Println("UpdateEducation")
 	var edu models.Education
 
 	vars := mux.Vars(r)
@@ -106,6 +101,7 @@ func UpdateEducation(w http.ResponseWriter, r *http.Request) {
 
 
 	edu.ID = _id
+	repo := &EducationRepository{C: collectionEdu}
 	result := repo.Update(edu)
 	if result != nil {
 		common.DisplayError(w, err, http.StatusInternalServerError,
@@ -119,7 +115,6 @@ func UpdateEducation(w http.ResponseWriter, r *http.Request) {
 
 // UpdatePatchEducation - creation of a new Education
 func UpdatePatchEducation(w http.ResponseWriter, r *http.Request) {
-	fmt.Println("UpdatePatchEducation")
 	var edu models.Education
 
 	vars := mux.Vars(r)
@@ -138,10 +133,10 @@ func UpdatePatchEducation(w http.ResponseWriter, r *http.Request) {
 		)
 		return
 	}
-	fmt.Println(edu)
 
 
 	edu.ID = _id
+	repo := &EducationRepository{C: collectionEdu}
 	result := repo.Update(edu)
 	if result != nil {
 		common.DisplayError(w, err, http.StatusInternalServerError,
@@ -155,8 +150,6 @@ func UpdatePatchEducation(w http.ResponseWriter, r *http.Request) {
 
 // DeleteEducation - creation of a new Education
 func DeleteEducation(w http.ResponseWriter, r *http.Request) {
-	fmt.Println("DeleteEducation")
-		// collect id from router
 		vars := mux.Vars(r)
 		_id, err := primitive.ObjectIDFromHex(vars["id"])
 		if err != nil {
@@ -166,7 +159,7 @@ func DeleteEducation(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 
-	
+		repo := &EducationRepository{C: collectionEdu}
 		errEdu := repo.Delete(_id)
 		if errEdu != nil {
 			common.DisplayError(w, errEdu, http.StatusInternalServerError,

@@ -14,5 +14,11 @@ func EducationRoutes() *mux.Router {
 	r.HandleFunc("/education/{id}", controllers.UpdateEducation).Methods("PUT")
 	r.HandleFunc("/education/{id}", controllers.UpdatePatchEducation).Methods("PATCH")
 	r.HandleFunc("/education/{id}", controllers.DeleteEducation).Methods("DELETE")
+	r.HandleFunc("/education/course", controllers.CreateCourse).Methods("POST")
+	// r.HandleFunc("/education/{id}", controllers.GetCourse).Methods("GET")
+	// r.HandleFunc("/educations", controllers.GetAllEducation).Methods("GET")
+	// r.HandleFunc("/education/{id}", controllers.UpdateEducation).Methods("PUT")
+	// r.HandleFunc("/education/{id}", controllers.UpdatePatchEducation).Methods("PATCH")
+	// r.HandleFunc("/education/{id}", controllers.DeleteEducation).Methods("DELETE")
 	return r
 }

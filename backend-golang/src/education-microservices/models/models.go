@@ -21,9 +21,11 @@ type Education struct {
 }
 type Course struct {
 	ID          primitive.ObjectID `json:"_id,omitempty" bson:"_id,omitempty"`
-	Name        string             `json:"name" bson:"name"`
+	EducationID          primitive.ObjectID `json:"education_id,omitempty" bson:"education_id,omitempty"`
 	Title       string             `json:"title" bson:"title"`
+	Author       string             `json:"author" bson:"author"`
 	Description string             `json:"description" bson:"description"`
 	Topic       string             `json:"topic" bson:"topic"`
+	Language       string             `json:"language" bson:"language"`
 	Rating      string             `json:"rating" bson:"rating"`
 }
