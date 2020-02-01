@@ -14,6 +14,7 @@ import (
 
 var (
 	collection = data.GetCollection("education")
+	repo = &EducationRepository{C: collection}
 )
 // CreateEducation - creation of a new Education
 func CreateEducation(w http.ResponseWriter, r *http.Request) {
@@ -29,7 +30,7 @@ func CreateEducation(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// link to Repository,define ID of education, pass struct into Create Method
-	repo := &EducationRepository{C: collection}
+
 	edu.ID = primitive.NewObjectID()
 	errEdu := repo.Create(edu)
 	if errEdu != nil {
@@ -54,7 +55,7 @@ func GetEducation(w http.ResponseWriter, r *http.Request) {
 		)
 		return
 	}
-	repo := &EducationRepository{C: collection}
+
 	edu, errEdu := repo.Get(_id)
 	if errEdu != nil {
 		common.DisplayError(w, errEdu, http.StatusInternalServerError,
@@ -69,7 +70,7 @@ func GetEducation(w http.ResponseWriter, r *http.Request) {
 // GetAllEducation - creation of a new Education
 func GetAllEducation(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("GetAllEducation")
-	repo := &EducationRepository{C: collection}
+
 	educations, err := repo.GetAll()
 	if err != nil {
 		common.DisplayError(w, err, http.StatusInternalServerError,
@@ -103,7 +104,7 @@ func UpdateEducation(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	repo := &EducationRepository{C: collection}
+
 	edu.ID = _id
 	result := repo.Update(edu)
 	if result != nil {
@@ -138,8 +139,8 @@ func UpdatePatchEducation(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	fmt.Println(edu)
-	
-	repo := &EducationRepository{C: collection}
+
+
 	edu.ID = _id
 	result := repo.Update(edu)
 	if result != nil {
@@ -165,7 +166,7 @@ func DeleteEducation(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 
-		repo := &EducationRepository{C: collection}
+	
 		errEdu := repo.Delete(_id)
 		if errEdu != nil {
 			common.DisplayError(w, errEdu, http.StatusInternalServerError,
@@ -175,4 +176,29 @@ func DeleteEducation(w http.ResponseWriter, r *http.Request) {
 		}
 		// show success message in response
 		common.DisplaySuccess(w, true, http.StatusOK, "deleted")
+}
+
+// DeleteAllEducation - creation of a new Education
+func DeleteAllEducation(w http.ResponseWriter, r *http.Request) {
+	fmt.Println("DeleteAllEducation")
+		// collect id from router
+		vars := mux.Vars(r)
+		_id, err := primitive.ObjectIDFromHex(vars["id"])
+		if err != nil {
+			common.DisplayError(w, err, http.StatusInternalServerError,
+				"error in retrieving id education path",
+			)
+			return
+		}
+
+	
+		errEdu := repo.DeleteAll()
+		if errEdu != nil {
+			common.DisplayError(w, errEdu, http.StatusInternalServerError,
+				"error in deleting id education db",
+			)
+			return
+		}
+		// show success message in response
+		common.DisplaySuccess(w, true, http.StatusOK, "deleted all")
 }

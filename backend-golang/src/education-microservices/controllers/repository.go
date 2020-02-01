@@ -108,3 +108,18 @@ func (r *EducationRepository) Delete(id primitive.ObjectID) error {
 	_, err := r.C.DeleteOne(ctx, filter, opts)
 	return err
 }
+
+// DeleteAll - DeleteAll Method
+func (r *EducationRepository) DeleteAll(id primitive.ObjectID) error {
+	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+	defer cancel()
+
+	filter := bson.M{"_id": id}
+	opts := options.Delete().SetCollation(&options.Collation{
+		Locale:    "en_US",
+		Strength:  1,
+		CaseLevel: false,
+	})
+	_, err := r.C.DeleteMany(ctx, filter, opts)
+	return err
+}
