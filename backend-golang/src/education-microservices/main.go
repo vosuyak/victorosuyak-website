@@ -9,5 +9,5 @@ import (
 
 func main() {
 	r := routers.EducationRoutes()
-	http.ListenAndServe(os.Getenv("APP_PORT"), r)
+	http.ListenAndServe(":"+os.Getenv("APP_PORT"), r)
 }
