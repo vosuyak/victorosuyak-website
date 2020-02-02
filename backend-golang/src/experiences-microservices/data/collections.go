@@ -4,23 +4,20 @@ import (
 	"context"
 	"time"
 
-	"education/models"
+	"experience/models"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo/options"
 	"go.mongodb.org/mongo-driver/mongo"
-	"education/core"
+	"experience/core"
 )
 
 // GetCollection : Goes to the GetClient Client and returns all Collections
 func GetCollection(coll string) *mongo.Collection {
 	var collection *mongo.Collection
 	switch coll {
-	case "educations":
-		collection = GetClient().Database(core.AppConfig.MgDbName).Collection("education")
-	
-	case "courses":
-		collection = GetClient().Database(core.AppConfig.MgDbName).Collection("courses")
+	case "experiences":
+		collection = GetClient().Database(core.AppConfig.MgDbName).Collection("experiences")
 	}
 	return collection
 }
@@ -30,26 +27,16 @@ func GetCollection(coll string) *mongo.Collection {
 func CheckIfIDExist(coll string, id primitive.ObjectID) error {
 	var result error
 	switch coll {
-	case "educations":
-		var education models.Education
+	case "experiences":
+		var experience models.Experience
 		ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 		defer cancel()
-		collection := GetCollection("educations")
+		collection := GetCollection("experiences")
 		filter := bson.D{
 			{"_id", id},
 		}
 		opts := options.FindOne()
-		result = collection.FindOne(ctx, filter, opts).Decode(&education)
-	case "courses":
-		var course models.Course
-		ctx, cancel := context.WithTimeout(context.Background(), 05*time.Second)
-		defer cancel()
-		collection := GetCollection("courses")
-		filter := bson.D{
-			{"_id", id},
-		}
-		opts := options.FindOne()
-		result = collection.FindOne(ctx, filter, opts).Decode(&course)
+		result = collection.FindOne(ctx, filter, opts).Decode(&experience)
 	}
 	return result
 }

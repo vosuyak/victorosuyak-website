@@ -2,7 +2,7 @@ package controllers
 
 import (
 	"context"
-	"education/models"
+	"experience/models"
 	"time"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
@@ -10,71 +10,74 @@ import (
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
-// CourseRepository - Repo
-type CourseRepository struct {
+// ExperienceRepository - Repo
+type ExperienceRepository struct {
 	C *mongo.Collection
 }
 
 // Create - Create Method
-func (r *CourseRepository) Create(course models.Course) error {
+func (r *ExperienceRepository) Create(exp models.Experience) error {
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
 
-	_, err := r.C.InsertOne(ctx, course)
+	_, err := r.C.InsertOne(ctx, exp)
 	return err
 }
 
 // Get - Get Method
-func (r *CourseRepository) Get(id primitive.ObjectID) (models.Course, error) {
-	var course models.Course
+func (r *ExperienceRepository) Get(id primitive.ObjectID) (models.Experience, error) {
+	var exp models.Experience
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
 
 	filter := bson.M{"_id": id}
 	opts := options.FindOne()
-	err := r.C.FindOne(ctx, filter, opts).Decode(&course)
-	return course, err
+	err := r.C.FindOne(ctx, filter, opts).Decode(&exp)
+	return exp, err
 }
 
 // GetAll - GetAll Method
-func (r *CourseRepository) GetAll() ([]models.Course, error) {
-	var courses []models.Course
+func (r *ExperienceRepository) GetAll() ([]models.Experience, error) {
+	var experiences []models.Experience
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
 
 	item,err := r.C.Find(ctx,bson.M{})
-	var course models.Course
+	var exp models.Experience
 	for item.Next(ctx){
-		item.Decode(&course)
-		courses = append(courses,course)
+		item.Decode(&exp)
+		experiences = append(experiences,exp)
 	}
 	defer item.Close(ctx)
-	return courses, err
+	return experiences, err
 }
 
 // Update - Update Method
-func (r *CourseRepository) Update(course models.Course) error {
+func (r *ExperienceRepository) Update(exp models.Experience) error {
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
 
-	filter := bson.M{"_id":course.ID}
+	filter := bson.M{"_id":exp.ID}
 	update := bson.M{
 		"$set":bson.M{
-			"title": course.Title,
-			"author": course.Author,
-			"descriotion": course.Description,
-			"topic": course.Topic,
-			"language": course.Language,
-			"rating": course.Rating,
+			"type": exp.Type,
+			"type_two": exp.TypeTwo,
+			"employer": exp.Employer,
+			"employer_url": exp.EmployerURL,
+			"start_date": exp.StartDate,
+			"end_date": exp.EndDate,
+			"postion": exp.Position,
+			"team_size": exp.TeamSize,
+			"description": exp.Description,
 		},
 	}
 	opts := options.FindOneAndUpdate().SetUpsert(true)
-	err := r.C.FindOneAndUpdate(ctx,filter,update,opts).Decode(&course)
+	err := r.C.FindOneAndUpdate(ctx,filter,update,opts).Decode(&exp)
 	return err
 }
 
 // Delete - Delete Method
-func (r *CourseRepository) Delete(id primitive.ObjectID) error {
+func (r *ExperienceRepository) Delete(id primitive.ObjectID) error {
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
 

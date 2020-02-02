@@ -1,11 +1,11 @@
   {
-    "port": ":8081",
+    "port": ":8082",
     "logFilename": "logs/server.log",
     "logMaxSize": 10,
     "logMaxBackups": 10,
     "logMaxAge": 30,
 
-    "mgAddrs": "mongo-education:27017", 
+    "mgAddrs": "localhost:27017", 
     "mgDbName": "victorosuyak",
     "mgDbUsername": "",
     "mgDbPassword": "",

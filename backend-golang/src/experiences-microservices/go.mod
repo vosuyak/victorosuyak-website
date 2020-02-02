@@ -1,4 +1,4 @@
-module education
+module experience
 
 require (
 	github.com/DataDog/zstd v1.4.4 // indirect

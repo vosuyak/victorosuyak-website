@@ -1,9 +1,9 @@
 FROM golang:1.11.0
 RUN mkdir /app
-ADD ./src/education-microservices /app
+ADD ./src/experience-microservices /app
 WORKDIR /app
-COPY /src/education-microservices/go.mod .
-COPY /src/education-microservices/go.sum .
+COPY /src/experience-microservices/go.mod .
+COPY /src/experience-microservices/go.sum .
 RUN go mod download
 COPY . .
 EXPOSE 8081
