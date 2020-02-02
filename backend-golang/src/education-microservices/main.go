@@ -2,12 +2,12 @@ package main
 
 import (
 	_ "education/data"
-	"education/core"
+	"os"
 	"education/routers"
 	"net/http"
 )
 
 func main() {
 	r := routers.EducationRoutes()
-	http.ListenAndServe(core.AppConfig.Port, r)
+	http.ListenAndServe(os.Getenv("APP_PORT"), r)
 }

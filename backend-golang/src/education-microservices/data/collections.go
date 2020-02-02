@@ -9,7 +9,7 @@ import (
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo/options"
 	"go.mongodb.org/mongo-driver/mongo"
-	"education/core"
+	"os"
 )
 
 // GetCollection : Goes to the GetClient Client and returns all Collections
@@ -17,10 +17,10 @@ func GetCollection(coll string) *mongo.Collection {
 	var collection *mongo.Collection
 	switch coll {
 	case "educations":
-		collection = GetClient().Database(core.AppConfig.MgDbName).Collection("education")
+		collection = GetClient().Database(os.Getenv("DB_NAME")).Collection("education")
 	
 	case "courses":
-		collection = GetClient().Database(core.AppConfig.MgDbName).Collection("courses")
+		collection = GetClient().Database(os.Getenv("DB_NAME")).Collection("courses")
 	}
 	return collection
 }

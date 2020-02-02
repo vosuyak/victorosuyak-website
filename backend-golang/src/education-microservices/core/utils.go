@@ -4,6 +4,8 @@ import (
 	"encoding/json"
 	"log"
 	"os"
+
+	"github.com/joho/godotenv"
 )
 
 // Configuration
@@ -38,5 +40,22 @@ func LoadAppConfig() {
 	err = decoder.Decode(&AppConfig)
 	if err != nil {
 		log.Fatalf("[loadAppConfig]: %s\n", err)
+	}
+}
+
+// LoadEnv - load enviorment variables
+func LoadEnv() {
+	err := godotenv.Load()
+	if err != nil {
+		log.Fatal("Error loading .env file")
+	}
+	env := os.Getenv("APP_ENV")
+	if "" == env {
+		log.Fatal("No variabels in file")
+	} else {
+		err = godotenv.Load("./core/.env." + env)
+		if err != nil {
+			log.Fatal("Error loading .env." + env + " file access might be restricted")
+		}
 	}
 }
