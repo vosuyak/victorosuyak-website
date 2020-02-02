@@ -1,7 +1,7 @@
 version: '2'
 
 services:
-    golang:
+    golang-edu:
         container_name: education-microservices
         build:
             context: .
@@ -9,10 +9,26 @@ services:
         networks: 
             - mgo-network
         ports:
-            - '8081:8081'
-    mongo:
+            - '8082:8081'
+    golang-exp:
+        container_name: experience-microservices
+        build:
+            context: .
+            dockerfile: ./src/experiences-microservices/experience.dockerfile
+        networks: 
+            - mgo-network
+        ports:
+            - '8081:8082'
+    mongo-edu:
         image: mongo:4.0.2
         container_name: mongo-education
+        networks: 
+            - mgo-network
+        ports: 
+            - '27018:27017'
+    mongo-exp:
+        image: mongo:4.0.2
+        container_name: mongo-experience
         networks: 
             - mgo-network
         ports: 

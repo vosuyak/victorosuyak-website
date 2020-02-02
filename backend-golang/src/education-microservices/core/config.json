@@ -5,7 +5,7 @@
     "logMaxBackups": 10,
     "logMaxAge": 30,
 
-    "mgAddrs": "localhost:27017", 
+    "mgAddrs": "mongo-education:27017", 
     "mgDbName": "victorosuyak",
     "mgDbUsername": "",
     "mgDbPassword": "",
