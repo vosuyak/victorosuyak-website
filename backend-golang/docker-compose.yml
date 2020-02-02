@@ -1,0 +1,30 @@
+version: '2'
+
+services:
+    golang:
+        container_name: education-microservices
+        build:
+            context: .
+            dockerfile: ./src/education-microservices/education.dockerfile
+        networks: 
+            - mgo-network
+        ports:
+            - '8081:8081'
+    mongo:
+        image: mongo:4.0.2
+        container_name: mongo-education
+        networks: 
+            - mgo-network
+        ports: 
+            - '27017:27017'
+networks: 
+    mgo-network:
+        driver: bridge
+
+        # docker-compose build  
+        # docker-compose up -d  
+        # docker-compose down  
+        # docker-compose kill
+        # docker-compose ps
+        # docker-compose logs
+            
