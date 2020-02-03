@@ -53,6 +53,7 @@ func LoadEnv() {
 	if "" == env {
 		log.Fatal("No variabels in file")
 	} else {
+		log.Println("using: ","./core/.env." + env)
 		err = godotenv.Load("./core/.env." + env)
 		if err != nil {
 			log.Fatal("Error loading .env." + env + " file access might be restricted")
