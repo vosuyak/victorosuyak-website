@@ -24,15 +24,15 @@ func GetClient() *mongo.Client {
 	defer cancel()
 
 	credential := options.Credential{
-		Username: os.Getenv("DB_USER"),
-		Password: os.Getenv("DB_PASSWORD"),
-		AuthSource: os.Getenv("DB_NAME"),
+		Username: os.Getenv("MONGO_DB_USER"),
+		Password: os.Getenv("MONGO_DB_PASSWORD"),
+		AuthSource: os.Getenv("MONGO_DB_NAME"),
 	}
-	clientOpts := options.Client().ApplyURI("mongodb://"+os.Getenv("DB_HOST")+":"+os.Getenv("DB_PORT")).SetAuth(credential)
+	clientOpts := options.Client().ApplyURI("mongodb://"+os.Getenv("MONGO_DB_HOST")+":"+os.Getenv("MONGO_DB_PORT")).SetAuth(credential)
 	client, err := mongo.Connect(ctx, clientOpts)
 	if err != nil {
 		log.Fatal(err)
-		log.Fatal("mongodb://"+os.Getenv("DB_USER")+":"+os.Getenv("DB_PASSWORD")+"@"+os.Getenv("DB_HOST")+":"+os.Getenv("DB_PORT"))
+		log.Fatal("mongodb://"+os.Getenv("MONGO_DB_USER")+":"+os.Getenv("MONGO_DB_PASSWORD")+"@"+os.Getenv("MONGO_DB_HOST")+":"+os.Getenv("MONGO_DB_NAME")+":"+os.Getenv("MONGO_DB_NAME"))
 	}
 	
 	err = client.Ping(ctx, readpref.Primary())

@@ -17,10 +17,10 @@ func GetCollection(coll string) *mongo.Collection {
 	var collection *mongo.Collection
 	switch coll {
 	case "educations":
-		collection = GetClient().Database(os.Getenv("DB_NAME")).Collection("education")
+		collection = GetClient().Database(os.Getenv("MONGO_DB_NAME")).Collection("education")
 	
 	case "courses":
-		collection = GetClient().Database(os.Getenv("DB_NAME")).Collection("courses")
+		collection = GetClient().Database(os.Getenv("MONGO_DB_NAME")).Collection("courses")
 	}
 	return collection
 }
