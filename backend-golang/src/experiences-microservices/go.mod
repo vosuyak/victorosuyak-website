@@ -1,4 +1,4 @@
-module education
+module experience
 
 require (
 	github.com/DataDog/zstd v1.4.4 // indirect
@@ -12,6 +12,7 @@ require (
 	github.com/golang/snappy v0.0.1 // indirect
 	github.com/gorilla/mux v1.7.3
 	github.com/jmank88/nuts v0.4.0 // indirect
+	github.com/joho/godotenv v1.3.0
 	github.com/nightlyone/lockfile v0.0.0-20200124072040-edb130adc195 // indirect
 	github.com/pelletier/go-toml v1.6.0 // indirect
 	github.com/pkg/errors v0.9.1 // indirect

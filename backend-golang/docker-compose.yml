@@ -1,7 +1,7 @@
-version: '2'
+version: '3'
 
 services:
-    golang:
+    golang-edu:
         container_name: education-microservices
         build:
             context: .
@@ -9,17 +9,52 @@ services:
         networks: 
             - mgo-network
         ports:
-            - '8081:8081'
-    mongo:
+            - '8082:8081'
+        volumes:
+            - ./src/education-microservices:/app/src/education-microservices
+        depends_on: 
+            - mongo-edu
+    mongo-edu:
         image: mongo:4.0.2
         container_name: mongo-education
+        # env_file: 
+        #     - ./src/education-microservices/.env.${APP_ENV}
+        # environment:
+        #     - MONGO_INITDB_ROOT_USERNAME=${MONGO_DB_USER}
+        #     - MONGO_INITDB_ROOT_PASSWORD=${MONGO_DB_PASSWORD}
+        #     - MONGO_INITDB_DATABASE=${MONGO_DB_NAME}
+        env_file: 
+            - ./src/education-microservices/.env
+        networks: 
+            - mgo-network
+        ports: 
+            - '27018:27017'
+
+    golang-exp:
+        container_name: experience-microservices
+        build:
+            context: .
+            dockerfile: ./src/experiences-microservices/experience.dockerfile
+        networks: 
+            - mgo-network
+        ports:
+            - '8083:8082'
+        volumes:
+            - ./src/experiences-microservices:/app/src/experiences-microservices
+        depends_on: 
+            - mongo-exp
+    mongo-exp:
+        image: mongo:4.0.2
+        container_name: mongo-experience
         networks: 
             - mgo-network
         ports: 
             - '27017:27017'
+
 networks: 
     mgo-network:
         driver: bridge
+
 
         # docker-compose build  
         # docker-compose up -d  

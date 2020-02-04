@@ -1,13 +1,13 @@
 package main
 
 import (
-	_ "education/data"
-	"os"
-	"education/routers"
 	"net/http"
+	"os"
+	_ "skill/data"
+	"skill/routers"
 )
 
 func main() {
-	r := routers.EducationRoutes()
+	r := routers.SkillRoutes()
 	http.ListenAndServe(":"+os.Getenv("APP_PORT"), r)
 }

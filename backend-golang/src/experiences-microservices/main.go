@@ -1,13 +1,13 @@
 package main
 
 import (
-	_ "education/data"
-	"education/core"
-	"education/routers"
+	_ "experience/data"
+	"experience/core"
+	"experience/routers"
 	"net/http"
 )
 
 func main() {
-	r := routers.EducationRoutes()
+	r := routers.ExperienceRoutes()
 	http.ListenAndServe(core.AppConfig.Port, r)
 }
