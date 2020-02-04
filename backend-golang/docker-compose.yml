@@ -51,6 +51,26 @@ services:
         ports: 
             - '27017:27017'
 
+    golang-skill:
+        container_name: skill-microservices
+        build:
+            context: .
+            dockerfile: ./src/skill-microservices/skill.dockerfile
+        networks: 
+            - mgo-network
+        ports:
+            - '8084:8083'
+        volumes:
+            - ./src/skill-microservices:/app/src/skill-microservices
+        depends_on: 
+            - mongo-ski
+    mongo-ski:
+        image: mongo:4.0.2
+        container_name: mongo-skill
+        networks: 
+            - mgo-network
+        ports: 
+            - '27019:27017'
 networks: 
     mgo-network:
         driver: bridge
