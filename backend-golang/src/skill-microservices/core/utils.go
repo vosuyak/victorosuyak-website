@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"log"
 	"os"
-	"github.com/joho/godotenv"
 
+	"github.com/joho/godotenv"
 )
 
 // Configuration

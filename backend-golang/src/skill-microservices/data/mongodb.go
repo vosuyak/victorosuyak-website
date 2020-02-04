@@ -8,7 +8,7 @@ import (
 	"go.mongodb.org/mongo-driver/mongo/readpref"
 	"log"
 	"time"
-	"experience/core"
+	"skill/core"
 	"os"
 )
 

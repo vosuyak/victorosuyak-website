@@ -1,4 +1,4 @@
-module experience
+module skill
 
 require (
 	github.com/DataDog/zstd v1.4.4 // indirect
