@@ -9,7 +9,7 @@ services:
         networks: 
             - mgo-network
         ports:
-            - '8082:8081'
+            - '8081:8081'
         volumes:
             - ./src/education-microservices:/app/src/education-microservices
         depends_on: 
@@ -38,7 +38,7 @@ services:
         networks: 
             - mgo-network
         ports:
-            - '8083:8082'
+            - '8082:8082'
         volumes:
             - ./src/experiences-microservices:/app/src/experiences-microservices
         depends_on: 
@@ -59,9 +59,7 @@ services:
         networks: 
             - mgo-network
         ports:
-            - '8084:8083'
-        volumes:
-            - ./src/skill-microservices:/app/src/skill-microservices
+            - '8083:8083'
         depends_on: 
             - mongo-ski
     mongo-ski:
@@ -71,6 +69,7 @@ services:
             - mgo-network
         ports: 
             - '27019:27017'
+
 networks: 
     mgo-network:
         driver: bridge

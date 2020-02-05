@@ -7,6 +7,6 @@ COPY /src/experiences-microservices/go.sum .
 RUN sed -i 's/local/development/g' .env
 RUN go mod download
 COPY . .
-EXPOSE 8082
+EXPOSE ${APP_PORT}
 RUN go build -o main .
 CMD "/app/main"
