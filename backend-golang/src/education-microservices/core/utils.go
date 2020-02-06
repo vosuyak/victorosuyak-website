@@ -58,5 +58,6 @@ func LoadEnv() {
 		if err != nil {
 			log.Fatal("Error loading .env." + env + " file access might be restricted")
 		}
+		log.Println("using: "+ env+" PORT: "+os.Getenv("APP_PORT"))
 	}
 }
