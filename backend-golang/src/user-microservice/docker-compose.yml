@@ -1,0 +1,42 @@
+version: '2'
+
+services:
+    golang-edu:
+        container_name: user-microservice
+        build:
+            context: .
+            dockerfile: ./user.dockerfile
+        networks: 
+            - mgo-network
+        ports:
+            - '8081:8081'
+        depends_on: 
+            - mongo-user
+    mongo-user:
+        image: mongo:4.0.2
+        container_name: mongo-user
+        # env_file: 
+        #     - ./src/user-microservices/.env.${APP_ENV}
+        # environment:
+        #     - MONGO_INITDB_ROOT_USERNAME=vosuyak
+        #     - MONGO_INITDB_ROOT_PASSWORD=password
+        #     - MONGO_INITDB_DATABASE=victorosuyak
+        # env_file: 
+        #     - ./src/education-microservices/.env
+        networks: 
+            - mgo-network
+        ports: 
+            - '27017:27017'
+
+networks: 
+    mgo-network:
+        driver: bridge
+
+
+        # docker-compose build  
+        # docker-compose up -d  
+        # docker-compose down  
+        # docker-compose kill
+        # docker-compose ps
+        # docker-compose logs
+            

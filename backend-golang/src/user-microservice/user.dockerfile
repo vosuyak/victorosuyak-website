@@ -1,10 +1,10 @@
 FROM golang:1.11.0
 RUN mkdir /app
+# RUN sed -i 's/local/development/g' ./.env
 ADD . /app
 WORKDIR /app
 COPY go.mod .
 COPY go.sum .
-RUN sed -i 's/local/development/g' .env
 RUN go mod download
 COPY . .
 EXPOSE 8081
