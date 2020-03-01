@@ -1,0 +1,12 @@
+<div fullpage id="fullpage"
+[options]="config"
+(ref)="getRef($event)">
+    <div class="section">
+        Section 1
+         <button (click)="fullpage.api.moveSectionDown()">
+            Next
+        </button>
+    </div>
+    <div class="section">Section 2</div>
+    <div class="section">Section 3</div>
+</div>

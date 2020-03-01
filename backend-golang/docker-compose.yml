@@ -17,10 +17,10 @@ services:
         container_name: mongo-education
         # env_file: 
         #     - ./src/education-microservices/.env.${APP_ENV}
-        environment:
-            - MONGO_INITDB_ROOT_USERNAME=vosuyak
-            - MONGO_INITDB_ROOT_PASSWORD=password
-            - MONGO_INITDB_DATABASE=victorosuyak
+        # environment:
+        #     - MONGO_INITDB_ROOT_USERNAME=vosuyak
+        #     - MONGO_INITDB_ROOT_PASSWORD=password
+        #     - MONGO_INITDB_DATABASE=victorosuyak
         # env_file: 
         #     - ./src/education-microservices/.env
         networks: 
@@ -42,10 +42,10 @@ services:
     mongo-exp:
         image: mongo:4.0.2
         container_name: mongo-experience
-        environment:
-            - MONGO_INITDB_ROOT_USERNAME=vosuyak
-            - MONGO_INITDB_ROOT_PASSWORD=password
-            - MONGO_INITDB_DATABASE=victorosuyak
+        # environment:
+        #     - MONGO_INITDB_ROOT_USERNAME=vosuyak
+        #     - MONGO_INITDB_ROOT_PASSWORD=password
+        #     - MONGO_INITDB_DATABASE=victorosuyak
         networks: 
             - mgo-network
         ports: 
@@ -61,14 +61,14 @@ services:
         ports:
             - '8083:8083'
         depends_on: 
-            - mongo-ski
-    mongo-ski:
+            - mongo-skill
+    mongo-skill:
         image: mongo:4.0.2
         container_name: mongo-skill
-        environment:
-            - MONGO_INITDB_ROOT_USERNAME=vosuyak
-            - MONGO_INITDB_ROOT_PASSWORD=password
-            - MONGO_INITDB_DATABASE=victorosuyak
+        # environment:
+        #     - MONGO_INITDB_ROOT_USERNAME=vosuyak
+        #     - MONGO_INITDB_ROOT_PASSWORD=password
+        #     - MONGO_INITDB_DATABASE=victorosuyak
         networks: 
             - mgo-network
         ports: 
