@@ -1,7 +1,7 @@
 version: '2'
 
 services:
-    golang-edu:
+    golang-user:
         container_name: user-microservice
         build:
             context: .
@@ -15,8 +15,9 @@ services:
     mongo-user:
         image: mongo:4.0.2
         container_name: mongo-user
-        # env_file: 
-        #     - ./src/user-microservices/.env.${APP_ENV}
+        volumes:
+        #     - ./core/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo-js
+            - userdata:/data/db
         # environment:
         #     - MONGO_INITDB_ROOT_USERNAME=vosuyak
         #     - MONGO_INITDB_ROOT_PASSWORD=password
@@ -31,7 +32,8 @@ services:
 networks: 
     mgo-network:
         driver: bridge
-
+volumes: 
+    userdata:
 
         # docker-compose build  
         # docker-compose up -d  
