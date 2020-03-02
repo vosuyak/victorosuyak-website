@@ -3,6 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { HomeComponent } from './home/home.component';
 import { EducationComponent } from './education/education.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { SkillComponent } from './skill/skill.component';
 
 
 const routes: Routes = [
@@ -13,6 +15,14 @@ const routes: Routes = [
   {
     path: 'education',
     component: EducationComponent
+  },
+  {
+    path: 'skill',
+    component: SkillComponent
+  },
+  {
+    path: 'experience',
+    component: ExperienceComponent
   },
   { path: '',
     redirectTo: '/home',
