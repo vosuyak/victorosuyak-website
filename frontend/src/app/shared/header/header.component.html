@@ -1,15 +1,7 @@
 <header>
-    <div class="row">
-        <div class="col-6">
-            lef
-        </div>
-        <div class="col-6">
-            righ
-        </div>
-    </div>
     <div class="row justify-content-between">
         <div class="col-4">
-            <span (click)="back()">back</span>
+            <span *ngIf="checkIfHome()"  (click)="back()">back</span>
         </div>
         <div class="col-4">
             <div class="images">

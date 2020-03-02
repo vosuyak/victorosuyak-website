@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnChanges } from '@angular/core';
 import { Location } from '@angular/common';
 
 @Component({
@@ -6,18 +6,24 @@ import { Location } from '@angular/common';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent implements OnInit, OnChanges {
+
 
   constructor(private location: Location) { }
+
+  ngOnChanges() {
+    this.checkIfHome();
+  }
 
   ngOnInit(): void {
   }
 
+  checkIfHome(){
+    let path = this.location.path();
+    return  path == "/home"? false:true;
+  }
+
   back() {
     this.location.back();
-    let path = this.location.path();
-    console.log('path: ', path);
-    let isPath = this.location.isCurrentPathEqualTo(path,'/home');
-    console.log('isPath: ', isPath);
   }
 }

@@ -1,7 +1,7 @@
 .wrapper {
     width: 100vw;
     height: 100vh;
-    background: deeppink;
+    background: rgb(255, 255, 255);
     position: relative;
     display: -webkit-box;
     display: -webkit-flex;
@@ -51,21 +51,21 @@
     display: inline-block;
     width: 8px;
     height: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.81);
+    border: 1px solid rgb(18, 18, 18);
     border-radius: 11px;
     cursor: pointer;
     -webkit-transition: all 0.25s linear;
     transition: all 0.25s linear;
   }
   
-  .wrapper form input:checked:before { background-color: white; }
+  .wrapper form input:checked:before { background-color: rgb(18, 18, 18); }
   
   .wrapper form input:after {
     content: "" attr(title) "";
     position: relative;
     left: 30px;
     opacity: .3;
-    color: white;
+    color: rgb(25, 25, 25);
     font-size: 9px;
     display: block;
     min-width: 80px;
@@ -153,13 +153,13 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    background-color: #2B2B38;
+    background-color: rgb(255, 255, 255);
     z-index: 0;
     -webkit-transition: all 0.75s cubic-bezier(0.75, 0.25, 0, 1.05);
     transition: all 0.75s cubic-bezier(0.75, 0.25, 0, 1.05);
   }
   
   .wrapper form .labels label:nth-child(odd) {
-    background-color: #F5004F;
+    background-color: #f6f6f6;
     color: white !important;
   }
