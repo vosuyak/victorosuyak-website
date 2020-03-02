@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skill.component.scss']
 })
 export class SkillComponent implements OnInit {
-  fullPage:string = 'skill';
+  page:string = 'skill';
 
   constructor() { }
 

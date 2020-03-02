@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./experience.component.scss']
 })
 export class ExperienceComponent implements OnInit {
-  fullPage:string = 'experience';
+  page:string = 'experience';
 
   constructor() { }
 
