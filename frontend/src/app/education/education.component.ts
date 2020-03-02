@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./education.component.scss']
 })
 export class EducationComponent implements OnInit {
-  fullPage:string = 'education';
+  page:string = 'education';
 
   constructor() { }
 
