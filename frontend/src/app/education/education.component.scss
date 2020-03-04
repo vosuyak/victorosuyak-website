@@ -1,0 +1,15 @@
+.nav-pills{
+    margin: auto;
+    padding-bottom: 1em;
+    .nav-item{
+        font-weight: 600;
+    }
+    .active{
+            background-color: rgb(199, 199, 199);
+    }
+    li{
+        a{
+            color: black;
+        }
+    }
+}

@@ -1,30 +1,82 @@
 <div class="page">
-    <shared-header></shared-header> 
-    <header class="page-title"><h1>{{page}}</h1></header>
+    <shared-header></shared-header>
+    <header class="page-title">
+        <h1>{{page}}</h1>
+    </header>
     <main class="main-content">
-        <div class="row sections container">
-            <div class="section-icon">
+        <div class="row sections container rm-m">
+            <!-- <div class="section-icon">
                 <i class="fas fa-graduation-cap"></i>
-            </div>
-            <section class="col-xs-12 col-md-4">
+            </div> -->
+            <section class="col-xs-12 col-md-4 big-snip">
                 <h4>MBA in IT Management</h4>
                 <h5>Western Governors University</h5>
                 <p>2018 - 2020</p>
             </section>
-            <section class="col-xs-12 col-md-4">
+            <section class="col-xs-12 col-md-4 big-snip">
                 <h4>B.S. Graphic Communication</h4>
                 <h5>Illinois State University</h5>
                 <p>2015 - 2017</p>
             </section>
-            <section class="col-xs-12 col-md-4">
+            <section class="col-xs-12 col-md-4 big-snip">
                 <h4>A.A. Digital Arts</h4>
                 <h5>Wright Community College</h5>
                 <p>2012 - 2015</p>
             </section>
         </div>
-        <div class="out">
-            good bye this is out
+        <div class="row sections container rm-m">
+            <!-- <div class="section-icon">
+                <i class="fas fa-book-open"></i>
+            </div> -->
+            <ul class="nav nav-pills" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="book-tab" data-toggle="tab" href="#book" role="tab"
+                        aria-controls="book" aria-selected="true">books</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="online-tab" data-toggle="tab" href="#online" role="tab"
+                        aria-controls="online" aria-selected="false">online</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="book" role="tabpanel" aria-labelledby="book-tab">
+                    <div class="row">
+                        <section class="col-xs-12 col-md-2 small-snip">
+                            <h4>Web Development with Go</h4>
+                            <h5>By: Shiju Varghese</h5>
+                            <p>Book</p>
+                        </section>
+                        <section class="col-xs-12 col-md-2 small-snip">
+                            <h4>Building Microservices with Go</h4>
+                            <h5>By: Nic Jackson</h5>
+                            <p>Book</p>
+                        </section>
+                        <section class="col-xs-12 col-md-2 small-snip">
+                            <h4>JavaScript and JQuery</h4>
+                            <h5>By: Jon Duckett</h5>
+                            <p>Book</p>
+                        </section>
+                        <section class="col-xs-12 col-md-2 small-snip">
+                            <h4>HTML and CSS</h4>
+                            <h5>By: Jon Duckett</h5>
+                            <p>Book</p>
+                        </section>
+                        <section class="col-xs-12 col-md-2 small-snip">
+                            <h4>HTML5 and CSS3</h4>
+                            <h5>By: Anne Boehm</h5>
+                            <p>Book</p>
+                        </section>
+                        <section class="col-xs-12 col-md-2 small-snip">
+                            <h4>PHP and MySQL</h4>
+                            <h5>By: Joel Murach</h5>
+                            <p>Book</p>
+                        </section>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="online" role="tabpanel" aria-labelledby="online-tab">...</div>
+            </div>
+
         </div>
     </main>
-    <shared-footer more="{{page}}"></shared-footer>  
+    <shared-footer more="{{page}}"></shared-footer>
 </div>

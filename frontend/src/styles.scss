@@ -3,13 +3,17 @@ body{
     margin: 0px;
 }
 
+.rm-m{
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
 .page{
     height: 100vh;
     width: 100vw;
     position: relative;
     .page-title{
         padding-left: 2em;
-        margin-bottom: 3em;
+        margin-bottom: 1.3em;
         h1{
             font-size: 1.1em;
             text-align: left;
@@ -19,10 +23,16 @@ body{
 }
 
 .main-content{
-    margin-left: 6em;
+    // margin-left: 6em;
+    overflow-y: auto;
+    height: 100%;
     section{
         border-bottom: solid 1px #e9e9e9;
-        padding: 2em 0 .2em 0;
+        margin-bottom: 2em;
+    }
+    .big-snip{
+        padding: 1em 0 .2em 0;
+
         h4{
             font-size: 1.3em;
         }
@@ -36,6 +46,26 @@ body{
             font-size: .8em;
             font-weight: 700;
             font-style: italic;
+        }
+    }
+    .small-snip{
+        padding: 1em 0 .2em 0;
+
+        h4{
+            font-size: 1rem;
+            font-weight: 800;
+        }
+        h5{
+            font-size: .8em;
+        }
+        h6{
+
+        }
+        p{
+            color: #575757;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: .7em;
         }
     }
     .in{
