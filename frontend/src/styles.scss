@@ -22,6 +22,29 @@ body{
     }
 }
 
+.vo-flex{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    .sections{
+        min-width: 100vw;
+    min-height: 100vh;
+    display: -webkit-inline-box;
+    margin-bottom: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: unset;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    align-items: center;
+    }
+}
 .main-content{
     // margin-left: 6em;
     overflow-y: auto;
@@ -73,5 +96,16 @@ body{
     }
     .out{
         margin-left: -6em;
+    }
+}
+
+@media (max-width: 575.98px) { 
+    .vo-flex{
+        .sections{
+            display: -webkit-inline-box;
+            height: 100%;
+            overflow-y: auto;
+            margin-top: 6em;
+        }
     }
 }

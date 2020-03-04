@@ -123,7 +123,37 @@
           "price": 0,
           "type": "book",
           "courses": null
-        }
+        },
+        {
+            "_id": "5e5dde7defaf5cef5d655235",
+            "school": "PHP and MySQL",
+            "start_date": "",
+            "end_date": "",
+            "degree": "Joel Murach",
+            "city": "",
+            "state": "",
+            "online": false,
+            "website": "",
+            "website_url": "",
+            "price": 0,
+            "type": "online",
+            "courses": null
+          },
+        {
+            "_id": "5e5dde7defaf5cef5d655235",
+            "school": "PHP and MySQL",
+            "start_date": "",
+            "end_date": "",
+            "degree": "Joel Murach",
+            "city": "",
+            "state": "",
+            "online": false,
+            "website": "",
+            "website_url": "",
+            "price": 0,
+            "type": "online",
+            "courses": null
+          }
       ]
     }
   }

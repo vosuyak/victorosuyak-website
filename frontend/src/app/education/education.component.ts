@@ -7,18 +7,40 @@ import { DataService } from './../core/data.service';
 })
 export class EducationComponent implements OnInit {
   page:string = 'education';
-
+  educations:Array<any>;
+  books: any[];
+  onlines: any[];
+  schools: any[];
   constructor(private data:DataService) { }
 
   ngOnInit(): void {
-    // this.getEducation();
+    this.getEducation();
+    this.getBooks();
+    this.getOnline();
+    this.getSchools();
   }
 
   getEducation(){
     this.data.getEducation().subscribe(data =>{
-      data
-      console.log('data: ', data);
+      this.educations = data['response']['data']
     })
   }
-
+  getBooks(){
+    this.data.getEducation().subscribe(data =>{
+      this.educations = data['response']['data']
+      this.books = this.educations.filter(edu => edu.type == 'book')
+    })
+  }
+  getOnline(){
+    this.data.getEducation().subscribe(data =>{
+      this.educations = data['response']['data']
+      this.onlines = this.educations.filter(online => online.type == 'online')
+    })
+  }
+  getSchools(){
+    this.data.getEducation().subscribe(data =>{
+      this.educations = data['response']['data']
+      this.schools = this.educations.filter(school => school.type == 'school')
+    })
+  }
 }
