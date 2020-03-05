@@ -4,6 +4,8 @@ header{
         width: 100px;
         margin-left: 1.5em;
         margin-top: 1.6em;
+        position: relative;
+        z-index: 100;
         i{
             font-size: 1.6em;
         }

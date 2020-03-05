@@ -9,7 +9,7 @@ services:
         networks: 
             - mgo-network
         ports:
-            - '8081:8081'
+            - '8082:8082'
         depends_on: 
             - mongo-skill
     mongo-skill:
@@ -27,7 +27,7 @@ services:
         networks: 
             - mgo-network
         ports: 
-            - '27017:27017'
+            - '27018:27017'
 
 networks: 
     mgo-network:

@@ -1,3 +1,16 @@
+$Montserrat : 'Montserrat', sans-serif;
+
+.me-content{
+  h1{
+    font-family: $Montserrat;
+    font-size: 5em;
+    font-weight: 600;
+  }
+  p{
+    font-family: $Montserrat;
+    font-size: 1.4em;
+  }
+}
 .wrapper {
     width: 100vw;
     height: 100vh;
@@ -32,12 +45,21 @@
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
+    padding-left: 0px;
+    .side-nav{
+      // position: absolute;
+    }
   }
   
   .wrapper form input {
     height: 0;
-    margin: 12px 0;
+    margin: 20px 0;
+    font-size: 1.2em;
     z-index: 1;
+    font-weight: 500;
+    &::before{
+      visibility: hidden;
+    }
   }
   
   .wrapper form input:checked {
@@ -66,7 +88,7 @@
     left: 30px;
     opacity: .3;
     color: rgb(25, 25, 25);
-    font-size: 9px;
+    font-size: .8em;
     display: block;
     min-width: 80px;
     -webkit-transition: all 0.25s linear;
@@ -163,4 +185,27 @@
   .wrapper form .labels label:nth-child(odd) {
     background-color: #f6f6f6;
     color: black;
+  }
+
+
+  @media (max-width: 575.98px) { 
+    .me-content{
+      position: absolute;
+      top: 5em;
+      padding-right: 2em;
+      width: 60%;
+      right: 0;
+  
+      h1{
+        font-family: $Montserrat;
+        font-size: 3em;
+        font-weight: 700;
+        text-align: right;
+      }
+      p{
+        font-family: $Montserrat;
+        font-size: .8em;
+        text-align: right;
+      }
+    }  
   }

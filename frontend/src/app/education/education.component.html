@@ -1,15 +1,14 @@
 <div class="page">
     <shared-header></shared-header>
-    <header class="page-title">
-        <h1>{{page}}</h1>
-    </header>
+    <header class="page-title"><h1>{{page}}</h1></header>
+    
     <main class="main-content">
         <div class="vo-flex">
             <div class="sections container rm-m">
                 <div class="row rm-m">
                     <section class="col-xs-12 col-md-4 big-snip" *ngFor="let school of schools">
                         <h4>{{school.school}}</h4>
-                        <h5>By: {{school.degree}}</h5>
+                        <h5>{{school.degree}}</h5>
                         <p>{{school.type}}</p>                            
                     </section>
                 </div>
@@ -28,20 +27,20 @@
                 <div class="row rm-m">
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="book" role="tabpanel" aria-labelledby="book-tab">
-                            <div class="row">
-                                <section class="col-xs-12 col-md-2 small-snip" *ngFor="let book of books">
+                            <div class="row secs">
+                                <section class="col-xs-12 col-md-3 small-snip" *ngFor="let book of books">
                                     <h4>{{book.school}}</h4>
                                     <h5>By: {{book.degree}}</h5>
                                     <p>{{book.type}}</p>                            
                                 </section>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="online" role="tabpanel" aria-labelledby="online-tab">
-                            <div class="row">
-                                <section class="col-xs-12 col-md-2 small-snip" *ngFor="let online of onlines">
+                        <div class="tab-pane fade show" id="online" role="tabpanel" aria-labelledby="online-tab">
+                            <div class="row secs">
+                                <section class="col-xs-12 col-md-3 small-snip" *ngFor="let online of onlines">
                                     <h4>{{online.school}}</h4>
-                                    <h5>By: {{online.degree}}</h5>
-                                    <p>{{online.type}}</p>                            
+                                    <h5>By: {{online.website}}</h5>
+                                    <p>{{online.start_date}}</p>                            
                                 </section>
                             </div>
                         </div>

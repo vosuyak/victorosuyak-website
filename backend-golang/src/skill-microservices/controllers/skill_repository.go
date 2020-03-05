@@ -61,6 +61,8 @@ func (r *SkillRepository) Update(skill models.Skill) error {
 	update := bson.M{
 		"$set":bson.M{
 			"language": skill.Language,
+			"image": skill.Image,
+			"background_color": skill.BackgroundColor,
 			"years_experience": skill.YearsExperience,
 		},
 	}
