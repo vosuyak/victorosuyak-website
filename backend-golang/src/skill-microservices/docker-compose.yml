@@ -1,0 +1,44 @@
+version: '2'
+
+services:
+    golang-skill:
+        container_name: skill-microservice
+        build:
+            context: .
+            dockerfile: ./skill.dockerfile
+        networks: 
+            - mgo-network
+        ports:
+            - '8082:8082'
+        depends_on: 
+            - mongo-skill
+    mongo-skill:
+        image: mongo:4.0.2
+        container_name: mongo-skill
+        volumes:
+        #     - ./core/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo-js
+            - skilldata:/data/db
+        # environment:
+        #     - MONGO_INITDB_ROOT_USERNAME=vosuyak
+        #     - MONGO_INITDB_ROOT_PASSWORD=password
+        #     - MONGO_INITDB_DATABASE=victorosuyak
+        # env_file: 
+        #     - ./src/education-microservices/.env
+        networks: 
+            - mgo-network
+        ports: 
+            - '27018:27017'
+
+networks: 
+    mgo-network:
+        driver: bridge
+volumes: 
+    skilldata:
+
+        # docker-compose build  
+        # docker-compose up -d  
+        # docker-compose down  
+        # docker-compose kill
+        # docker-compose ps
+        # docker-compose logs
+            

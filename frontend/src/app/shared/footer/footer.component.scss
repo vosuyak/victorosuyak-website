@@ -1,0 +1,23 @@
+footer{
+    .creator{
+        p{
+            font-size: .8em;
+            margin-bottom: 0px;
+            span{
+                color: rgb(228, 228, 56);
+            }
+        };
+    }
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 1em 0;
+    box-shadow: #242424 0px -10px 40px -25px;
+    a{
+        color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+    }
+}

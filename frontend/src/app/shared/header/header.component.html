@@ -1,0 +1,16 @@
+<header>
+    <div class="row justify-content-between">
+        <div class="col-4">
+            <div class="icon" *ngIf="checkIfHome()"  (click)="back()"><i class="fas fa-angle-left"></i></div>
+        </div>
+        <div class="col-4">
+            <div class="images">
+                <img src="./../../../assets/vologo.png" alt="logo">
+            </div>
+        </div>
+    </div>
+    <header *ngIf="removeShowMoreBTN()"  class="page-title">
+        <h1>{{page}}</h1>
+        <div class="show-more"><a routerLink="/{{page}}"><button></button></a></div>
+    </header>
+</header>
