@@ -1,0 +1,15 @@
+.small-skip{
+    min-height: 170px;
+    position: relative;
+    img{
+        width: 100%;
+        padding: 4em;
+    }
+    h4{
+        position: absolute;
+        bottom: 15px;
+        margin: auto;
+        display: block;
+        width: 100%;
+    }
+}

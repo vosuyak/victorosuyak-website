@@ -12,4 +12,9 @@ export class DataService {
     let url = './../../assets/pages/education.json';
     return this.http.get(url)
   }
+
+  getSkill(){
+    let url = './../../assets/pages/skill.json';
+    return this.http.get(url)
+  }
 }

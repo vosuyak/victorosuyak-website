@@ -21,7 +21,21 @@ body{
         }
     }
 }
-
+.nav-pills{
+    margin: auto;
+    padding-bottom: 1em;
+    .nav-item{
+        font-weight: 600;
+    }
+    .active{
+            background-color: rgb(199, 199, 199) !important;
+    }
+    li{
+        a{
+            color: black;
+        }
+    }
+}
 .vo-flex{
     position: absolute;
     top: 0;
