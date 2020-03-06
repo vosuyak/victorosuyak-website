@@ -1,0 +1,19 @@
+.tab-content{
+    .secs{
+        section{
+            max-width: 80%;
+            margin: auto;
+        }
+    }
+}
+
+
+@media (max-width: 575.98px) { 
+    .tab-content{
+        .secs{
+            section{
+                max-width: 100%;
+            }
+        }
+    }
+}

@@ -11,6 +11,9 @@ import { HeaderComponent } from './shared/header/header.component';
 import { SkillComponent } from './skill/skill.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { EducationSnippetComponent } from './education/education-snippet/education-snippet.component';
+import { ExperienceSnippetComponent } from './experience/experience-snippet/experience-snippet.component';
+import { SkillSnippetComponent } from './skill/skill-snippet/skill-snippet.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { FooterComponent } from './shared/footer/footer.component';
     HeaderComponent,
     SkillComponent,
     ExperienceComponent,
-    FooterComponent
+    FooterComponent,
+    EducationSnippetComponent,
+    ExperienceSnippetComponent,
+    SkillSnippetComponent
   ],
   imports: [
     BrowserModule,
