@@ -13,6 +13,11 @@ export class DataService {
     return this.http.get(url)
   }
 
+  getExperience(){
+    let url = './../../assets/pages/experience.json';
+    return this.http.get(url)
+  }
+
   getSkill(){
     let url = './../../assets/pages/skill.json';
     return this.http.get(url)

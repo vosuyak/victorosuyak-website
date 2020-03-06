@@ -1,4 +1,18 @@
 <div class="page">
-    <shared-header page={{page}}></shared-header>  
-    <shared-footer more="{{page}}"></shared-footer>  
+    <shared-header page={{page}}></shared-header>
+
+    <main class="main-content">
+        <div class="vo-flex">
+            <div class="sections container rm-m">
+                <div class="row rm-m">
+                    <section class="col-xs-12 col-md-4 big-snip" *ngFor="let school of experiences">
+                        <h4>{{school.school}}</h4>
+                        <h5>{{school.degree}}</h5>
+                        <!-- <p>{{school.type}}</p>                             -->
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+    <shared-footer more="{{page}}"></shared-footer>
 </div>
