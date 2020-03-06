@@ -1,4 +1,4 @@
-import { Component, OnInit, OnChanges } from '@angular/core';
+import { Component, OnInit, OnChanges, Input } from '@angular/core';
 import { Location } from '@angular/common';
 
 @Component({
@@ -7,7 +7,7 @@ import { Location } from '@angular/common';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit, OnChanges {
-
+  @Input() page:string
 
   constructor(private location: Location) { }
 
@@ -25,5 +25,15 @@ export class HeaderComponent implements OnInit, OnChanges {
 
   back() {
     this.location.back();
+  }
+
+  removeShowMoreBTN(){
+    if ("/"+this.page == this.location.path()){
+      return false
+    } else if(this.page == undefined){
+      return false  
+    }else{
+      return true
+    }
   }
 }

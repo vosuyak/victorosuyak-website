@@ -1,7 +1,6 @@
 <div class="page">
-    <shared-header></shared-header>
-    <header class="page-title"><h1>{{page}}</h1></header>
-    
+    <shared-header page={{page}}></shared-header>
+
     <main class="main-content">
         <div class="vo-flex">
             <div class="sections container rm-m">
@@ -9,7 +8,7 @@
                     <section class="col-xs-12 col-md-4 big-snip" *ngFor="let school of schools">
                         <h4>{{school.school}}</h4>
                         <h5>{{school.degree}}</h5>
-                        <p>{{school.type}}</p>                            
+                        <!-- <p>{{school.type}}</p>                             -->
                     </section>
                 </div>
                 <div class="row rm-m">

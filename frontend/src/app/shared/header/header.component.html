@@ -9,4 +9,8 @@
             </div>
         </div>
     </div>
+    <header *ngIf="removeShowMoreBTN()"  class="page-title">
+        <h1>{{page}}</h1>
+        <div class="show-more"><a routerLink="/{{page}}"><button></button></a></div>
+    </header>
 </header>

@@ -1,5 +1,9 @@
 header{
     margin-bottom:2em;
+    position: relative;
+    background-color: #efefef;
+    width: 100%;
+    z-index: 99;
     .icon{
         width: 100px;
         margin-left: 1.5em;
@@ -19,10 +23,52 @@ header{
             width: 100%;
         }
     }
+    .page-title{
+        padding-left: 2em;
+        .show-more{
+            button{
+                position: absolute;
+                left: 0;
+                background-color: white;
+                color: black;
+                font-weight: 400;
+                text-align: center;
+                border: none;
+                box-shadow: black -1px 1px 7px -3px;
+                border-radius: 3px;
+                margin-left: 2em;
+                margin-top: .5em;
+                z-index: 100;
+                &:before{
+                    content: "show more";
+                }
+            }
+        }
+        h1{
+            font-size: 1.1em;
+            text-align: left;
+            text-transform: capitalize;
+            padding-bottom: 1em;
+            margin-bottom: 0;
+        }
+    }
+}
+@media (max-width: 991.98px) { 
+        .page-title{
+            .show-more{
+                button{
+                    margin-left: 7.8em !important;
+                    margin-top: -2.7em !important;
+                    &:before{
+                        content: "more" !important;
+                    }
+                }
+            }
+        }
 }
 @media (max-width: 575.98px) { 
     header{
-        margin-bottom: 1em;
+        margin-bottom: 0em;
 
     }
 }
