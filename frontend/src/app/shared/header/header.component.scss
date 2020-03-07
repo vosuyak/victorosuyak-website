@@ -1,9 +1,10 @@
 header{
-    margin-bottom:2em;
-    position: relative;
-    background-color: #efefef;
-    width: 100%;
+    margin-bottom: 2em;
+    position: sticky;
     z-index: 99;
+    left: 0;
+    right: 0;
+    top: 0;
     .icon{
         width: 100px;
         margin-left: 1.5em;
@@ -52,8 +53,63 @@ header{
             margin-bottom: 0;
         }
     }
+    .side-nav{
+        display: none;
+        ul{
+            list-style-type: none;
+            width: 170px;
+            background-color: #e9e9e9;
+            height: 100vh;
+            top: 0;
+            position: absolute;
+            padding: 1em;
+            bottom: 0;
+            margin: 0;
+            .menu{
+                right: -30px;
+                position: absolute;
+                font-size: 1.5em;
+                i{
+    
+                }
+            }
+            li{
+                padding: .5em 0;
+                a{
+                    color: black;
+                }
+            }
+        }
+    }
+    .top-nav{
+        position: absolute;
+        width: 100%;
+        // border: solid 1px black;
+        padding-right: 4em;
+        display: block;
+        ul{
+            // padding-left: 0px;
+            display: block;
+            float: left;
+            list-style-type: none;
+            margin-bottom: 0px;
+            li{
+                display: inline;
+                margin: 0px 1em;
+                a{
+                    color: black;
+                }
+            }
+        }
+    }
 }
 @media (max-width: 991.98px) { 
+    .top-nav{
+        display: none !important;
+    }
+    .side-nav{
+        display: block !important;
+    }
         .page-title{
             .show-more{
                 button{
@@ -67,6 +123,12 @@ header{
         }
 }
 @media (max-width: 575.98px) { 
+    .top-nav{
+        display: none !important;
+    }
+    .side-nav{
+        display: block !important;
+    }
     header{
         margin-bottom: 0em;
 

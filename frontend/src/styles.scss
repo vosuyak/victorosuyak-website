@@ -1,17 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
 body{
     margin: 0px;
+    padding: 0px;
 }
 
 .rm-m{
     margin-right: 0px !important;
     margin-left: 0px !important;
 }
+.rm-p{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
 
-.page{
-    height: 100vh;
-    width: 100vw;
-    position: relative;
+.wrapper {
+
+}
+.all-pages{
+    .page{
+        height: 100vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 .nav-pills{
     margin: auto;
@@ -29,30 +41,6 @@ body{
         a{
             color: black;
         }
-    }
-}
-.vo-flex{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    .sections{
-        min-width: 100vw;
-    min-height: 100vh;
-    display: -webkit-inline-box;
-    margin-bottom: 0px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: unset;
-    -webkit-box-pack: center;
-    -webkit-box-align: center;
-    align-items: center;
-    margin-top: -90px;
     }
 }
 .main-content{
