@@ -14,6 +14,8 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { EducationSnippetComponent } from './education/education-snippet/education-snippet.component';
 import { ExperienceSnippetComponent } from './experience/experience-snippet/experience-snippet.component';
 import { SkillSnippetComponent } from './skill/skill-snippet/skill-snippet.component';
+import { HomeModule } from './home/home.module';
+import { NgxPageScrollModule } from 'ngx-page-scroll';
 
 @NgModule({
   declarations: [
@@ -32,8 +34,9 @@ import { SkillSnippetComponent } from './skill/skill-snippet/skill-snippet.compo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
-
+    HttpClientModule,
+    HomeModule,
+    NgxPageScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,19 +1,26 @@
 <div class="wrapper">
     <form>
       <!-- <div class="side-nav"> -->
+        <ul>
+          <li>
+            <a pageScroll href="#awesomePart">Take me to the awesomeness</a>
+          </li>
+        </ul>
         <input type="radio" id="me" name="slider" title="Me" checked="checked"/>
         <input type="radio" id="education" name="slider" title="Education"/>
         <input type="radio" id="experience" name="slider" title="Experience"/>
         <input type="radio" id="skill" name="slider" title="Skill"/>
       <!-- </div> -->
-
+      <!-- Further content here -->
       <!-- <input type="radio" id="Slide5" name="slider" title="Section 5"/> -->
       <div class="labels">
         <label for="me" id="me" class="Slide">
+
           <div class="me-content">
             <h1>Victor Osuyak</h1>
             <p>Software Developer | Investor</p>
           </div>
+
         </label>
         <label for="education" id="education" class="Slide">
             <!-- <page-education></page-education> -->
@@ -24,6 +31,8 @@
           <experience-snippet></experience-snippet>
         </label>
         <label for="skill" id="skill" class="Slide">
+          <h2 id="awesomePart">This is where the awesome happens</h2>
+
           <!-- <page-skill></page-skill> -->
           <skill-snippet></skill-snippet>
         </label>
