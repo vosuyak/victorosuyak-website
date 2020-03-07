@@ -16,6 +16,9 @@ body{
 .nav-pills{
     margin: auto;
     padding-bottom: 1em;
+    position: relative;
+    z-index: 90;
+    margin: auto;
     .nav-item{
         font-weight: 600;
     }

@@ -10,7 +10,7 @@ export class ExperienceSnippetComponent implements OnInit {
   page:string = 'experience';
   experiences:Array<any>;
   jobs: any[];
-  founder: any[];
+  founders: any[];
   projects: any[];
 
   constructor(private data:DataService) { }
@@ -30,19 +30,20 @@ export class ExperienceSnippetComponent implements OnInit {
   getJobs(){
     this.data.getExperience().subscribe(data =>{
       this.experiences = data['response']['data']
-      this.jobs = this.experiences.filter(edu => edu.type == 'book')
+      this.jobs = this.experiences.filter(exp => exp.type == 'job')
     })
   }
   getFounder(){
     this.data.getExperience().subscribe(data =>{
       this.experiences = data['response']['data']
-      this.founder = this.experiences.filter(online => online.type == 'online')
+      this.founders = this.experiences.filter(exp => exp.type == 'founder')
+      
     })
   }
   getProject(){
     this.data.getExperience().subscribe(data =>{
       this.experiences = data['response']['data']
-      this.projects = this.experiences.filter(school => school.type == 'school')
+      this.projects = this.experiences.filter(exp => exp.type == 'project')
     })
   }
 
