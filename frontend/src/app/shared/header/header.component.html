@@ -2,15 +2,19 @@
     <div class="row rm-m justify-content-between">
         <div class="col-6 rm-p">
             <nav class="side-nav">
-                <ul>
-                    <div class="menu">
-                        <i class="fas fa-bars"></i>
-                    </div>
+                <div class="opacity" *ngIf="isMenuOpen" (click)="openMenu()"></div>
+                <div class="menu" (click)="openMenu()">
+                    <i *ngIf="!isMenuOpen"  class="fas fa-bars"></i>
+                    <i *ngIf="isMenuOpen" class="fas fa-times"></i>
+                </div>
+                <ul  #menu>
                     <li><a pageScroll href="#me">me</a></li>
                     <li><a pageScroll href="#education">education</a></li>
                     <li><a pageScroll href="#experience">experience</a></li>
                     <li><a pageScroll href="#skill">skill</a></li>
-                  </ul>
+
+                </ul>
+
             </nav>
             <div class="icon" *ngIf="checkIfHome()"  (click)="back()"><i class="fas fa-angle-left"></i></div>
         </div>

@@ -23,6 +23,13 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
+        h2{
+            color: black;
+            text-transform: capitalize;
+            margin-top: 2em;
+            text-align: center;
+            font-size: 1.3em;
+        }
     }
 }
 .nav-pills{
@@ -74,17 +81,17 @@ body{
         }
     }
     .small-snip{
-        padding: 1em;
+        padding: .4em;
         h4{
-            font-size: 1rem;
+            font-size: .8rem;
             font-weight: 500;
-            // max-width: 160px;
             display: block;
             text-align: center;
             margin: auto;
+            margin-bottom: .4em;
         }
         h5{
-            font-size: .8em;
+            font-size: .7em;
             text-align: center;
 
         }
@@ -97,7 +104,7 @@ body{
             font-weight: 600;
             text-align: center;
             margin-bottom: 0px;
-            font-size: .7em;
+            font-size: 0.6em;
         }
     }
     .in{
@@ -109,7 +116,16 @@ body{
 }
 
 @media (max-width: 575.98px) { 
-
+    .all-pages{
+        .page{
+            h2{
+                margin-top: 2em;
+                font-size: 1.3em;
+                background-color: white;
+                margin-bottom: 0px;
+            }
+        }
+    }
     .main-content{
 
         section{
@@ -140,14 +156,16 @@ body{
         }
     }
     .vo-flex{
+        height: 100vh;
         .main-content{
                 margin-top: 2em;
         }
         .sections{
-            display: -webkit-inline-box;
+            // display: -webkit-inline-box;
             height: 100%;
             overflow-y: auto;
-            margin-top: 10px;
+            padding-top: 1.2em;
+            background-color: white;
         }
         .secs{
             margin-bottom: 7em;

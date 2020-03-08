@@ -11,14 +11,15 @@
     section{
         a{
             color: black;
-            padding: 0.1em;
+            padding: 0.2em;
             height: 25px;
             width: 25px;
             border-radius: 50%;
             display: block;
             float: right;
-            font-size: .8em;
+            font-size: 0.9em;
             background-color: #f1f1f1;
+            text-align: center;
         }
     }
 
@@ -57,6 +58,7 @@ section{
     ul{
         list-style-type: none;
     padding: 0px;
+    text-align: center;
         li{
             font-size: .8em;
         }
@@ -66,7 +68,8 @@ section{
 
 @media (max-width: 575.98px) { 
     .nav{
-        margin-top: 10px;
+        padding-top: 10px;
+        background: white;
     }
     .vo-flex{
         .sections{

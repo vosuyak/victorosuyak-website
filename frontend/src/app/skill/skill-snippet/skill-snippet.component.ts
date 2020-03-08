@@ -18,7 +18,7 @@ export class SkillSnippetComponent implements OnInit {
   getSkill(){
     this.data.getSkill().subscribe(data =>{
       this.skills = data['response']['data']
-      console.log('this.skills: ', this.skills);
+      
     })
   }
 
