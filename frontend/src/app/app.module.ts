@@ -16,6 +16,8 @@ import { ExperienceSnippetComponent } from './experience/experience-snippet/expe
 import { SkillSnippetComponent } from './skill/skill-snippet/skill-snippet.component';
 import { HomeModule } from './home/home.module';
 import { NgxPageScrollModule } from 'ngx-page-scroll';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,8 @@ import { NgxPageScrollModule } from 'ngx-page-scroll';
     AppRoutingModule,
     HttpClientModule,
     HomeModule,
-    NgxPageScrollModule
+    NgxPageScrollModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
