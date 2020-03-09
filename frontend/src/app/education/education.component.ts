@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterContentInit, AfterViewChecked } from '@angular/core';
 import { DataService } from './../core/data.service';
 @Component({
   selector: 'page-education',
   templateUrl: './education.component.html',
   styleUrls: ['./education.component.scss']
 })
-export class EducationComponent implements OnInit {
+export class EducationComponent implements OnInit, AfterViewChecked {
   page:string = 'education';
   educations:Array<any>;
   books: any[];
@@ -13,7 +13,10 @@ export class EducationComponent implements OnInit {
   schools: any[];
   constructor(private data:DataService) { }
 
-  ngOnInit(): void {
+  ngOnInit(){
+    
+  }
+  ngAfterViewChecked(): void {
     this.getEducation();
     this.getBooks();
     this.getOnline();
