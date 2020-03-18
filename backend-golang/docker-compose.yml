@@ -1,0 +1,88 @@
+version: '2'
+
+services:
+    golang-edu:
+        container_name: education-microservices
+        build:
+            context: .
+            dockerfile: ./src/education-microservices/education.dockerfile
+        networks: 
+            - mgo-network
+        ports:
+            - '8081:8081'
+        depends_on: 
+            - mongo-edu
+    mongo-edu:
+        image: mongo:4.0.2
+        container_name: mongo-education
+        # env_file: 
+        #     - ./src/education-microservices/.env.${APP_ENV}
+        # environment:
+        #     - MONGO_INITDB_ROOT_USERNAME=vosuyak
+        #     - MONGO_INITDB_ROOT_PASSWORD=password
+        #     - MONGO_INITDB_DATABASE=victorosuyak
+        # env_file: 
+        #     - ./src/education-microservices/.env
+        networks: 
+            - mgo-network
+        ports: 
+            - '27018:27017'
+
+    golang-exp:
+        container_name: experience-microservices
+        build:
+            context: .
+            dockerfile: ./src/experiences-microservices/experience.dockerfile
+        networks: 
+            - mgo-network
+        ports:
+            - '8082:8082'
+        depends_on: 
+            - mongo-exp
+    mongo-exp:
+        image: mongo:4.0.2
+        container_name: mongo-experience
+        # environment:
+        #     - MONGO_INITDB_ROOT_USERNAME=vosuyak
+        #     - MONGO_INITDB_ROOT_PASSWORD=password
+        #     - MONGO_INITDB_DATABASE=victorosuyak
+        networks: 
+            - mgo-network
+        ports: 
+            - '27017:27017'
+
+    golang-skill:
+        container_name: skill-microservices
+        build:
+            context: .
+            dockerfile: ./src/skill-microservices/skill.dockerfile
+        networks: 
+            - mgo-network
+        ports:
+            - '8083:8083'
+        depends_on: 
+            - mongo-skill
+    mongo-skill:
+        image: mongo:4.0.2
+        container_name: mongo-skill
+        # environment:
+        #     - MONGO_INITDB_ROOT_USERNAME=vosuyak
+        #     - MONGO_INITDB_ROOT_PASSWORD=password
+        #     - MONGO_INITDB_DATABASE=victorosuyak
+        networks: 
+            - mgo-network
+        ports: 
+            - '27019:27017'
+
+networks: 
+    mgo-network:
+        driver: bridge
+
+
+        # docker-compose build  
+        # docker-compose up -d  
+        # docker-compose down  
+        # docker-compose kill
+        # docker-compose ps
+        # docker-compose logs
+            

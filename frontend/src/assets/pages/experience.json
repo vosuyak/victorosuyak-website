@@ -1,0 +1,129 @@
+{
+    "response": {
+      "db": true,
+      "code": 200,
+      "message": "success",
+      "data": [
+        {
+          "_id": "5e628a2ec1c216e2a5d0c182",
+          "type": "job",
+          "type_two": "",
+          "employer": "VSA Partners",
+          "employer_url": "https://www.vsapartners.com/",
+          "start_date": "May 2017",
+          "end_date": "August 2017",
+          "position": "Developer Intern",
+          "team_size": 310,
+          "description": "HTML, CSS, JS, Angular 4, Google Firebase, JSON"
+        },
+        {
+          "_id": "5e628c39c1c216e2a5d0c183",
+          "type": "job",
+          "type_two": "",
+          "employer": "PII (Acquired by Taylor Corp.)",
+          "employer_url": "https://www.taylorcommunications.com/solutions/customer-communications/customer-communication-management/direct-marketing/",
+          "start_date": "May 2016 - May 2017",
+          "end_date": "Aug 2017 - May 2017",
+          "position": "Web Developer Intern",
+          "team_size": 10000,
+          "description": "HTML, CSS, Jquery, Bootstrap, JSON"
+        },
+        {
+          "_id": "5e628d4dc1c216e2a5d0c184",
+          "type": "job",
+          "type_two": "",
+          "employer": "Illinois State University",
+          "employer_url": "https://illinoisstate.edu/",
+          "start_date": "Dec 2015",
+          "end_date": "May 2016",
+          "position": "Web Design Intern",
+          "team_size": 60,
+          "description": "HTML, CSS, Bootstrap, Jquery"
+        },
+        {
+          "_id": "5e628e1ac1c216e2a5d0c185",
+          "type": "founder",
+          "type_two": "",
+          "employer": "Unproto LLC",
+          "employer_url": "http://www.unproto.com",
+          "start_date": "2016",
+          "end_date": "Present",
+          "position": "Founder | Lead Developer",
+          "team_size": 1,
+          "description": "HTML, CSS, Bootstrap, Jquery, Angulay 8, Materialize.css, JSON, Hosting, prototyping"
+        },
+        {
+          "_id": "5e628eeac1c216e2a5d0c186",
+          "type": "founder",
+          "type_two": "",
+          "employer": "Your Founders",
+          "employer_url": "http://www.yourfounders.com",
+          "start_date": "2017",
+          "end_date": "Present",
+          "position": "Founder | Lead Developer",
+          "team_size": 3,
+          "description": "HTML, CSS, Bootstrap, Jquery, Angulay 8, Materialize.css, JSON, Hosting"
+        },
+        {
+          "_id": "5e628f50c1c216e2a5d0c187",
+          "type": "founder",
+          "type_two": "",
+          "employer": "Bumper Flag LLC",
+          "employer_url": "http://www.bumperflag.co",
+          "start_date": "2019",
+          "end_date": "Present",
+          "position": "Founder | Developer",
+          "team_size": 1,
+          "description": "HTML, CSS, e-commerce, JSON, Liquid"
+        },
+        {
+          "_id": "5e629090c1c216e2a5d0c188",
+          "type": "project",
+          "type_two": "github",
+          "employer": "Monthly Budget Calculator",
+          "employer_url": "https://github.com/vosuyak/MonthlyBudget_GoLang_API",
+          "start_date": "2020",
+          "end_date": "Present",
+          "position": "Lead Developer",
+          "team_size": 2,
+          "description": "Go Lang, Docker, Microservice, JSON, Mongo DB, BSON"
+        },
+        {
+          "_id": "5e6290b8c1c216e2a5d0c189",
+          "type": "project",
+          "type_two": "github",
+          "employer": "Country Holidays",
+          "employer_url": "https://github.com/vosuyak/country-holidays",
+          "start_date": "2020",
+          "end_date": "Present",
+          "position": "Lead Developer",
+          "team_size": 1,
+          "description": "Angular 8, Docker, API, JSON"
+        },
+        {
+            "_id": "5e6335a0c1c216e2a5d0c18b",
+            "type": "job",
+            "type_two": "github",
+            "employer": "Verizon",
+            "employer_url": "https://verizon.com",
+            "start_date": "2017",
+            "end_date": "Present",
+            "position": "Lead UI Developer",
+            "team_size": 20000,
+            "description": "Angular 8, Go Lang, Mongo DB, Docker, API, JSON, Cassandra"
+          },
+        {
+          "_id": "5e629602c1c216e2a5d0c18a",
+          "type": "project",
+          "type_two": "github",
+          "employer": "Portfolio Website",
+          "employer_url": "https://github.com/vosuyak/victorosuyak-website",
+          "start_date": "2020",
+          "end_date": "Present",
+          "position": "Lead Developer",
+          "team_size": 1,
+          "description": "Angular 8, Go Lang, Mongo DB, Docker, API, JSON"
+        }
+      ]
+    }
+  }

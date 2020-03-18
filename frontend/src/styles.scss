@@ -1,0 +1,175 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.rm-m{
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+.rm-p{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.wrapper {
+
+}
+.all-pages{
+    .page{
+        height: 100vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h2{
+            color: black;
+            text-transform: capitalize;
+            margin-top: 2em;
+            text-align: center;
+            font-size: 1.3em;
+        }
+    }
+}
+.nav-pills{
+    margin: auto;
+    padding-bottom: 1em;
+    position: relative;
+    z-index: 90;
+    margin: auto;
+    .nav-item{
+        font-weight: 600;
+    }
+    .active{
+            background-color: rgb(199, 199, 199) !important;
+    }
+    li{
+        a{
+            color: black;
+        }
+    }
+}
+.main-content{
+    position: relative;
+    
+    section{
+        border: solid 1px #e9e9e9;
+        margin-bottom: 2em;
+    }
+    .big-snip{
+        padding: 2em 1em 2em 1em;
+        h4{
+            font-size: 1.3em;
+            text-align: center;
+
+        }
+        h5{
+            font-weight:500;
+            text-align: center;
+
+        }
+        h6{
+
+        }
+        p{
+            font-size: .8em;
+            font-weight: 700;
+            font-style: italic;
+            text-align: center;
+
+        }
+    }
+    .small-snip{
+        padding: .4em;
+        h4{
+            font-size: .8rem;
+            font-weight: 500;
+            display: block;
+            text-align: center;
+            margin: auto;
+            margin-bottom: .4em;
+        }
+        h5{
+            font-size: .7em;
+            text-align: center;
+
+        }
+        h6{
+
+        }
+        p{
+            color: #575757;
+            text-transform: uppercase;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 0px;
+            font-size: 0.6em;
+        }
+    }
+    .in{
+
+    }
+    .out{
+        margin-left: -6em;
+    }
+}
+
+@media (max-width: 575.98px) { 
+    .all-pages{
+        .page{
+            h2{
+                margin-top: 2em;
+                font-size: 1.3em;
+                background-color: white;
+                margin-bottom: 0px;
+            }
+        }
+    }
+    .main-content{
+
+        section{
+            margin-bottom: 1em;
+        }
+        .big-snip{
+            padding: 1em 0 .2em 0;
+            border: none;
+            h4{
+                text-align: right;
+                font-size: 1.1em !important;
+            }
+            h5{
+                text-align: right;
+                font-weight:400;
+                font-size: 1em !important;
+            }
+            p{
+                text-align: right;
+                font-size: .8em !important;
+                font-weight: 700;
+                font-style: italic;
+            }
+        }
+        .small-snip{
+            p{
+            }
+        }
+    }
+    .vo-flex{
+        height: 100vh;
+        .main-content{
+                margin-top: 2em;
+        }
+        .sections{
+            // display: -webkit-inline-box;
+            height: 100%;
+            overflow-y: auto;
+            padding-top: 1.2em;
+            background-color: white;
+        }
+        .secs{
+            margin-bottom: 7em;
+        }
+    }
+
+}

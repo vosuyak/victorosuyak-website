@@ -1,0 +1,41 @@
+<header>
+    <div class="row rm-m justify-content-between">
+        <div class="col-6 rm-p">
+            <nav class="side-nav">
+                <div class="opacity" *ngIf="isMenuOpen" (click)="openMenu()"></div>
+                <div class="menu" (click)="openMenu()">
+                    <i *ngIf="!isMenuOpen"  class="fas fa-bars"></i>
+                    <i *ngIf="isMenuOpen" class="fas fa-times"></i>
+                </div>
+                <ul  #menu>
+                    <li><a pageScroll href="#me">me</a></li>
+                    <li><a pageScroll href="#education">education</a></li>
+                    <li><a pageScroll href="#experience">experience</a></li>
+                    <li><a pageScroll href="#skill">skill</a></li>
+
+                </ul>
+
+            </nav>
+            <div class="icon" *ngIf="checkIfHome()"  (click)="back()"><i class="fas fa-angle-left"></i></div>
+        </div>
+        <div class="col-6 rm-p">
+            <div class="images">
+                <img src="./../../../assets/vologo.png" alt="logo">
+            </div>
+        </div>
+    </div>
+    <div class="row rm-m">
+        <nav class="top-nav">
+            <ul>
+              <li><a pageScroll href="#me">me</a></li>
+              <li><a pageScroll href="#education">education</a></li>
+              <li><a pageScroll href="#experience">experience</a></li>
+              <li><a pageScroll href="#skill">skill</a></li>
+            </ul>
+          </nav>
+    </div>
+    <header *ngIf="removeShowMoreBTN()"  class="page-title">
+        <!-- <h1>{{page}}</h1> -->
+        <!-- <div class="show-more"><a routerLink="/{{page}}"><button></button></a></div> -->
+    </header>
+</header>

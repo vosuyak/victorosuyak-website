@@ -1,0 +1,44 @@
+version: '2'
+
+services:
+    golang-education:
+        container_name: education-microservice
+        build:
+            context: .
+            dockerfile: ./education.dockerfile
+        networks: 
+            - mgo-network
+        ports:
+            - '8081:8081'
+        depends_on: 
+            - mongo-education
+    mongo-education:
+        image: mongo:4.0.2
+        container_name: mongo-education
+        volumes:
+        #     - ./core/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo-js
+            - educationdata:/data/db
+        # environment:
+        #     - MONGO_INITDB_ROOT_USERNAME=vosuyak
+        #     - MONGO_INITDB_ROOT_PASSWORD=password
+        #     - MONGO_INITDB_DATABASE=victorosuyak
+        # env_file: 
+        #     - ./src/education-microservices/.env
+        networks: 
+            - mgo-network
+        ports: 
+            - '27017:27017'
+
+networks: 
+    mgo-network:
+        driver: bridge
+volumes: 
+    educationdata:
+
+        # docker-compose build  
+        # docker-compose up -d  
+        # docker-compose down  
+        # docker-compose kill
+        # docker-compose ps
+        # docker-compose logs
+            

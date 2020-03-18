@@ -1,0 +1,18 @@
+<div class="page">
+
+    <main class="main-content">
+
+        <div class="vo-flex">
+            <h2>{{page}}s</h2>
+
+            <div class="sections skill-container container rm-m">
+                <div class="row rm-m">
+                    <section class="col-sm-6 col-md-4 small-snip" *ngFor="let skill of skills">
+                        <h4>{{skill.language}}</h4>
+                        <!-- <img [src]="skill.image" alt="{{skill.language}}"> -->
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
