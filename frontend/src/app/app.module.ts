@@ -18,6 +18,7 @@ import { HomeModule } from './home/home.module';
 import { NgxPageScrollModule } from 'ngx-page-scroll';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { environment } from '../environments/environment';
     FooterComponent,
     EducationSnippetComponent,
     ExperienceSnippetComponent,
-    SkillSnippetComponent
+    SkillSnippetComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,

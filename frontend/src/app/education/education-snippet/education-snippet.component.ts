@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { DataService } from 'src/app/core/data.service';
+import { Education } from '../models/education';
 
 @Component({
   selector: 'education-snippet',
@@ -12,6 +13,9 @@ export class EducationSnippetComponent implements OnInit {
   books: any[];
   onlines: any[];
   schools: any[];
+
+  @Input() Education:Education;
+  
   constructor(private data:DataService) { }
 
   ngOnInit(): void {

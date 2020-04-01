@@ -1,4 +1,3 @@
-<div class="page">
-    <shared-header page={{page}}></shared-header>  
-    <shared-footer more="{{page}}"></shared-footer>  
-</div>
+<ng-container *ngFor="let item of experiences" >
+    <experience-snippet employer="{{item.employer}}"></experience-snippet>
+</ng-container>
