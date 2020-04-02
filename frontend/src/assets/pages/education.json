@@ -122,7 +122,8 @@
             "name": "Applied Economic Analysis for Technologists",
             "skills": []
           }
-        ]      },
+        ]      
+      },
       {
         "_id": "5e5dd153efaf5cef5d655230",
         "school": "Wilbur Wright College",
@@ -154,7 +155,7 @@
         "courses": [
           {
             "_id": "5e5dddebefaf5cef5d655231",
-            "school": "Web Development with Go",
+            "name": "Web Development with Go",
             "start_date": "",
             "end_date": "",
             "degree": "Shiju Varghese",
@@ -169,7 +170,7 @@
           },
           {
             "_id": "5e5dde07efaf5cef5d655232",
-            "school": "Building Microservices with Go",
+            "name": "Building Microservices with Go",
             "start_date": "",
             "end_date": "",
             "degree": "Nic Jackson",
@@ -184,7 +185,7 @@
           },
           {
             "_id": "5e5dde2defaf5cef5d655233",
-            "school": "JavaScript and JQuery",
+            "name": "JavaScript and JQuery",
             "start_date": "",
             "end_date": "",
             "degree": "Jon Duckett",
@@ -199,7 +200,7 @@
           },
           {
             "_id": "5e5dde57efaf5cef5d655234",
-            "school": "HTML5 and CSS3",
+            "name": "HTML5 and CSS3",
             "start_date": "",
             "end_date": "",
             "degree": "Anne Boehm",
@@ -214,7 +215,7 @@
           },
           {
             "_id": "5e5dde7defaf5cef5d655235",
-            "school": "PHP and MySQL",
+            "name": "PHP and MySQL",
             "start_date": "",
             "end_date": "",
             "degree": "Joel Murach",
@@ -229,7 +230,7 @@
           },
           {
             "_id": "5e5ffef034bb1aae20e54f71",
-            "school": "Web Development w/ Google’s Go (golang) ...",
+            "name": "Web Development w/ Google’s Go (golang) ...",
             "start_date": "19hr",
             "end_date": "",
             "degree": "Todd McLeod",
@@ -244,7 +245,7 @@
           },
           {
             "_id": "5e5fff4534bb1aae20e54f72",
-            "school": "Learn How To Code: Google's Go (golang) ...",
+            "name": "Learn How To Code: Google's Go (golang) ...",
             "start_date": "15hr",
             "end_date": "",
             "degree": "Todd McLeod",
@@ -259,7 +260,7 @@
           },
           {
             "_id": "5e5fffbd34bb1aae20e54f73",
-            "school": "Modern Golang Programming",
+            "name": "Modern Golang Programming",
             "start_date": "12hr",
             "end_date": "",
             "degree": "Packt Publishing",
@@ -274,7 +275,7 @@
           },
           {
             "_id": "5e6007f134bb1aae20e54f74",
-            "school": "Docker for Web Developers",
+            "name": "Docker for Web Developers",
             "start_date": "5hr",
             "end_date": "",
             "degree": "Dan Wahlin",
@@ -289,7 +290,7 @@
           },
           {
             "_id": "5e60082634bb1aae20e54f75",
-            "school": "Angular Architecture and Best Practices",
+            "name": "Angular Architecture and Best Practices",
             "start_date": "5hr",
             "end_date": "",
             "degree": "Dan Wahlin",
@@ -304,7 +305,7 @@
           },
           {
             "_id": "5e60089a34bb1aae20e54f76",
-            "school": "Angular Forms",
+            "name": "Angular Forms",
             "start_date": "2hr",
             "end_date": "",
             "degree": "Mark Zamoyta",
@@ -319,7 +320,7 @@
           },
           {
             "_id": "5e60099334bb1aae20e54f77",
-            "school": "Big Data & Reporting with MongoDB",
+            "name": "Big Data & Reporting with MongoDB",
             "start_date": "3hr",
             "end_date": "",
             "degree": "Nuri Halperin",
