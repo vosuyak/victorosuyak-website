@@ -13,7 +13,12 @@ export class ExperienceSnippetComponent implements OnInit {
   founders: any[];
   projects: any[];
 
+  @Input() position:any;
   @Input() employer:any;
+  @Input() start_date:any;
+  @Input() end_date:any;
+  @Input() description:any;
+
 
   constructor(private data:DataService) { }
 

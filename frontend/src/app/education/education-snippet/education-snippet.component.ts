@@ -12,10 +12,24 @@ export class EducationSnippetComponent implements OnInit {
   educations:Array<any>;
   books: any[];
   onlines: any[];
-  schools: any[];
+  schools: any  [];
+  education:Education;
 
   @Input() Education:Education;
-  
+  @Input() id:any;
+  @Input() school:any;
+  @Input() degree:any;
+  @Input() start_date:any;
+  @Input() end_date:any;
+  @Input() city:any;
+  @Input() state:any;
+  @Input() online:any;
+  @Input() website:any;
+  @Input() price:any;
+  @Input() type:any;
+  @Input() courses:any;
+
+
   constructor(private data:DataService) { }
 
   ngOnInit(): void {

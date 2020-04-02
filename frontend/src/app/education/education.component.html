@@ -1,3 +1,11 @@
-<ng-container *ngFor="let item of educations" >
-    {{item.school}}
-</ng-container>
+<div class="row">
+    <ng-container *ngFor="let item of educations" >
+        <education-snippet 
+        id="{{item._id}}"
+        school="{{item.school}}"
+        degree="{{item.degree}}"
+        type="{{item.type}}"
+        [courses]=item.courses
+        ></education-snippet>
+    </ng-container>
+</div>

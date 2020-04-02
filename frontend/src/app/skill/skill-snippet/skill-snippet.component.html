@@ -1,18 +1,9 @@
-<div class="page">
-
-    <main class="main-content">
-
-        <div class="vo-flex">
-            <h2>{{page}}s</h2>
-
-            <div class="sections skill-container container rm-m">
-                <div class="row rm-m">
-                    <section class="col-sm-6 col-md-4 small-snip" *ngFor="let skill of skills">
-                        <h4>{{skill.language}}</h4>
-                        <!-- <img [src]="skill.image" alt="{{skill.language}}"> -->
-                    </section>
-                </div>
+<section class="col-sm-6 col-md-4 small-snip">
+        <div class="card" style="width: 18rem;">
+            <img [src]="img" [ngStyle]="{'background-color':background_color}" class="card-img-top" alt="{{language}}">
+            <div class="card-body"> 
+              <h5 class="card-title">{{language}}</h5>
+              <h6 class="card-subtitle mb-2 text-muted">{{end}}</h6>
             </div>
-        </div>
-    </main>
-</div>
+        </div> 
+</section>

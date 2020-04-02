@@ -1,0 +1,12 @@
+<section class="col-sm-6 col-md-4 small-snip">
+    <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{name}}</h5>
+          <p class="card-text">{{position}}</p>
+          <p class="card-text">{{description}}</p>
+          <a [href]="url" class="btn btn-primary"><span *ngIf="type_two == 'github' else link"><i class="fab fa-github"></i></span> <ng-template #link><i class="fas fa-link"></i></ng-template>
+          </a>
+        </div>
+    </div>
+</section>

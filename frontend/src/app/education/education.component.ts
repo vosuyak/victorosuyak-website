@@ -14,13 +14,9 @@ export class EducationComponent implements OnInit, AfterViewChecked {
   constructor(private data:DataService) { }
 
   ngOnInit(){
-    
+    this.getEducation();    
   }
   ngAfterViewChecked(): void {
-    this.getEducation();
-    this.getBooks();
-    this.getOnline();
-    this.getSchools();
   }
 
   getEducation(){
@@ -28,22 +24,22 @@ export class EducationComponent implements OnInit, AfterViewChecked {
       this.educations = data['response']['data']
     })
   }
-  getBooks(){
-    this.data.getEducation().subscribe(data =>{
-      this.educations = data['response']['data']
-      this.books = this.educations.filter(edu => edu.type == 'book')
-    })
-  }
-  getOnline(){
-    this.data.getEducation().subscribe(data =>{
-      this.educations = data['response']['data']
-      this.onlines = this.educations.filter(online => online.type == 'online')
-    })
-  }
-  getSchools(){
-    this.data.getEducation().subscribe(data =>{
-      this.educations = data['response']['data']
-      this.schools = this.educations.filter(school => school.type == 'school')
-    })
-  }
+  // getBooks(){
+  //   this.data.getEducation().subscribe(data =>{
+  //     this.educations = data['response']['data']
+  //     this.books = this.educations.filter(edu => edu.type == 'book')
+  //   })
+  // }
+  // getOnline(){
+  //   this.data.getEducation().subscribe(data =>{
+  //     this.educations = data['response']['data']
+  //     this.onlines = this.educations.filter(online => online.type == 'online')
+  //   })
+  // }
+  // getSchools(){
+  //   this.data.getEducation().subscribe(data =>{
+  //     this.educations = data['response']['data']
+  //     this.schools = this.educations.filter(school => school.type == 'school')
+  //   })
+  // }
 }

@@ -42,7 +42,7 @@
         },
         {
           "_id": "5e628e1ac1c216e2a5d0c185",
-          "type": "founder",
+          "type": "job",
           "type_two": "",
           "employer": "Unproto LLC",
           "employer_url": "http://www.unproto.com",
@@ -54,9 +54,9 @@
         },
         {
           "_id": "5e628eeac1c216e2a5d0c186",
-          "type": "founder",
+          "type": "project",
           "type_two": "",
-          "employer": "Your Founders",
+          "employer": "Your Founders LLC",
           "employer_url": "http://www.yourfounders.com",
           "start_date": "2017",
           "end_date": "Present",
@@ -66,7 +66,7 @@
         },
         {
           "_id": "5e628f50c1c216e2a5d0c187",
-          "type": "founder",
+          "type": "project",
           "type_two": "",
           "employer": "Bumper Flag LLC",
           "employer_url": "http://www.bumperflag.co",

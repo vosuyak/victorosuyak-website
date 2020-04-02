@@ -19,34 +19,33 @@ export class ExperienceComponent implements OnInit {
 
   ngOnInit(): void {
     this.getExperience();
-    this.getJobs();
-    this.getFounder();
-    this.getProject();
   }
 
   getExperience(){
     this.data.getExperience().subscribe(data =>{
-      this.experiences = data['response']['data']
+      let array = data['response']['data']
+      this.experiences = array.filter(exp => exp.type == 'job')
+
     })
   }
-  getJobs(){
-    this.data.getExperience().subscribe(data =>{
-      this.experiences = data['response']['data']
-      this.jobs = this.experiences.filter(exp => exp.type == 'job')
-    })
-  }
-  getFounder(){
-    this.data.getExperience().subscribe(data =>{
-      this.experiences = data['response']['data']
-      this.founders = this.experiences.filter(exp => exp.type == 'founder')
+  // getJobs(){
+  //   this.data.getExperience().subscribe(data =>{
+  //     this.experiences = data['response']['data']
+  //     this.jobs = this.experiences.filter(exp => exp.type == 'job')
+  //   })
+  // }
+  // getFounder(){
+  //   this.data.getExperience().subscribe(data =>{
+  //     this.experiences = data['response']['data']
+  //     this.founders = this.experiences.filter(exp => exp.type == 'founder')
       
-    })
-  }
-  getProject(){
-    this.data.getExperience().subscribe(data =>{
-      this.experiences = data['response']['data']
-      this.projects = this.experiences.filter(exp => exp.type == 'project')
-    })
-  }
+  //   })
+  // }
+  // getProject(){
+  //   this.data.getExperience().subscribe(data =>{
+  //     this.experiences = data['response']['data']
+  //     this.projects = this.experiences.filter(exp => exp.type == 'project')
+  //   })
+  // }
 
 }

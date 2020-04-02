@@ -1,72 +1,10 @@
-<div class="page">
-
-    <main class="main-content">
-        <div class="vo-flex">
-            <h2>{{page}}</h2>
-            <p>{{employer}}</p>
-
-            <!-- <div class="row rm-m">
-                <ul class="nav nav-pills" id="myTab" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="job-tab" data-toggle="tab" href="#job" role="tab"
-                            aria-controls="job" aria-selected="true">jobs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="founder-tab" data-toggle="tab" href="#founder" role="tab"
-                            aria-controls="founder" aria-selected="false">founder</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="project-tab" data-toggle="tab" href="#project" role="tab"
-                            aria-controls="project" aria-selected="false">project</a>
-                    </li>
-                </ul>
-            </div> -->
-            <!-- <div class="sections exp container rm-m">
-                <div class="row rm-m">
-                    <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="job" role="tabpanel" aria-labelledby="job-tab">
-                            <div class="row secs">
-                                <section class="col-xs-12 col-md-4 big-snip" *ngFor="let job of jobs">
-                                    <a target="_blank" [href]="job.employer_url"><i class="fas fa-link"></i></a>
-                                    <h4>{{job.position}}</h4>
-                                    <h5>{{job.employer}}</h5>
-                                    <p>{{job.start_date}} | {{job.end_date}}</p>  
-                                    <ul>
-                                        <li>{{job.description}}</li>
-                                    </ul>                          
-                                </section>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade show" id="founder" role="tabpanel" aria-labelledby="founder-tab">
-                            <div class="row secs">
-                                <section class="col-xs-12 col-md-4 big-snip" *ngFor="let founder of founders">
-                                    <a target="_blank" [href]="founder.employer_url"><i class="fas fa-link"></i></a>
-                                    <h4>{{founder.position}}</h4>
-                                    <h5>{{founder.employer}}</h5>
-                                    <p>{{founder.start_date}} | {{founder.end_date}}</p>  
-                                    <ul>
-                                        <li>{{founder.description}}</li>
-                                    </ul>                          
-                                </section>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade show" id="project" role="tabpanel" aria-labelledby="project-tab">
-                            <div class="row secs">
-                                <section class="col-xs-12 col-md-4 big-snip" *ngFor="let project of projects">
-                                    <a target="_blank" [href]="project.employer_url"><i class="fas fa-link"></i></a>
-                                    <h4>{{project.position}}</h4>
-                                    <h5>{{project.employer}}</h5>
-                                    <p>{{project.start_date}} | {{project.end_date}}</p>  
-                                    <ul>
-                                        <li>{{project.description}}</li>
-                                    </ul>                          
-                                </section>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
+<section class="col-xs-12 col-md-4 big-snip">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">{{position}}</h5>
+          <h6 class="card-subtitle mb-2 text-muted text-center">{{employer}}</h6>
+          <p class="card-text">{{start_date}} | {{end_date}}</p>
+          <p class="card-text">{{description}}</p>
         </div>
-    </main>
-    <!-- <shared-footer more="{{page}}"></shared-footer> -->
-</div>
+    </div>
+</section>
