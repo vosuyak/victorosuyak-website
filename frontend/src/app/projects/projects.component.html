@@ -1,10 +1,10 @@
-<div class="row">
+<div class="row rm-m">
     <ng-container *ngFor="let item of projects" >
         <project-snippet
         name="{{item.employer}}"
         url="{{item.employer_url}}"
         position="{{item.position}}"
-        description="{{item.description}}"
+        [description]=item.description
         type_two="{{item.type_two}}"
         ></project-snippet>
     </ng-container>
