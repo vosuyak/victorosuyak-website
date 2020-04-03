@@ -14,7 +14,8 @@
           "end_date": "August 2017",
           "position": "Developer Intern",
           "team_size": 310,
-          "description": "HTML, CSS, JS, Angular 4, Google Firebase, JSON"
+          "description": ["HTML", "CSS", "JS", "Angular 4","Google Firebase", "JSON"]
+
         },
         {
           "_id": "5e628c39c1c216e2a5d0c183",
@@ -26,7 +27,8 @@
           "end_date": "Aug 2017 - May 2017",
           "position": "Web Developer Intern",
           "team_size": 10000,
-          "description": "HTML, CSS, Jquery, Bootstrap, JSON"
+          "description": ["HTML", "CSS", "Bootstrap", "Jquery", "JSON"]
+
         },
         {
           "_id": "5e628d4dc1c216e2a5d0c184",
@@ -38,7 +40,8 @@
           "end_date": "May 2016",
           "position": "Web Design Intern",
           "team_size": 60,
-          "description": "HTML, CSS, Bootstrap, Jquery"
+          "description": ["HTML", "CSS", "Bootstrap", "Jquery"]
+
         },
         {
           "_id": "5e628e1ac1c216e2a5d0c185",
@@ -50,7 +53,7 @@
           "end_date": "Present",
           "position": "Founder | Lead Developer",
           "team_size": 1,
-          "description": "HTML, CSS, Bootstrap, Jquery, Angulay 8, Materialize.css, JSON, Hosting, prototyping"
+          "description": ["HTML", "CSS", "Bootstrap", "Jquery", "Angular 8", "Materialize.css", "JSON", "Hosting"]
         },
         {
           "_id": "5e628eeac1c216e2a5d0c186",
@@ -62,7 +65,7 @@
           "end_date": "Present",
           "position": "Founder | Lead Developer",
           "team_size": 3,
-          "description": "HTML, CSS, Bootstrap, Jquery, Angulay 8, Materialize.css, JSON, Hosting"
+          "description": ["HTML", "CSS", "Bootstrap", "Jquery", "Angular 8", "Materialize.css", "JSON", "Hosting"]
         },
         {
           "_id": "5e628f50c1c216e2a5d0c187",
@@ -74,7 +77,8 @@
           "end_date": "Present",
           "position": "Founder | Developer",
           "team_size": 1,
-          "description": "HTML, CSS, e-commerce, JSON, Liquid"
+          "description": ["HTML", "CSS", "e-commerce", "JSON","Liquid"]
+
         },
         {
           "_id": "5e629090c1c216e2a5d0c188",
@@ -86,7 +90,8 @@
           "end_date": "Present",
           "position": "Lead Developer",
           "team_size": 2,
-          "description": "Go Lang, Docker, Microservice, JSON, Mongo DB, BSON"
+          "description": ["Go Lang", "Docker", "Microservice API", "JSON","Mongo DB", "BSON"]
+
         },
         {
           "_id": "5e6290b8c1c216e2a5d0c189",
@@ -98,7 +103,8 @@
           "end_date": "Present",
           "position": "Lead Developer",
           "team_size": 1,
-          "description": "Angular 8, Docker, API, JSON"
+          "description": ["Angular 8", "Docker", "API", "JSON"]
+
         },
         {
             "_id": "5e6335a0c1c216e2a5d0c18b",
@@ -110,7 +116,8 @@
             "end_date": "Present",
             "position": "Lead UI Developer",
             "team_size": 20000,
-            "description": "Angular 8, Go Lang, Mongo DB, Docker, API, JSON, Cassandra"
+            "description": ["Angular 4-8", "Go Lang","Mongo DB", "Docker", "API", "KML", "JSON"]
+
           },
         {
           "_id": "5e629602c1c216e2a5d0c18a",
@@ -122,7 +129,8 @@
           "end_date": "Present",
           "position": "Lead Developer",
           "team_size": 1,
-          "description": "Angular 8, Go Lang, Mongo DB, Docker, API, JSON"
+          "description": ["Angular 8", "Go Lang","Mongo DB", "Docker", "API", "JSON"]
+
         }
       ]
     }

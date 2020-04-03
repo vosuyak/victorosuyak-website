@@ -1,11 +1,11 @@
-<div class="row">
+<div class="row rm-m">
     <ng-container *ngFor="let item of experiences" >
         <experience-snippet 
         position="{{item.position}}"
         employer="{{item.employer}}"
         start_date="{{item.start_date}}"
         end_date="{{item.end_date}}"
-        description="{{item.description}}"
+        [description]=item.description
     
         ></experience-snippet>
     </ng-container>
