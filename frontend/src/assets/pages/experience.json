@@ -115,6 +115,34 @@
 
         },
         {
+          "_id": "5e629090c1c216e2a5d0c167",
+          "type": "project",
+          "bg_color":"golang_web",
+          "type_two": "github",
+          "employer": "Go w/ Docker",
+          "employer_url": "https://github.com/vosuyak/Golang-Dockerfile-Example1",
+          "start_date": "2020",
+          "end_date": "Present",
+          "position": "Lead Developer",
+          "team_size": 2,
+          "description": ["Go Lang", "Docker"]
+
+        },
+        {
+          "_id": "5e629090c1c216e2a5d0c167",
+          "type": "project",
+          "bg_color":"golang_web",
+          "type_two": "github",
+          "employer": "Income Tax Calculator",
+          "employer_url": "https://github.com/vosuyak/goloang-incometax-calculator",
+          "start_date": "2017",
+          "end_date": "Present",
+          "position": "Lead Developer",
+          "team_size": 2,
+          "description": ["Go Lang","JSON","Docker"]
+
+        },
+        {
           "_id": "5e6290b8c1c216e2a5d0c189",
           "type": "project",
           "bg_color":"angular_web",
