@@ -5,6 +5,20 @@
       "message": "success",
       "data": [
         {
+          "_id": "5e6335a0c1c216e2a5d0c18b",
+          "type": "job",
+          "type_two": "github",
+          "employer": "Verizon",
+          "image":"https://lh3.googleusercontent.com/61i_Zq9aboPrz9QkIve830x23vro7IZpvlw9FhV-mMZhtyk-d3FLvbaxGbfJdXd5LG0",
+          "employer_url": "https://verizon.com",
+          "start_date": "2017",
+          "end_date": "Present",
+          "position": "Lead UI Developer",
+          "team_size": 20000,
+          "description": ["Angular 4-8", "Go Lang","Mongo DB", "Docker", "API", "KML", "JSON"]
+
+        },
+        {
           "_id": "5e628a2ec1c216e2a5d0c182",
           "type": "job",
           "type_two": "",
@@ -114,20 +128,7 @@
           "description": ["Angular 8", "Docker", "API", "JSON"]
 
         },
-        {
-            "_id": "5e6335a0c1c216e2a5d0c18b",
-            "type": "job",
-            "type_two": "github",
-            "employer": "Verizon",
-            "image":"https://lh3.googleusercontent.com/61i_Zq9aboPrz9QkIve830x23vro7IZpvlw9FhV-mMZhtyk-d3FLvbaxGbfJdXd5LG0",
-            "employer_url": "https://verizon.com",
-            "start_date": "2017",
-            "end_date": "Present",
-            "position": "Lead UI Developer",
-            "team_size": 20000,
-            "description": ["Angular 4-8", "Go Lang","Mongo DB", "Docker", "API", "KML", "JSON"]
 
-          },
         {
           "_id": "5e629602c1c216e2a5d0c18a",
           "type": "project",

@@ -37,6 +37,9 @@ body{
 
 .all-pages{
     .page{
+        .me-content{
+            margin-top: 8em;
+        }
         height: 100%;
         position: relative;
         display: flex;
@@ -56,6 +59,9 @@ body{
 
 @media (max-width: 575.98px) { 
     .all-pages{
+        .me-content{
+            margin-top: 0em;
+        }
         .page{
             h2{
                 margin-top: 2em;
@@ -66,5 +72,6 @@ body{
         }
     }
     .card{
+        width: 21rem;
     }
 }
