@@ -15,6 +15,7 @@ export class ExperienceSnippetComponent implements OnInit {
 
   @Input() position:any;
   @Input() employer:any;
+  @Input() image:any;
   @Input() start_date:any;
   @Input() end_date:any;
   @Input() description:any;

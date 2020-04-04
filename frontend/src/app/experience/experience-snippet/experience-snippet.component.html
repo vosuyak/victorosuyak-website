@@ -1,9 +1,12 @@
 <section class="col-xs-12 col-md-4 big-snip">
     <div class="card">
         <div class="card-body">
-          <h5 class="card-title text-center">{{position}}</h5>
-          <h6 class="card-subtitle mb-2 text-muted text-center">{{employer}}</h6>
-          <p class="card-text text-center">{{start_date}} | {{end_date}}</p>
+          <div class="logo"><img [src]="image" alt=""></div>
+          <div class="context">
+            <h5 class="card-title text-center">{{position}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted text-center">{{employer}}</h6>
+            <p class="card-text text-center">{{start_date}} | {{end_date}}</p>
+          </div>
           <p class="card-text">
             <span *ngFor="let item of description"  class="badge badge-pill badge-dark">{{item}}</span>
           </p>

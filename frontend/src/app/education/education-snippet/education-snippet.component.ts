@@ -21,6 +21,7 @@ export class EducationSnippetComponent implements OnInit {
   @Input() degree:any;
   @Input() start_date:any;
   @Input() end_date:any;
+  @Input() image:any;
   @Input() city:any;
   @Input() state:any;
   @Input() online:any;

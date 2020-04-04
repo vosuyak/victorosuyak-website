@@ -12,6 +12,7 @@ export class ProjectSnippetComponent implements OnInit {
   @Input() description:string;
   @Input() type_two:string;
   @Input() img:string;
+  @Input() bgImg:string;
   
   constructor() { }
 

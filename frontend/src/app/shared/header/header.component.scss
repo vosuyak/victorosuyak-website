@@ -5,6 +5,7 @@ header{
     left: 0;
     right: 0;
     top: 0;
+    background-color: #fff;
     .icon{
         width: 100px;
         margin-left: 1em;
@@ -91,7 +92,6 @@ header{
         }
     }
     .top-nav{
-        position: absolute;
         width: 100%;
         // border: solid 1px black;
         padding-right: 4em;
