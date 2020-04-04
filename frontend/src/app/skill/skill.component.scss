@@ -1,11 +1,13 @@
 .skill-container{
-
+    max-width: 80%;
+    margin: auto;
 }
 
 @media (max-width: 991.98px) { 
 }
 @media (max-width: 575.98px) { 
     .skill-container{
+        max-width: 100%;
         -webkit-box-pack: inherit;
         padding-left: 6em;
         .small-snip{

@@ -1,16 +1,42 @@
 <header>
-    <div class="row justify-content-between">
-        <div class="col-4">
+    <div class="row rm-m justify-content-between">
+        <div class="col-6 rm-p">
+            <nav class="side-nav">
+                <div class="opacity" *ngIf="isMenuOpen" (click)="openMenu()"></div>
+                <div class="menu" (click)="openMenu()">
+                    <i *ngIf="!isMenuOpen"  class="fas fa-bars"></i>
+                    <i *ngIf="isMenuOpen" class="fas fa-times"></i>
+                </div>
+                <ul *ngIf="isMenuOpen">
+                    <li (click)="openMenu()"><a routerLink="/home">me</a></li>
+                    <li (click)="openMenu()"><a routerLink="/education">education</a></li>
+                    <li (click)="openMenu()"><a routerLink="/experience">experience</a></li>
+                    <li (click)="openMenu()"><a routerLink="/skill">skills</a></li>
+                    <li (click)="openMenu()"><a routerLink="/project">projects</a></li>
+                </ul>
+
+            </nav>
             <div class="icon" *ngIf="checkIfHome()"  (click)="back()"><i class="fas fa-angle-left"></i></div>
         </div>
-        <div class="col-4">
+        <div class="col-6 rm-p">
             <div class="images">
                 <img src="./../../../assets/vologo.png" alt="logo">
             </div>
         </div>
     </div>
+    <div class="row rm-m">
+        <nav class="top-nav">
+            <ul>
+                <li><a routerLink="/home">me</a></li>
+                <li><a routerLink="/education">education</a></li>
+                <li><a routerLink="/experience">experience</a></li>
+                <li><a routerLink="/skill">skills</a></li>
+                <li><a routerLink="/project">projects</a></li>
+            </ul>
+          </nav>
+    </div>
     <header *ngIf="removeShowMoreBTN()"  class="page-title">
-        <h1>{{page}}</h1>
-        <div class="show-more"><a routerLink="/{{page}}"><button></button></a></div>
+        <!-- <h1>{{page}}</h1> -->
+        <!-- <div class="show-more"><a routerLink="/{{page}}"><button></button></a></div> -->
     </header>
 </header>

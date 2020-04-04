@@ -1,23 +1,29 @@
 footer{
+    position: absolute;
     .creator{
         p{
             font-size: .8em;
             margin-bottom: 0px;
+            text-align: center;
             span{
                 color: rgb(228, 228, 56);
             }
-        };
+        }
     }
-    position: absolute;
+    .footer{
+        text-align: center;
+    margin: auto;
+    padding: 0 0 1em 0;
+    }
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: 12;
     background-color: white;
     padding: 1em 0;
-    box-shadow: #242424 0px -10px 40px -25px;
     a{
         color: black;
     font-weight: 600;
-    text-transform: uppercase;
+    text-transform: capitalize;
     }
 }

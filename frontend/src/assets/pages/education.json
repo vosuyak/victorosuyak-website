@@ -7,6 +7,7 @@
       {
         "_id": "5e5dd092efaf5cef5d65522e",
         "school": "Western Governors University",
+        "image":"https://yt3.ggpht.com/a/AATXAJw5kpg0c4GCBeGCL1WXao9UVwX77x4yRwfrIw=s900-c-k-c0xffffffff-no-rj-mo",
         "start_date": "2018",
         "end_date": "2020",
         "degree": "MBA in IT Management",
@@ -17,11 +18,53 @@
         "website_url": "",
         "price": 8000,
         "type": "school",
-        "courses": null
+        "courses": [
+          {
+            "name": "Marketing and Communication",
+            "skills": []
+          },
+          {
+            "name": "Project Management",
+            "skills": ["IT Project Management"]
+          },
+          {
+            "name": "Management",
+            "skills": ["Managing Human Capital", "Managing Organizations and Leading People"]
+          },
+          {
+            "name": "Economics",
+            "skills": ["Global Economics for Managers"]
+          },
+          {
+            "name": "Accounting",
+            "skills": ["Accounting for Decision Makers"]
+          },
+          {
+            "name": "Leadership",
+            "skills": ["Ethical Leadership"]
+          },
+          {
+            "name": "Finance",
+            "skills": ["Financial Management"]
+          },
+          {
+            "name": "Strategy",
+            "skills": ["Data-Driven Decision Making"]
+          },
+          {
+            "name": "Strategic Solution",
+            "skills": ["IT Strategic Solutions"]
+          },
+          {
+            "name": "Capstone",
+            "skills": []
+          }
+        ]
       },
       {
         "_id": "5e5dd0f6efaf5cef5d65522f",
         "school": "Illinois State University",
+        "image":"https://universitymarketing.illinoisstate.edu/images/logos/SECNDRY_head_3C.png",
         "start_date": "2015",
         "end_date": "2017",
         "degree": "B.S. Graphic Communication",
@@ -32,11 +75,61 @@
         "website_url": "",
         "price": 28000,
         "type": "school",
-        "courses": null
+        "courses": [
+          {
+            "name": "Professional Development in Technology",
+            "skills": []
+          },
+          {
+            "name": "Introduction to Technical Drawing & Constraint-Based",
+            "skills": []
+          },
+          {
+            "name": "Solid Modeling",
+            "skills": []
+          },
+          {
+            "name": "Graphic Communications Technology",
+            "skills": []
+          },
+          {
+            "name": "Introduction to Computer Systems Technology",
+            "skills": ["Java","PHP","MySQL"]
+          },
+          {
+            "name": "Digital Media Applications",
+            "skills": []
+          },
+          {
+            "name": "Graphic Media Composition",
+            "skills": []
+          },
+          {
+            "name": "Managing Technological Systems",
+            "skills": []
+          },
+          {
+            "name": "Quality Systems for Technology",
+            "skills": []
+          },
+          {
+            "name": "Computer-Aided Rendering & Animation",
+            "skills": ["HTML","CSS", "JavaScript"]
+          },
+          {
+            "name": "Project Management",
+            "skills": []
+          },
+          {
+            "name": "Applied Economic Analysis for Technologists",
+            "skills": []
+          }
+        ]      
       },
       {
         "_id": "5e5dd153efaf5cef5d655230",
         "school": "Wilbur Wright College",
+        "image":"data:image/jpeg;base64,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",
         "start_date": "2012",
         "end_date": "2015",
         "degree": "A.A. Digital Arts",
@@ -51,183 +144,199 @@
       },
       {
         "_id": "5e5dddebefaf5cef5d655231",
-        "school": "Web Development with Go",
+        "school": "Self Taught",
         "start_date": "",
         "end_date": "",
-        "degree": "Shiju Varghese",
+        "degree": "Online / Books",
         "city": "",
         "state": "",
         "online": false,
         "website": "",
         "website_url": "",
         "price": 0,
-        "type": "book",
-        "courses": null
-      },
-      {
-        "_id": "5e5dde07efaf5cef5d655232",
-        "school": "Building Microservices with Go",
-        "start_date": "",
-        "end_date": "",
-        "degree": "Nic Jackson",
-        "city": "",
-        "state": "",
-        "online": false,
-        "website": "",
-        "website_url": "",
-        "price": 0,
-        "type": "book",
-        "courses": null
-      },
-      {
-        "_id": "5e5dde2defaf5cef5d655233",
-        "school": "JavaScript and JQuery",
-        "start_date": "",
-        "end_date": "",
-        "degree": "Jon Duckett",
-        "city": "",
-        "state": "",
-        "online": false,
-        "website": "",
-        "website_url": "",
-        "price": 0,
-        "type": "book",
-        "courses": null
-      },
-      {
-        "_id": "5e5dde57efaf5cef5d655234",
-        "school": "HTML5 and CSS3",
-        "start_date": "",
-        "end_date": "",
-        "degree": "Anne Boehm",
-        "city": "",
-        "state": "",
-        "online": false,
-        "website": "",
-        "website_url": "",
-        "price": 0,
-        "type": "book",
-        "courses": null
-      },
-      {
-        "_id": "5e5dde7defaf5cef5d655235",
-        "school": "PHP and MySQL",
-        "start_date": "",
-        "end_date": "",
-        "degree": "Joel Murach",
-        "city": "",
-        "state": "",
-        "online": false,
-        "website": "",
-        "website_url": "",
-        "price": 0,
-        "type": "book",
-        "courses": null
-      },
-      {
-        "_id": "5e5ffef034bb1aae20e54f71",
-        "school": "Web Development w/ Google’s Go (golang) ...",
-        "start_date": "19hr",
-        "end_date": "",
-        "degree": "Todd McLeod",
-        "city": "",
-        "state": "",
-        "online": false,
-        "website": "udemy",
-        "website_url": "https://www.udemy.com/course/go-programming-language/",
-        "price": 0,
-        "type": "online",
-        "courses": null
-      },
-      {
-        "_id": "5e5fff4534bb1aae20e54f72",
-        "school": "Learn How To Code: Google's Go (golang) ...",
-        "start_date": "15hr",
-        "end_date": "",
-        "degree": "Todd McLeod",
-        "city": "",
-        "state": "",
-        "online": false,
-        "website": "stackskills",
-        "website_url": "https://stackskills.com/courses/enrolled/81365",
-        "price": 0,
-        "type": "online",
-        "courses": null
-      },
-      {
-        "_id": "5e5fffbd34bb1aae20e54f73",
-        "school": "Modern Golang Programming",
-        "start_date": "12hr",
-        "end_date": "",
-        "degree": "Packt Publishing",
-        "city": "",
-        "state": "",
-        "online": true,
-        "website": "stackskills",
-        "website_url": "https://stackskills.com/courses/enrolled/221398",
-        "price": 0,
-        "type": "online",
-        "courses": null
-      },
-      {
-        "_id": "5e6007f134bb1aae20e54f74",
-        "school": "Docker for Web Developers",
-        "start_date": "5hr",
-        "end_date": "",
-        "degree": "Dan Wahlin",
-        "city": "",
-        "state": "",
-        "online": true,
-        "website": "pluralsight",
-        "website_url": "https://app.pluralsight.com/library/courses/docker-web-development/table-of-contents",
-        "price": 0,
-        "type": "online",
-        "courses": null
-      },
-      {
-        "_id": "5e60082634bb1aae20e54f75",
-        "school": "Angular Architecture and Best Practices",
-        "start_date": "5hr",
-        "end_date": "",
-        "degree": "Dan Wahlin",
-        "city": "",
-        "state": "",
-        "online": true,
-        "website": "pluralsight",
-        "website_url": "https://app.pluralsight.com/library/courses/angular-architecture-best-practices/table-of-contents",
-        "price": 0,
-        "type": "online",
-        "courses": null
-      },
-      {
-        "_id": "5e60089a34bb1aae20e54f76",
-        "school": "Angular Forms",
-        "start_date": "2hr",
-        "end_date": "",
-        "degree": "Mark Zamoyta",
-        "city": "",
-        "state": "",
-        "online": true,
-        "website": "pluralsight",
-        "website_url": "https://app.pluralsight.com/library/courses/angular-forms/table-of-contents",
-        "price": 0,
-        "type": "online",
-        "courses": null
-      },
-      {
-        "_id": "5e60099334bb1aae20e54f77",
-        "school": "Big Data & Reporting with MongoDB",
-        "start_date": "3hr",
-        "end_date": "",
-        "degree": "Nuri Halperin",
-        "city": "",
-        "state": "",
-        "online": true,
-        "website": "pluralsight",
-        "website_url": "https://app.pluralsight.com/library/courses/mongodb-big-data-reporting/table-of-contents",
-        "price": 0,
-        "type": "online",
-        "courses": null
+        "type": "school",
+        "courses": [
+          {
+            "_id": "5e5dddebefaf5cef5d655231",
+            "name": "Web Development with Go",
+            "start_date": "",
+            "end_date": "",
+            "degree": "Shiju Varghese",
+            "city": "",
+            "state": "",
+            "online": false,
+            "website": "",
+            "website_url": "",
+            "price": 0,
+            "type": "book",
+            "courses": null
+          },
+          {
+            "_id": "5e5dde07efaf5cef5d655232",
+            "name": "Building Microservices with Go",
+            "start_date": "",
+            "end_date": "",
+            "degree": "Nic Jackson",
+            "city": "",
+            "state": "",
+            "online": false,
+            "website": "",
+            "website_url": "",
+            "price": 0,
+            "type": "book",
+            "courses": null
+          },
+          {
+            "_id": "5e5dde2defaf5cef5d655233",
+            "name": "JavaScript and JQuery",
+            "start_date": "",
+            "end_date": "",
+            "degree": "Jon Duckett",
+            "city": "",
+            "state": "",
+            "online": false,
+            "website": "",
+            "website_url": "",
+            "price": 0,
+            "type": "book",
+            "courses": null
+          },
+          {
+            "_id": "5e5dde57efaf5cef5d655234",
+            "name": "HTML5 and CSS3",
+            "start_date": "",
+            "end_date": "",
+            "degree": "Anne Boehm",
+            "city": "",
+            "state": "",
+            "online": false,
+            "website": "",
+            "website_url": "",
+            "price": 0,
+            "type": "book",
+            "courses": null
+          },
+          {
+            "_id": "5e5dde7defaf5cef5d655235",
+            "name": "PHP and MySQL",
+            "start_date": "",
+            "end_date": "",
+            "degree": "Joel Murach",
+            "city": "",
+            "state": "",
+            "online": false,
+            "website": "",
+            "website_url": "",
+            "price": 0,
+            "type": "book",
+            "courses": null
+          },
+          {
+            "_id": "5e5ffef034bb1aae20e54f71",
+            "name": "Web Development w/ Google’s Go (golang) ...",
+            "start_date": "19hr",
+            "end_date": "",
+            "degree": "Todd McLeod",
+            "city": "",
+            "state": "",
+            "online": false,
+            "website": "udemy",
+            "website_url": "https://www.udemy.com/course/go-programming-language/",
+            "price": 0,
+            "type": "online",
+            "courses": null
+          },
+          {
+            "_id": "5e5fff4534bb1aae20e54f72",
+            "name": "Learn How To Code: Google's Go (golang) ...",
+            "start_date": "15hr",
+            "end_date": "",
+            "degree": "Todd McLeod",
+            "city": "",
+            "state": "",
+            "online": false,
+            "website": "stackskills",
+            "website_url": "https://stackskills.com/courses/enrolled/81365",
+            "price": 0,
+            "type": "online",
+            "courses": null
+          },
+          {
+            "_id": "5e5fffbd34bb1aae20e54f73",
+            "name": "Modern Golang Programming",
+            "start_date": "12hr",
+            "end_date": "",
+            "degree": "Packt Publishing",
+            "city": "",
+            "state": "",
+            "online": true,
+            "website": "stackskills",
+            "website_url": "https://stackskills.com/courses/enrolled/221398",
+            "price": 0,
+            "type": "online",
+            "courses": null
+          },
+          {
+            "_id": "5e6007f134bb1aae20e54f74",
+            "name": "Docker for Web Developers",
+            "start_date": "5hr",
+            "end_date": "",
+            "degree": "Dan Wahlin",
+            "city": "",
+            "state": "",
+            "online": true,
+            "website": "pluralsight",
+            "website_url": "https://app.pluralsight.com/library/courses/docker-web-development/table-of-contents",
+            "price": 0,
+            "type": "online",
+            "courses": null
+          },
+          {
+            "_id": "5e60082634bb1aae20e54f75",
+            "name": "Angular Architecture and Best Practices",
+            "start_date": "5hr",
+            "end_date": "",
+            "degree": "Dan Wahlin",
+            "city": "",
+            "state": "",
+            "online": true,
+            "website": "pluralsight",
+            "website_url": "https://app.pluralsight.com/library/courses/angular-architecture-best-practices/table-of-contents",
+            "price": 0,
+            "type": "online",
+            "courses": null
+          },
+          {
+            "_id": "5e60089a34bb1aae20e54f76",
+            "name": "Angular Forms",
+            "start_date": "2hr",
+            "end_date": "",
+            "degree": "Mark Zamoyta",
+            "city": "",
+            "state": "",
+            "online": true,
+            "website": "pluralsight",
+            "website_url": "https://app.pluralsight.com/library/courses/angular-forms/table-of-contents",
+            "price": 0,
+            "type": "online",
+            "courses": null
+          },
+          {
+            "_id": "5e60099334bb1aae20e54f77",
+            "name": "Big Data & Reporting with MongoDB",
+            "start_date": "3hr",
+            "end_date": "",
+            "degree": "Nuri Halperin",
+            "city": "",
+            "state": "",
+            "online": true,
+            "website": "pluralsight",
+            "website_url": "https://app.pluralsight.com/library/courses/mongodb-big-data-reporting/table-of-contents",
+            "price": 0,
+            "type": "online",
+            "courses": null
+          }
+        ]
       }
     ]
   }

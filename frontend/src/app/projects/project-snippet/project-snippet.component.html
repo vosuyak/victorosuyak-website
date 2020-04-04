@@ -1,0 +1,14 @@
+<section class="col-sm-6 col-md-4 small-snip">
+    <div class="card">
+        <img style="background-image: url(./../../../../assets/{{bgImg}}.png)" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">{{name}}</h5>
+          <p class="card-text">{{position}}</p>
+          <p class="card-text">
+            <span *ngFor="let item of description"  class="badge badge-pill badge-dark">{{item}}</span>
+          </p>
+          <a [href]="url" class="btn btn-dark"><span *ngIf="type_two == 'github' else link"><i class="fab fa-github"></i></span> <ng-template #link><i class="fas fa-link"></i></ng-template>
+          </a>
+        </div>
+    </div>
+</section>

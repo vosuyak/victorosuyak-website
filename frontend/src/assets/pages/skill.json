@@ -8,71 +8,89 @@
           "_id": "5e6096d1c0dd395363a3775c",
           "language": "JavaScript",
           "image": "https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-512.png",
-          "background_color": "f0db4f",
-          "years_experience": 4
+          "background_color": "#f0db4f",
+          "years_experience": 4,
+          "end":"front-end"      
         },
         {
           "_id": "5e60977ac0dd395363a3775d",
           "language": "TypeScript",
           "image": "https://image.flaticon.com/icons/png/512/919/919832.png",
-          "background_color": "0078cf",
-          "years_experience": 3
+          "background_color": "#0078cf",
+          "years_experience": 3,
+          "end":"front-end"      
         },
         {
           "_id": "5e60980dc0dd395363a3775e",
           "language": "Go Lang",
           "image": "https://pbs.twimg.com/profile_images/1142154201444823041/O6AczwfV.png",
-          "background_color": "00add8",
-          "years_experience": 2
+          "background_color": "#00add8",
+          "years_experience": 2,
+          "end":"back-end"      
         },
         {
           "_id": "5e60983cc0dd395363a3775f",
-          "language": "Angular 4+",
+          "language": "Angular 8",
           "image": "https://cdn.worldvectorlogo.com/logos/angular-icon.svg",
-          "background_color": "fff",
-          "years_experience": 4
+          "background_color": "#fff",
+          "years_experience": 4,
+          "end":"front-end"      
         },
         {
           "_id": "5e609860c0dd395363a37760",
           "language": "Git",
           "image": "https://cdn.iconscout.com/icon/free/png-256/git-1-226092.png",
-          "background_color": "fff",
-          "years_experience": 4
+          "background_color": "#fff",
+          "years_experience": 4,
+          "end":"dev-ops"      
         },
         {
           "_id": "5e60993fc0dd395363a37761",
           "language": "Html 5",
           "image": "https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-html-5-512.png",
-          "background_color": "fff",
-          "years_experience": 5
+          "background_color": "#e44d26",
+          "years_experience": 5,
+          "end":"front-end"      
         },
         {
           "_id": "5e609957c0dd395363a37762",
           "language": "CSS",
           "image": "https://cdn.iconscout.com/icon/free/png-512/css-118-569410.png",
-          "background_color": "fff",
-          "years_experience": 5
+          "background_color": "#0078be",
+          "years_experience": 5,
+          "end":"front-end"      
         },
         {
           "_id": "5e60997ac0dd395363a37763",
           "language": "Mongo DB",
-          "image": "https://webassets.mongodb.com/_com_assets/cms/MongoDB_Logo_FullColorBlack_RGB-4td3yuxzjs.png",
-          "background_color": "fff",
-          "years_experience": 2
+          "image": "https://user-images.githubusercontent.com/11978772/40430921-73d53922-5e63-11e8-8dcd-1662136c3212.png",
+          "background_color": "#80c363",
+          "years_experience": 2,
+          "end":"database"      
         },
         {
           "_id": "5e609997c0dd395363a37764",
           "language": "Docker",
-          "image": "https://www.docker.com/sites/default/files/d8/2019-07/vertical-logo-monochromatic.png",
-          "background_color": "fff",
-          "years_experience": 2
+          "image": "https://paganresearch.io/images/Docker.jpg",
+          "background_color": "#fff",
+          "years_experience": 2,
+          "end":"dev-ops"      
         },
         {
           "_id": "5e6099b8c0dd395363a37765",
           "language": "Kubernetes",
-          "image": "https://kubernetes.io/images/kubernetes-horizontal-color.png",
-          "background_color": "fff",
-          "years_experience": 1
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/1200px-Kubernetes_logo_without_workmark.svg.png",
+          "background_color": "#fff",
+          "years_experience": 1,
+          "end":"dev-ops"     
+        },
+        {
+          "_id": "5e6099b8c0dd395363a37765",
+          "language": "Jira",
+          "image": "https://cdn.iconscout.com/icon/free/png-512/jira-1693573-1442614.png",
+          "background_color": "#fff",
+          "years_experience": 1,
+          "end":"dev-ops"     
         }
       ]
     }
