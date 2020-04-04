@@ -7,12 +7,12 @@
                     <i *ngIf="!isMenuOpen"  class="fas fa-bars"></i>
                     <i *ngIf="isMenuOpen" class="fas fa-times"></i>
                 </div>
-                <ul  #menu>
-                    <li><a pageScroll href="#me">me</a></li>
-                    <li><a pageScroll href="#education">education</a></li>
-                    <li><a pageScroll href="#experience">experience</a></li>
-                    <li><a pageScroll href="#skill">skill</a></li>
-
+                <ul *ngIf="isMenuOpen">
+                    <li (click)="openMenu()"><a routerLink="/home">me</a></li>
+                    <li (click)="openMenu()"><a routerLink="/education">education</a></li>
+                    <li (click)="openMenu()"><a routerLink="/experience">experience</a></li>
+                    <li (click)="openMenu()"><a routerLink="/skill">skills</a></li>
+                    <li (click)="openMenu()"><a routerLink="/project">projects</a></li>
                 </ul>
 
             </nav>
@@ -27,10 +27,11 @@
     <div class="row rm-m">
         <nav class="top-nav">
             <ul>
-              <li><a pageScroll href="#me">me</a></li>
-              <li><a pageScroll href="#education">education</a></li>
-              <li><a pageScroll href="#experience">experience</a></li>
-              <li><a pageScroll href="#skill">skill</a></li>
+                <li><a routerLink="/home">me</a></li>
+                <li><a routerLink="/education">education</a></li>
+                <li><a routerLink="/experience">experience</a></li>
+                <li><a routerLink="/skill">skills</a></li>
+                <li><a routerLink="/project">projects</a></li>
             </ul>
           </nav>
     </div>

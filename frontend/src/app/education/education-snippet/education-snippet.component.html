@@ -1,52 +1,27 @@
-<div class="page">
-    <main class="main-content">
-        <div class="vo-flex">
-            <h2>{{page}}</h2>
-
-            <div class="sections container rm-m">
-                <div class="row rm-m">
-                    <section class="col-xs-12 col-md-4 big-snip" *ngFor="let school of schools">
-                        <h4>{{school.school}}</h4>
-                        <h5>{{school.degree}}</h5>
-                        <!-- <p>{{school.type}}</p>                             -->
-                    </section>
-                </div>
-                <div class="row rm-m">
-                    <ul class="nav nav-pills" id="myTab" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" id="book-tab" data-toggle="tab" href="#book" role="tab"
-                                aria-controls="book" aria-selected="true">books</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="online-tab" data-toggle="tab" href="#online" role="tab"
-                                aria-controls="online" aria-selected="false">online</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="row rm-m">
-                    <div class="tab-content container" id="myTabContent">
-                        <div class="tab-pane fade show active" id="book" role="tabpanel" aria-labelledby="book-tab">
-                            <div class="row secs">
-                                <section class="col-6 col-md-3 small-snip" *ngFor="let book of books">
-                                    <h4>{{book.school}}</h4>
-                                    <h5>By: {{book.degree}}</h5>
-                                    <p>{{book.type}}</p>                            
-                                </section>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade show" id="online" role="tabpanel" aria-labelledby="online-tab">
-                            <div class="row secs">
-                                <section class="col-6 col-md-3 small-snip" *ngFor="let online of onlines">
-                                    <h4>{{online.school}}</h4>
-                                    <h5>By: {{online.website}}</h5>
-                                    <p>{{online.start_date}}</p>                            
-                                </section>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<section class="col-6 col-md-3 small-snip">
+    <div class="card">
+        <div class="card-body">
+          <div class="logo"><img [src]="image" alt=""></div>
+          <h5 class="card-title">{{school}}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{degree}}</h6>
+          <p class="card-text">{{type}}</p>
         </div>
-    </main>
-    <!-- <shared-footer more="{{page}}"></shared-footer> -->
-</div>
+        <div class="accordion" id="accordionExample">
+          <div class="courses">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" attr.data-target="#collapse{{id}}" aria-expanded="false" attr.aria-controls="collapse{{id}}">
+                  Courses
+                </button>
+              </h2>
+            </div>
+        
+            <div id="collapse{{id}}" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                <span *ngFor="let item of courses"  class="badge badge-pill badge-dark">{{item.name}}</span>
+              </div>
+            </div>
+          </div> 
+        </div>
+    </div>                         
+</section>

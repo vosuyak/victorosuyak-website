@@ -1,0 +1,17 @@
+
+.card{
+    .card-body{
+        min-height: 145px;
+    }
+    .courses{
+        .card-header{
+            padding: 0px;
+        }
+            .btn-link{
+                color: black;
+            }
+        .card-body{
+            overflow-x: auto;
+        }
+    }
+}

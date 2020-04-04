@@ -1,5 +1,5 @@
 footer{
-    position: relative;
+    position: absolute;
     .creator{
         p{
             font-size: .8em;
@@ -21,10 +21,9 @@ footer{
     z-index: 12;
     background-color: white;
     padding: 1em 0;
-    box-shadow: #242424 0px -10px 40px -25px;
     a{
         color: black;
     font-weight: 600;
-    text-transform: uppercase;
+    text-transform: capitalize;
     }
 }

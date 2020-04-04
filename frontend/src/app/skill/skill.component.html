@@ -1,17 +1,11 @@
-<div class="page">
-    <shared-header page={{page}}></shared-header>
-    
-    <main class="main-content">
-        <div class="vo-flex">
-            <div class="sections skill-container container rm-m">
-                <div class="row rm-m">
-                    <section class="col-sm-6 col-md-4 small-snip" *ngFor="let skill of skills">
-                        <h4>{{skill.language}}</h4>
-                        <!-- <img [src]="skill.image" alt="{{skill.language}}"> -->
-                    </section>
-                </div>
-            </div>
-        </div>
-    </main>
-    <shared-footer more="{{page}}"></shared-footer>
+<div class="row rm-m">
+    <ng-container *ngFor="let item of skills" >
+        <skill-snippet 
+        img="{{item.image}}"
+        language="{{item.language}}"
+        years_experience="{{item.years_experience}}"
+        background_color="{{item.background_color}}"
+        end="{{item.end}}"
+        ></skill-snippet>
+    </ng-container>
 </div>

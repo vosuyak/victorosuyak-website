@@ -12,13 +12,35 @@ body{
     padding-right: 0px !important;
     padding-left: 0px !important;
 }
-
-.wrapper {
-
+.card{
+    width: 18rem;
+    margin:1em 0px;
+    .card-img-top {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 160px;
+    }
+    .logo{
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        img{
+            width: 100%;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+        }
+    }
 }
+
 .all-pages{
     .page{
-        height: 100vh;
+        .me-content{
+            margin-top: 8em;
+        }
+        height: 100%;
         position: relative;
         display: flex;
         align-items: center;
@@ -32,91 +54,14 @@ body{
         }
     }
 }
-.nav-pills{
-    margin: auto;
-    padding-bottom: 1em;
-    position: relative;
-    z-index: 90;
-    margin: auto;
-    .nav-item{
-        font-weight: 600;
-    }
-    .active{
-            background-color: rgb(199, 199, 199) !important;
-    }
-    li{
-        a{
-            color: black;
-        }
-    }
-}
-.main-content{
-    position: relative;
-    
-    section{
-        border: solid 1px #e9e9e9;
-        margin-bottom: 2em;
-    }
-    .big-snip{
-        padding: 2em 1em 2em 1em;
-        h4{
-            font-size: 1.3em;
-            text-align: center;
 
-        }
-        h5{
-            font-weight:500;
-            text-align: center;
 
-        }
-        h6{
-
-        }
-        p{
-            font-size: .8em;
-            font-weight: 700;
-            font-style: italic;
-            text-align: center;
-
-        }
-    }
-    .small-snip{
-        padding: .4em;
-        h4{
-            font-size: .8rem;
-            font-weight: 500;
-            display: block;
-            text-align: center;
-            margin: auto;
-            margin-bottom: .4em;
-        }
-        h5{
-            font-size: .7em;
-            text-align: center;
-
-        }
-        h6{
-
-        }
-        p{
-            color: #575757;
-            text-transform: uppercase;
-            font-weight: 600;
-            text-align: center;
-            margin-bottom: 0px;
-            font-size: 0.6em;
-        }
-    }
-    .in{
-
-    }
-    .out{
-        margin-left: -6em;
-    }
-}
 
 @media (max-width: 575.98px) { 
     .all-pages{
+        .me-content{
+            margin-top: 0em;
+        }
         .page{
             h2{
                 margin-top: 2em;
@@ -126,50 +71,7 @@ body{
             }
         }
     }
-    .main-content{
-
-        section{
-            margin-bottom: 1em;
-        }
-        .big-snip{
-            padding: 1em 0 .2em 0;
-            border: none;
-            h4{
-                text-align: right;
-                font-size: 1.1em !important;
-            }
-            h5{
-                text-align: right;
-                font-weight:400;
-                font-size: 1em !important;
-            }
-            p{
-                text-align: right;
-                font-size: .8em !important;
-                font-weight: 700;
-                font-style: italic;
-            }
-        }
-        .small-snip{
-            p{
-            }
-        }
+    .card{
+        width: 21rem;
     }
-    .vo-flex{
-        height: 100vh;
-        .main-content{
-                margin-top: 2em;
-        }
-        .sections{
-            // display: -webkit-inline-box;
-            height: 100%;
-            overflow-y: auto;
-            padding-top: 1.2em;
-            background-color: white;
-        }
-        .secs{
-            margin-bottom: 7em;
-        }
-    }
-
 }

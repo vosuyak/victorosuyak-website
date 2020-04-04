@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { DataService } from '../../core/data.service';
 
 @Component({
@@ -12,6 +12,14 @@ export class ExperienceSnippetComponent implements OnInit {
   jobs: any[];
   founders: any[];
   projects: any[];
+
+  @Input() position:any;
+  @Input() employer:any;
+  @Input() image:any;
+  @Input() start_date:any;
+  @Input() end_date:any;
+  @Input() description:any;
+
 
   constructor(private data:DataService) { }
 
