@@ -97,7 +97,7 @@
           "end_date": "Present",
           "position": "Founder | Developer",
           "team_size": 1,
-          "description": ["HTML", "CSS", "e-commerce", "JSON","Liquid"]
+          "description": ["HTML", "CSS", "Shopify", "e-commerce", "JSON","Liquid"]
 
         },
         {
@@ -154,9 +154,33 @@
           "position": "Lead Developer",
           "team_size": 1,
           "description": ["Angular 8", "Docker", "API", "JSON"]
-
         },
-
+        {
+          "_id": "5e6290b8c1c216e2a520c189",
+          "type": "project",
+          "bg_color":"whoop_web",
+          "type_two": "github",
+          "employer": "Provision",
+          "employer_url": "https://www.vsapartners.com/news/chicago-food-pantries-leverage-technology-to-eliminate-waste/",
+          "start_date": "2017",
+          "end_date": "Present",
+          "position": "Lead Developer",
+          "team_size": 1,
+          "description": ["Angular 4", "JSON", "API", "Google Firebase"]
+        },
+        {
+          "_id": "5e6292b8c1c216e2a520c189",
+          "type": "project",
+          "bg_color":"monthlybudget_web",
+          "type_two": "github",
+          "employer": "Monthly Budget",
+          "employer_url": "https://github.com/vosuyak/Budget-Calculator",
+          "start_date": "2016",
+          "end_date": "Present",
+          "position": "Lead Developer",
+          "team_size": 1,
+          "description": ["Angular 4", "JSON"]
+        },
         {
           "_id": "5e629602c1c216e2a5d0c18a",
           "type": "project",
