@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { DataService } from 'dist/frontend/assets/data.service';
+import { DataService } from './../core/data.service';
 
 @Component({
   selector: 'page-experience',
