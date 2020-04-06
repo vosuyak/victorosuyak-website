@@ -7,7 +7,7 @@
           <p class="card-text">
             <span *ngFor="let item of description"  class="badge badge-pill badge-dark">{{item}}</span>
           </p>
-          <a [href]="url" class="btn btn-dark"><span *ngIf="type_two == 'github' else link"><i class="fab fa-github"></i></span> <ng-template #link><i class="fas fa-link"></i></ng-template>
+          <a *ngIf="location == 'internal'"  routerLink="/project/{{url}}" class="btn btn-dark"><span><i class="fas fa-link"></i></span>
           </a>
         </div>
     </div>

@@ -193,6 +193,20 @@
           "position": "Lead Developer",
           "team_size": 1,
           "description": ["Angular 8", "Go Lang","Mongo DB", "Docker", "API", "JSON"]
+        },
+        {
+          "_id": "5e629602c1c296e2a5d0c18a",
+          "type": "project",
+          "bg_color":"angular_web",
+          "type_two": "github",
+          "employer": "Social Media Login",
+          "employer_url": "social-login",
+          "start_date": "2020",
+          "end_date": "Present",
+          "position": "Lead Developer",
+          "team_size": 1,
+          "location": "internal",
+          "description": ["Angular 9", "Google OAth API", "JSON"]
 
         }
       ]

@@ -28,6 +28,8 @@ const routes: Routes = [
   {
     path: 'project',
     component: ProjectsComponent
+    // loadChildren: () => import('./projects/projects.module').then(m => m.ProjectsModule)
+
   },
   { path: '',
     redirectTo: '/home',

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ProjectsComponent } from './projects.component';
+import { SocialLoginComponent } from './social-login/social-login.component';
 
 
 const routes: Routes = [
@@ -10,7 +11,13 @@ const routes: Routes = [
   },  
   {
     path: 'project',
-    component: ProjectsComponent
+    component: ProjectsComponent,
+    children :[
+      {
+        path: 'social-login',
+        component: SocialLoginComponent
+      }
+    ]
   },
 ];
 
