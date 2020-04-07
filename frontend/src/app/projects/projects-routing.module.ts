@@ -9,18 +9,16 @@ const routes: Routes = [
   {
     path: '',
     pathMatch:"full",
-    redirectTo:'/project'
+    redirectTo:'/projects'
   },  
   {
     path: '',
-    component: SocialLoginComponent,
-    children :[
-      {
-        path: 'social-login',
-        component: TestComponent 
-      }
-    ]
+    component: ProjectsComponent,
   },
+  {
+    path: 'social-login',
+    component: SocialLoginComponent 
+  }
 ];
 
 @NgModule({

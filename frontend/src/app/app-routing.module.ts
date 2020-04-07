@@ -26,7 +26,7 @@ const routes: Routes = [
     component: ExperienceComponent
   },
   {
-    path: 'project',
+    path: 'projects',
     loadChildren: () => import('./projects/projects.module').then(m => m.ProjectsModule)
 
   },
