@@ -1,10 +1,32 @@
-<p>social-login works!</p>
-<!-- <img src="{{ user.photoUrl }}">
-<div>
-  <h4>{{ user.name }}</h4>
-  <p>{{ user.email }}</p>
-</div> -->
-<!-- <div>
-    <button type="button" (click)="signInWithFB()" class="btn btn-primary">Sign In With Facebook</button>
-    <button type="button" (click)="signInWithGoogle()" class="btn btn-primary">Sign In With Google</button>
-</div> -->
+<div class="row rm-m">
+  <div class="container">
+    <div class="google-signin" class="social-container">
+      <div class="col-12 col-md-12">
+        <div class="signInBtns">
+          <button type="button" (click)="signInWithGoogle()" class="btn btn-primary">Sign In With Google <span><i class="fab fa-google-plus-g"></i></span></button>
+          <br><br>
+          <button *ngIf="loggedIn" type="button" (click)="signOut()" class="btn btn-warning">Sign Out <span><i class="fab fa-google-plus-g"></i></span></button>
+          <div *ngIf="!loggedIn" class="alert alert-warning" style="width: 220px;" role="alert">
+            No Longer Signed In!
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-12">
+        <div *ngIf="loggedIn" class="card">
+          <img src="{{ user.photoUrl }}" class="card-img-top" alt="{{ user.firstName }}">
+          <div class="card-body">
+            <h5 class="card-title">Hello, {{ user.firstName }}</h5>
+            <p class="card-text">Easy and secure sign on capability with {{ user.provider }} :)</p>
+          </div>
+          <div class="card-header">
+            Details from {{ user.provider }}
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><b>Name:</b>{{ user.name }}</li>
+            <li class="list-group-item"><b>Email:</b>{{ user.email }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -7,26 +7,23 @@ import { SocialLoginComponent } from './social-login/social-login.component';
 
 // login project
 import { SocialLoginModule, AuthServiceConfig } from "angularx-social-login";
-import { GoogleLoginProvider, FacebookLoginProvider } from "angularx-social-login";
+import { GoogleLoginProvider } from "angularx-social-login";
 import { ProjectsComponent } from './projects.component';
-let clientId = '587421380986-qrun4in4pil2cieientqucocurju8cog.apps.googleusercontent.com';
-let clientSecret = 'RqmHn8jEUCeEPE97zR-b-gPM'; 
+import { TestComponent } from './test/test.component';
+
+const clientId = '587421380986-qrun4in4pil2cieientqucocurju8cog.apps.googleusercontent.com';
 
 let config = new AuthServiceConfig([
   {
     id: GoogleLoginProvider.PROVIDER_ID,
     provider: new GoogleLoginProvider(clientId)
-  },
-  {
-    id: FacebookLoginProvider.PROVIDER_ID,
-    provider: new FacebookLoginProvider("Facebook-App-Id")
   }
 ]);
 export function provideConfig() {
   return config;
 }
 @NgModule({
-  declarations: [ProjectsComponent, ProjectSnippetComponent, SocialLoginComponent],
+  declarations: [ProjectsComponent, ProjectSnippetComponent, SocialLoginComponent, TestComponent],
   imports: [
     CommonModule,
     SocialLoginModule,
