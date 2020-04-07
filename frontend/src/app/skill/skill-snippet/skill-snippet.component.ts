@@ -21,7 +21,6 @@ export class SkillSnippetComponent implements OnInit {
 
   ngOnInit(): void {
     this.getSkill();
-    console.log('background_color: ', this.background_color);
   }
 
   getSkill(){

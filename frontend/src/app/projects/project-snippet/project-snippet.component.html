@@ -4,11 +4,13 @@
         <div class="card-body">
           <h5 class="card-title">{{name}}</h5>
           <p class="card-text">{{position}}</p>
-          <p class="card-text">
+          <p class="card-text badges">
             <span *ngFor="let item of description"  class="badge badge-pill badge-dark">{{item}}</span>
           </p>
-          <a [href]="url" class="btn btn-dark"><span *ngIf="type_two == 'github' else link"><i class="fab fa-github"></i></span> <ng-template #link><i class="fas fa-link"></i></ng-template>
+          <a [href]="url" class="btn btn-dark"><span *ngIf="type_two == 'github' else link"><i class="fab fa-github"></i></span> 
+            <ng-template #link><i *ngIf="location == 'external'" class="fas fa-link"></i></ng-template>
           </a>
+          <a *ngIf="location == 'internal'"  routerLink="/projects/{{url}}" class="btn btn-dark"><span><i class="fas fa-link"></i></span></a>
         </div>
     </div>
 </section>
