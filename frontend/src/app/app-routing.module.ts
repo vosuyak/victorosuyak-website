@@ -26,8 +26,9 @@ const routes: Routes = [
     component: ExperienceComponent
   },
   {
-    path: 'project',
-    component: ProjectsComponent
+    path: 'projects',
+    loadChildren: () => import('./projects/projects.module').then(m => m.ProjectsModule)
+
   },
   { path: '',
     redirectTo: '/home',

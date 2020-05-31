@@ -1,200 +1,308 @@
 {
-    "response": {
-      "db": true,
-      "code": 200,
-      "message": "success",
-      "data": [
-        {
-          "_id": "5e6335a0c1c216e2a5d0c18b",
-          "type": "job",
-          "type_two": "github",
-          "employer": "Verizon",
-          "image":"https://lh3.googleusercontent.com/61i_Zq9aboPrz9QkIve830x23vro7IZpvlw9FhV-mMZhtyk-d3FLvbaxGbfJdXd5LG0",
-          "employer_url": "https://verizon.com",
-          "start_date": "2017",
-          "end_date": "Present",
-          "position": "Lead UI Developer",
-          "team_size": 20000,
-          "description": ["Angular 4-8", "Go Lang","Mongo DB", "Docker", "API", "KML", "JSON"]
+  "response": {
+    "db": true,
+    "code": 200,
+    "message": "success",
+    "data": [
+      {
+        "_id": "5e6335a0c1c216e2a5d0c18b",
+        "type": "job",
+        "type_two": "github",
+        "employer": "Verizon",
+        "image": "https://lh3.googleusercontent.com/61i_Zq9aboPrz9QkIve830x23vro7IZpvlw9FhV-mMZhtyk-d3FLvbaxGbfJdXd5LG0",
+        "employer_url": "https://verizon.com",
+        "start_date": "2017",
+        "end_date": "Present",
+        "position": "Lead UI Developer",
+        "team_size": 20000,
+        "location": "external",
+        "description": [
+          "Angular 4-8",
+          "Go Lang",
+          "Mongo DB",
+          "Docker",
+          "API",
+          "KML",
+          "JSON"
+        ]
+      },
+      {
+        "_id": "5e628a2ec1c216e2a5d0c182",
+        "type": "job",
+        "type_two": "",
+        "employer": "VSA Partners",
+        "employer_url": "https://www.vsapartners.com/",
+        "image": "https://static.vsapartners.com/images/avatar/avatar.png",
+        "start_date": "May 2017",
+        "end_date": "August 2017",
+        "position": "Developer Intern",
+        "team_size": 310,
+        "location": "external",
+        "description": [
+          "HTML",
+          "CSS",
+          "JS",
+          "Angular 4",
+          "Google Firebase",
+          "JSON"
+        ]
+      },
+      {
+        "_id": "5e628c39c1c216e2a5d0c183",
+        "type": "job",
+        "type_two": "",
+        "employer": "PII (Acquired by Taylor Corp.)",
+        "employer_url": "https://www.taylorcommunications.com/solutions/customer-communications/customer-communication-management/direct-marketing/",
+        "image": "data:image/jpeg;base64,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8J7u0+wADgt0iKAiIgIiICIiAiIgLExTDYaqF0FRG2SN4s5rhcH/AGI4EbQstEFdNIWiKejLqigDp4NpLN80Q5fONHWNvWOKi5XbsuFztotocS1pQDT1B+djAs422dLHufzFjs3oKuouxzXo1xHDyXPhM0Q+dhBe0Dre0DWZ6RbtXHBVBERAREQEREBERARF0uVsiYhiRHxeBwjO+aS7IgOxxHd8m3Qc0u/yBouqsSLZZQYKbYekcO7kHVE0/mOznuUqZK0P0dEWy1R+NTDaNYWhYb/Jj+Ue1191wApJAUVrMvYBTUEAp6WIRsG022uceLnu3ud2lbREQEREBERAREQEREBERAREQEREBcrmTR5hlfd01M1rz85H3uS/WS3Y77QK6pEEG41oEcLmirQdmxk7NvpkZ+lcZieibGIP+1Eo64pGO/hJDvYrSogpvVZaror9JRVLLb7wyW9drLVvaWmzgQeoix9qu4iCkQ2mw2ns2rZUuX62W3RUlQ++7VhkI9YCuWiCquG6LcYntajdGDxlcxluYJ1vYuxwbQLM6xrKxjBxbC0vJHVrv1QPulTyiDi8uaLcLorObB00g+cnPSG/WG2DAeQXZhtty9RAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREH/2Q==",
+        "start_date": "May 2016 - May 2017",
+        "end_date": "Aug 2017 - May 2017",
+        "position": "Web Developer Intern",
+        "team_size": 10000,
+        "location": "external",
+        "description": [
+          "HTML",
+          "CSS",
+          "Bootstrap",
+          "Jquery",
+          "JSON"
+        ]
+      },
+      {
+        "_id": "5e628d4dc1c216e2a5d0c184",
+        "type": "job",
+        "type_two": "",
+        "employer": "Illinois State University",
+        "employer_url": "https://illinoisstate.edu/",
+        "image": "https://universitymarketing.illinoisstate.edu/images/logos/SECNDRY_head_3C.png",
+        "start_date": "Dec 2015",
+        "end_date": "May 2016",
+        "position": "Web Design Intern",
+        "team_size": 60,
+        "location": "external",
+        "description": [
+          "HTML",
+          "CSS",
+          "Bootstrap",
+          "Jquery"
+        ]
+      },
+      {
+        "_id": "5e628e1ac1c216e2a5d0c185",
+        "type": "job",
+        "type_two": "",
+        "employer": "Unproto LLC",
+        "employer_url": "http://www.unproto.com",
+        "image": "https://www.unproto.com/assets//logodemo.png",
+        "start_date": "2016",
+        "end_date": "Present",
+        "position": "Founder | Lead Developer",
+        "team_size": 1,
+        "location": "external",
+        "description": [
+          "HTML",
+          "CSS",
+          "Bootstrap",
+          "Jquery",
+          "Angular 8",
+          "Materialize.css",
+          "JSON"
+        ]
+      },
+      {
+        "_id": "5e628eeac1c216e2a5d0c186",
+        "type": "project",
+        "bg_color": "yourfounders_web",
+        "type_two": "",
+        "employer": "Your Founders LLC",
+        "employer_url": "http://www.yourfounders.com",
+        "start_date": "2017",
+        "end_date": "Present",
+        "position": "Founder | Lead Developer",
+        "team_size": 3,
+        "location": "external",
+        "description": [
+          "HTML",
+          "CSS",
+          "Bootstrap",
+          "Jquery",
+          "Angular 8",
+          "Materialize.css",
+          "JSON",
+          "Hosting"
+        ]
+      },
+      {
+        "_id": "5e628f50c1c216e2a5d0c187",
+        "type": "project",
+        "bg_color": "bumperflag_web",
+        "type_two": "",
+        "employer": "Bumper Flag LLC",
+        "employer_url": "http://www.bumperflag.co",
+        "start_date": "2019",
+        "end_date": "Present",
+        "position": "Founder | Developer",
+        "team_size": 1,
+        "location": "external",
+        "description": [
+          "HTML",
+          "CSS",
+          "Shopify",
+          "e-commerce",
+          "JSON",
+          "Liquid"
+        ]
+      },
+      {
+        "_id": "5e629090c1c216e2a5d0c188",
+        "type": "project",
+        "bg_color": "golang_web",
+        "type_two": "github",
+        "employer": "Monthly Budget Calculator",
+        "employer_url": "https://github.com/vosuyak/MonthlyBudget_GoLang_API",
+        "start_date": "2020",
+        "end_date": "Present",
+        "position": "Lead Developer",
+        "team_size": 2,
+        "location": "external",
+        "description": [
+          "Go Lang",
+          "Docker",
+          "Microservice API",
+          "JSON",
+          "Mongo DB",
+          "BSON"
+        ]
+      },
+      {
+        "_id": "5e629090c1c216e2a5d0c167",
+        "type": "project",
+        "bg_color": "golang_web",
+        "type_two": "github",
+        "employer": "Go w/ Docker",
+        "employer_url": "https://github.com/vosuyak/Golang-Dockerfile-Example1",
+        "start_date": "2020",
+        "end_date": "Present",
+        "position": "Lead Developer",
+        "team_size": 2,
+        "location": "external",
+        "description": [
+          "Go Lang",
+          "Docker"
+        ]
+      },
+      {
+        "_id": "5e629090c1c216e2a5d0c167",
+        "type": "project",
+        "bg_color": "golang_web",
+        "type_two": "github",
+        "employer": "Income Tax Calculator",
+        "employer_url": "https://github.com/vosuyak/goloang-incometax-calculator",
+        "start_date": "2017",
+        "end_date": "Present",
+        "position": "Lead Developer",
+        "team_size": 2,
+        "location": "external",
+        "description": [
+          "Go Lang",
+          "JSON",
+          "Docker"
+        ]
+      },
+      {
+        "_id": "5e6290b8c1c216e2a5d0c189",
+        "type": "project",
+        "bg_color": "angular_web",
+        "type_two": "github",
+        "employer": "Country Holidays",
+        "employer_url": "https://github.com/vosuyak/country-holidays",
+        "start_date": "2020",
+        "end_date": "Present",
+        "position": "Lead Developer",
+        "team_size": 1,
+        "location": "external",
+        "description": [
+          "Angular 8",
+          "Docker",
+          "API",
+          "JSON"
+        ]
+      },
+      {
+        "_id": "5e6290b8c1c216e2a520c189",
+        "type": "project",
+        "bg_color": "whoop_web",
+        "type_two": "",
+        "employer": "Provision",
+        "employer_url": "https://www.vsapartners.com/news/chicago-food-pantries-leverage-technology-to-eliminate-waste/",
+        "start_date": "2017",
+        "end_date": "Present",
+        "position": "Lead Developer",
+        "team_size": 1,
+        "location": "external",
+        "description": [
+          "Angular 4",
+          "JSON",
+          "API",
+          "Google Firebase"
+        ]
+      },
+      {
+        "_id": "5e6292b8c1c216e2a520c189",
+        "type": "project",
+        "bg_color": "monthlybudget_web",
+        "type_two": "github",
+        "employer": "Monthly Budget",
+        "employer_url": "https://github.com/vosuyak/Budget-Calculator",
+        "start_date": "2016",
+        "end_date": "Present",
+        "position": "Lead Developer",
+        "team_size": 1,
+        "location": "external",
 
-        },
-        {
-          "_id": "5e628a2ec1c216e2a5d0c182",
-          "type": "job",
-          "type_two": "",
-          "employer": "VSA Partners",
-          "employer_url": "https://www.vsapartners.com/",
-          "image":"https://static.vsapartners.com/images/avatar/avatar.png",
-          "start_date": "May 2017",
-          "end_date": "August 2017",
-          "position": "Developer Intern",
-          "team_size": 310,
-          "description": ["HTML", "CSS", "JS", "Angular 4","Google Firebase", "JSON"]
-
-        },
-        {
-          "_id": "5e628c39c1c216e2a5d0c183",
-          "type": "job",
-          "type_two": "",
-          "employer": "PII (Acquired by Taylor Corp.)",
-          "employer_url": "https://www.taylorcommunications.com/solutions/customer-communications/customer-communication-management/direct-marketing/",
-          "image":"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxEQDxUQEBEVFRUVEhYVERYXFRUZFhUXFhIXFhcYFRYYHSggGBomHBYTJDEiJSorLjouFx8zODMtNygtMCsBCgoKDg0OFRAPGS0kHSArLS0rLi8tLSsrListNy81Ky03LS0wKystLystKy0tLS01LSsvLS0tLSs0KystLTI1N//AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABwgEBQYBAwL/xABLEAABAwICBgMKCwUGBwAAAAABAAIDBBEFBgcSITFBcRNRYSIjMjVScoGRobMIFEJDYnSCkrGy0jNUoqPBFiRTc8LRFSU0RGPh8P/EABsBAQEAAgMBAAAAAAAAAAAAAAABAwQCBQYH/8QAMBEBAAIBAgMECAcBAAAAAAAAAAECAwQRBSExQVFx4RITMzRykbHRBhUyQoGhwSL/2gAMAwEAAhEDEQA/AJxREQEREBERAREQEXhKwcTxinphrTzMZzO08m7yi1rNp2rG8s9FwOJaUKZlxBFJKeDjZjPb3XsXOVmk6sf+zZFGORefWSB7FjnJWO12OLhGryft28eXmmFFA9RnXEX76pw80Mb+AWDJmGtdvrKj0TSD8pC4+uhuV/D+aeto/tYZFXhmYK0bqyp9M8p/FyzYM5YizdVvPnarvzBPXQtvw/m7Lx/aekUN0ekyuZ+0EUg7Wlp9bTb2LocO0pwusKiB8fW5hD2j8D7CuUZay08vB9Xj/bv4c0hotXhWYKWq/YTscfJvZw5tO1bO6yOutS1J2tG0vUREcRERAREQEREBERAREQEREBEX4llDWlziAALkk2AA4koP0tNmDM9NRN79J3Vu5jbtefRwHabBcTm3SOTeGgOzc6Yj3QP5j6BxUcyyOe4ve4ucTdziSST2k71hvliOUO+0XBL5Nr5uUd3b5Owx7SLVT3bB3hnZYyEdrju9HrXHySOc4ue4ucd7nElx5k7SvyiwWtM9XpsGlxYI2x1iBERcWcREQEREBERAabG42EbiN45FdVgOfayms17unj8mTwgOyTf67rlUVi0x0Yc2nxZo9HJWJTrlzOVLW2ax+pJxjfYO+ydzvQuiuq0A2NxsI2g8QesLu8p6RJISIqy8ke4Sb5Ged5Y9vNZ6Zt+Vnm9bwO1N74Ocd3b5pdRfCjq2TMEkTw9jhdrmm4IX3Wd5+YmJ2kRERBERAREQEREBeL1fKpnZGxz5HBrWglzjuAG8lDbfo/FdWRwRullcGsaLuJ4KF845xlrnFjLsgB7lnF9tzn/0bw7V8865qfXy2bdsDD3tvlHy3Dr6hwXNrWyZN+UPXcL4VGKIy5Y/67I7vMREWF3oiIgIiy6fC55GOkZC8sa0uc/VOqABcnWOw7kiN3G161/VOzERERyEREBFl/8AC5+iE4heY3Xs8NJbsJBuRu2g71iAps41vW36Z3EREchERBvMr5nmoJLsOtG498jJ2O7W+S7t9am3BcWhq4WzQuu07+tp4tcOBVdluMsZhloJ+kZcsOyWO+x4/o4cD/usuPJtyno6bifC66iJvj5X+vmn+69WHhWIx1MLJoXazHi4PV1gjgQbiyzFtPHTWazMT1EREQREQEREBY2IUMc8bopmB7HCzmncVkoixMxO8IlzRo4livJR3kZvMZI6Rvmn5Y9vNcE5pBIIIINiCCCD1EHcVZYrn8y5Qpq4Xe3Uk+TK3Y7k7g4c1hvhiejv9Fxy1NqZ+cd/b5oIRb3MmVKmhN5G68fCVoOr9ryDz9a0S15iY5S9PizUy19Ok7wLoctZPqq6zmt6OL/FfuPmDe78O1dVkvR8LNqK1t+LITu7DJ1n6Pr6lJTGACwFgNwG4LNTD22dFr+NxSZpg5z39n8OYwLIdHTWcWdM/wAuTaL/AEWeCPx7Vss1tAw+pAFv7tL7srcLU5t8X1X1aX3ZWbaIjk89GbJly1tktMzvCvqIi0n0IREQTdozH/KoecvvnrJxzJlHV3L4gx5+cj7l1+s22O9IKx9GXiuHnL7566lbsRExG7wGoy3x6nJakzE+lPTxQlmXIlTSAyMHTRD5TR3TR9Nn9Rf0LlFZay4TOeQWT609IAyXaXM3Mk/S7t3dfWsN8PbV3Wg45vMU1Hz+6JEX6licxxY9pa5ps5pFiCOBCzsFwWesk6OnjLvKduY3znbhy3rDETPJ6K2Sla+nado72vK6vLGRKiss+QGGLfrOHduH0Gn8Ts5rusr5AgpbSTd+lG0EjuGH6LePM+xdkAs9MPe85reOda6f5z/jXYDgkNFF0MDSG31nEkkucRtJJ4rZIl1nectabTNrTvMiIiOIiIgLwleri9LuYDQ4TM5ptJLaCLrvJfWI7QwPPMBBEeYtK9Y3F5aijl7w13RMid3UUjI7jWIvsLnFx1gQbEDgpVyLpPo8TtET0FQdnRPcLPP/AIn7A/lsPYquoQqLuoq4ZG0w1VHaGtDqmEbA6/f2Dscdkg7Hbe1T1l7MVLiEPTUkzZG/KA8Jhtue07WnmoNlJGHAhwBB2EEXBHaFztHkmiiqvjTI7EeCz5trvKa3gfYulRTaGSmW9ImKzMb9X5AX6RFWMWpzb4vqvq0vuytstTm3xfVfVpfdlSejJh9pXxhX1ERaL6OIiIJv0ZeK4ecvvnrqVy2jLxXDzl989dSt2vSHz3We8ZPin6i8K9Rcms5vH8mUtbMyaQOa5vh6ht0g4B3+42rdUNDHAwRwsDGjc1osFlIptDJbNktWKWtO0dIeBerFxLEYaaJ008jY42+E5xAA/wDfYoQzxprfJrQ4W0sbuNQ8d2d/7Nh8AfSdt7AqxpSzlnuiwtn94k1pCLshZYyO6iR8lvabDmoRrdMdfLXQ1H7OCKQONPGdj2bniRxtru1S624A2NtijueZ0jy+Rznucbuc4lznE8XE7SV81RdejqWTRsljcHMe1r2OG4tcLg+or7KMNAWP/GMOdSvN30r9UdfRPu5nqIkHJoUnqAiIgKAfhF4xr1VPRtOyKMyvH0pDZt+TWn7yn5VJ0m4j8Zxmsk4Cd0TeUPehbsOpf0oOYREVQWfgmKVNLO2WkkfHLfVaWHa65HckbnAm2w3CwF2+hzBhV4zCHC7IQ6oeP8uwZ/G6NBZvCBN8Xi+Mlpm6NnTFos3X1Rrao6r3WWiKKIiIC1ObfF9V9Wl92Vtlqc2+L6r6tL7sqT0ZMPtK+MK+oiLRfRxERBN+jLxXDzl989dSuW0ZeK4ecvvnrqVu16Q+e6z3jJ8U/UREXJrC8du2b+C9RBUbPuM19RWyR4hKXPhkczUFxEwg272zcARbbvItcrm1KXwg8GEOIx1LRYVMXddskRDXH7rolFqqCIiCRNBWMfF8XbETZtRG6I9WsBrsPO7SPtKzKpfgteaaqhqRe8MzJNm86jw4j1BXPa4EXG47Qor1ERB+ZHWBJ4Ak+gKlNXUGWR8rt73ueebnFx/FXKxx9qScjhBIfVGVTBu5AREVQU3fBtw//rKkj/CiafvPcPyKEVYr4O8OrhUrvLq3n1Rxj+iCU0RFFEREBanNvi+q+rS+7K2y1ObfF9V9Wl92VJ6MmH2lfGFfURFovo4iIgm/Rl4rh5y++eupXLaMvFcPOX3z11K3a9IfPdZ7xk+KfqIiLk1hERBFnwh8P18LjmA2w1LdvU2Rrmn26irqrTaZ4dfAqr6Ijd92ZhVWVQRERAq4uTqszYbSTHe+lhceZibf23VOlbPRY++C0RP+AB6iR/RRXVIiIMDHm3pJx1wS+7cqYt3K7U8Yc0tO4gg+kWVKJoTG5zHbHNcWu5tNj+CD8IiKoKxnweJgcKkb5NW8H0sjP9VXNTn8G2u73WU5O58UrftNcx35WoJqREUUREQFqc2+L6r6tL7srbLU5t8X1X1eX3ZUnoyYfaV8YV9REWi+jiIiCb9GXiuHnL7566lctoy8Vw85ffPXUrdr0h891nvGT4p+oiIuTWEREHFaZZgzAqq/FsbfvTMCqurH/CDrujwlsXGapjb6GB0h9rWquCAiIqgrZaKxbBKL/IHtcSqmlXByPSmHC6OMixbSQhw+l0Tdb23UVvEREBVD0hYeafF6yI/vL3t82Q9I32PHqVvFXj4Q+EdFiEVUBsnh1XefEbflcz1IIpREVQXf6EMXFNjMbXGzaiN8B6rmz2fxMA+0uAX1pp3RvbIw2cxzXsPU5pBB9YCC7CLT5Rx1mIUMNWy3fGAvHkvGx7fQ4ELcKKIiIC12YaZ8tHPFGLufDI1guBcuYQBc7tq2KItbejMTHYg0ZBxL93/mRfqT+wOJfu/8yL9SnJFi9TV3X59qe6vyn7oN/sDiX7v/ADIv1J/YHEv3f+ZF+pTkiepqfn2p7q/Kfu0GRsOlpqCKGZuq9pfrC4NtaRzhtGzcQt+iLJEbOnyXnJe156zO4iIq4CIsbEa1lPC+eV2qyNjnvPU1oufwQQL8InFxJWwUjTsgiL3+fMRsPaGsaftKJVscw4s+tq5quTwpZC+3kjc1voaAPQtcqgiIgyMPo3TzRwN8KWRkbeb3Bo/FXSijDWhrRYAADkBYKsGhXCPjOMwki7YA6d3Nosz+NzT6FaJRRERAXAabMBNXhD3sF5KdwnZbeWtBEg+4XHm0Lv1+ZWBzS1wBBBBB3EEWIKCkiLoc+5dOG4jNS27gO14D1xP2s522tPa0rnlUEREEqaCs5CkqTQTutDUOvESdjJrWA5PAA5hvWrEqkYNtoVj9D+kIYhCKSqeBVRN2En9uwDwh9MfKHp67RUmoiICIiAiIgIiICIiAiIgKEtPuchYYVA7adV9WQdwvdkXPc49mr1m3caTs9x4TTHUIdUyAinjPDgZHjyR7Ts6yKuVVS+WR0sri973Fz3He5xNyT6UHyREVQXq8WfgWFSVlVFSxeHLIGDsvvcewC5PYEE6fB5wExUUta8WdUPDY/wDLiuLjm8v+6FLSw8Iw6Olp46eIWZFG1jB2NFrntO/0rMUUREQEREEa6bsnmuovjULbz0wLgBvfEdr224kW1hyIG9VsV3Sq06ZMjHD6o1UDP7rO4kW3RSm5cw9TTtLfSOCCOERFUF9qSpfFI2WJ5Y9jg5jmmxa4bQQV8UQWO0Z6VYq8NpaxzYqrYGuNhHP5vBr/AKPHh1CT1SJSdkbTDVUerDWA1MI2B1+/sHY47JB2O29vBRVj0Wiy1m+hxFt6Soa82u6M9zK3zozt9O7tW9QEREBERARFq8ezFSUEfSVc7IhYkBx7p1vIYO6ceQKDaXXCaRdJFPhTDGy01UR3EQOxlxsdMR4I7N55bVHmd9Nc014cNaYWbjM4DpXeY3aGDtNzt4KI5JC5xc4lznElxJJJJNySTvKDLxnFp6yd9RUyF8jzdzj7ABuDRuACwURVBERB6p30AZQ6ON2KTNs6QFlKDwjv3clvpEWHYDwKjbRpkx+LVgYQRTxkOqXjyeDGnynWt2C54K1VPC2NjWMaGta0Na0bAABYADqsor6IiICIiAiIgLBxrCoaynfTVDA+ORuq4fgQeBBsQesLORBUnP2TZsJquhku6J9zTy22SNFrg9TxcXHaDuK5hXJzJgFPiFO6mqWazHbQdzmO4PYeDh/9sVYM+ZHqcJm1ZRrxPJ6GYDuX9jvJfbePVdUcqi9XiIIiIP1G8tcHNJBBu0g2II3EEbiu1wPSti1IA0VAmaNzZ26/8YIf7VxCIJrw/T67YKigB63RzW9THN/1Ldw6eMPPhU9U37MR/wBaryiCxEunfDh4NPVO+xGP9a0+IafW7qegJ6nSTAfwNafzKD0RXf41pgxapBayVlO08IWWdbz3Em/aLLhamofK8ySvc97vCc9xc483HaV8kRBERAREQFuMq5dnxKqbS04u5217j4MbARrPf2C45kgL95SyvU4nUCCmZe1jI831I2n5Tz+A3lWgyTlCnwqm6GAXc6xmlI7uVw4nqA22bwvzJKyMo5agwykZS042Da958KR58J7u0+wADgt0iKAiIgIiICIiAiIgLExTDYaqF0FRG2SN4s5rhcH/AGI4EbQstEFdNIWiKejLqigDp4NpLN80Q5fONHWNvWOKi5XbsuFztotocS1pQDT1B+djAs422dLHufzFjs3oKuouxzXo1xHDyXPhM0Q+dhBe0Dre0DWZ6RbtXHBVBERAREQEREBERARF0uVsiYhiRHxeBwjO+aS7IgOxxHd8m3Qc0u/yBouqsSLZZQYKbYekcO7kHVE0/mOznuUqZK0P0dEWy1R+NTDaNYWhYb/Jj+Ue1191wApJAUVrMvYBTUEAp6WIRsG022uceLnu3ud2lbREQEREBERAREQEREBERAREQEREBcrmTR5hlfd01M1rz85H3uS/WS3Y77QK6pEEG41oEcLmirQdmxk7NvpkZ+lcZieibGIP+1Eo64pGO/hJDvYrSogpvVZaror9JRVLLb7wyW9drLVvaWmzgQeoix9qu4iCkQ2mw2ns2rZUuX62W3RUlQ++7VhkI9YCuWiCquG6LcYntajdGDxlcxluYJ1vYuxwbQLM6xrKxjBxbC0vJHVrv1QPulTyiDi8uaLcLorObB00g+cnPSG/WG2DAeQXZhtty9RAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREH/2Q==",
-          "start_date": "May 2016 - May 2017",
-          "end_date": "Aug 2017 - May 2017",
-          "position": "Web Developer Intern",
-          "team_size": 10000,
-          "description": ["HTML", "CSS", "Bootstrap", "Jquery", "JSON"]
-
-        },
-        {
-          "_id": "5e628d4dc1c216e2a5d0c184",
-          "type": "job",
-          "type_two": "",
-          "employer": "Illinois State University",
-          "employer_url": "https://illinoisstate.edu/",
-          "image":"https://universitymarketing.illinoisstate.edu/images/logos/SECNDRY_head_3C.png",
-          "start_date": "Dec 2015",
-          "end_date": "May 2016",
-          "position": "Web Design Intern",
-          "team_size": 60,
-          "description": ["HTML", "CSS", "Bootstrap", "Jquery"]
-
-        },
-        {
-          "_id": "5e628e1ac1c216e2a5d0c185",
-          "type": "job",
-          "type_two": "",
-          "employer": "Unproto LLC",
-          "employer_url": "http://www.unproto.com",
-          "image":"https://www.unproto.com/assets//logodemo.png",
-          "start_date": "2016",
-          "end_date": "Present",
-          "position": "Founder | Lead Developer",
-          "team_size": 1,
-          "description": ["HTML", "CSS", "Bootstrap", "Jquery", "Angular 8", "Materialize.css", "JSON"]
-        },
-        {
-          "_id": "5e628eeac1c216e2a5d0c186",
-          "type": "project",
-          "bg_color":"yourfounders_web",
-          "type_two": "",
-          "employer": "Your Founders LLC",
-          "employer_url": "http://www.yourfounders.com",
-          "start_date": "2017",
-          "end_date": "Present",
-          "position": "Founder | Lead Developer",
-          "team_size": 3,
-          "description": ["HTML", "CSS", "Bootstrap", "Jquery", "Angular 8", "Materialize.css", "JSON", "Hosting"]
-        },
-        {
-          "_id": "5e628f50c1c216e2a5d0c187",
-          "type": "project",
-          "bg_color":"bumperflag_web",
-          "type_two": "",
-          "employer": "Bumper Flag LLC",
-          "employer_url": "http://www.bumperflag.co",
-          "start_date": "2019",
-          "end_date": "Present",
-          "position": "Founder | Developer",
-          "team_size": 1,
-          "description": ["HTML", "CSS", "Shopify", "e-commerce", "JSON","Liquid"]
-
-        },
-        {
-          "_id": "5e629090c1c216e2a5d0c188",
-          "type": "project",
-          "bg_color":"golang_web",
-          "type_two": "github",
-          "employer": "Monthly Budget Calculator",
-          "employer_url": "https://github.com/vosuyak/MonthlyBudget_GoLang_API",
-          "start_date": "2020",
-          "end_date": "Present",
-          "position": "Lead Developer",
-          "team_size": 2,
-          "description": ["Go Lang", "Docker", "Microservice API", "JSON","Mongo DB", "BSON"]
-
-        },
-        {
-          "_id": "5e629090c1c216e2a5d0c167",
-          "type": "project",
-          "bg_color":"golang_web",
-          "type_two": "github",
-          "employer": "Go w/ Docker",
-          "employer_url": "https://github.com/vosuyak/Golang-Dockerfile-Example1",
-          "start_date": "2020",
-          "end_date": "Present",
-          "position": "Lead Developer",
-          "team_size": 2,
-          "description": ["Go Lang", "Docker"]
-
-        },
-        {
-          "_id": "5e629090c1c216e2a5d0c167",
-          "type": "project",
-          "bg_color":"golang_web",
-          "type_two": "github",
-          "employer": "Income Tax Calculator",
-          "employer_url": "https://github.com/vosuyak/goloang-incometax-calculator",
-          "start_date": "2017",
-          "end_date": "Present",
-          "position": "Lead Developer",
-          "team_size": 2,
-          "description": ["Go Lang","JSON","Docker"]
-
-        },
-        {
-          "_id": "5e6290b8c1c216e2a5d0c189",
-          "type": "project",
-          "bg_color":"angular_web",
-          "type_two": "github",
-          "employer": "Country Holidays",
-          "employer_url": "https://github.com/vosuyak/country-holidays",
-          "start_date": "2020",
-          "end_date": "Present",
-          "position": "Lead Developer",
-          "team_size": 1,
-          "description": ["Angular 8", "Docker", "API", "JSON"]
-        },
-        {
-          "_id": "5e6290b8c1c216e2a520c189",
-          "type": "project",
-          "bg_color":"whoop_web",
-          "type_two": "github",
-          "employer": "Provision",
-          "employer_url": "https://www.vsapartners.com/news/chicago-food-pantries-leverage-technology-to-eliminate-waste/",
-          "start_date": "2017",
-          "end_date": "Present",
-          "position": "Lead Developer",
-          "team_size": 1,
-          "description": ["Angular 4", "JSON", "API", "Google Firebase"]
-        },
-        {
-          "_id": "5e6292b8c1c216e2a520c189",
-          "type": "project",
-          "bg_color":"monthlybudget_web",
-          "type_two": "github",
-          "employer": "Monthly Budget",
-          "employer_url": "https://github.com/vosuyak/Budget-Calculator",
-          "start_date": "2016",
-          "end_date": "Present",
-          "position": "Lead Developer",
-          "team_size": 1,
-          "description": ["Angular 4", "JSON"]
-        },
-        {
-          "_id": "5e629602c1c216e2a5d0c18a",
-          "type": "project",
-          "bg_color":"angular_web",
-          "type_two": "github",
-          "employer": "Portfolio Website",
-          "employer_url": "https://github.com/vosuyak/victorosuyak-website",
-          "start_date": "2020",
-          "end_date": "Present",
-          "position": "Lead Developer",
-          "team_size": 1,
-          "description": ["Angular 8", "Go Lang","Mongo DB", "Docker", "API", "JSON"]
-
-        }
-      ]
-    }
+        "description": [
+          "Angular 4",
+          "JSON"
+        ]
+      },
+      {
+        "_id": "5e629602c1c216e2a5d0c18a",
+        "type": "project",
+        "bg_color": "angular_web",
+        "type_two": "github",
+        "employer": "Portfolio Website",
+        "employer_url": "https://github.com/vosuyak/victorosuyak-website",
+        "start_date": "2020",
+        "end_date": "Present",
+        "position": "Lead Developer",
+        "team_size": 1,
+        "location": "external",
+        "description": [
+          "Angular 8",
+          "Go Lang",
+          "Mongo DB",
+          "Docker",
+          "API",
+          "JSON"
+        ]
+      },
+      {
+        "_id": "5e629602c1c296e2a5d0c18a",
+        "type": "project",
+        "bg_color": "angular_web",
+        "type_two": "",
+        "employer": "Social Media Login",
+        "employer_url": "social-login",
+        "start_date": "2020",
+        "end_date": "Present",
+        "position": "Lead Developer",
+        "team_size": 1,
+        "location": "internal",
+        "description": [
+          "Angular 9",
+          "Google OAth API",
+          "JSON"
+        ]
+      }
+    ]
   }
+}

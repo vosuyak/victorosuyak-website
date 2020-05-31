@@ -1,17 +1,24 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ProjectsComponent } from './projects.component';
+import { SocialLoginComponent } from './social-login/social-login.component';
+import { TestComponent } from './test/test.component';
 
 
 const routes: Routes = [
   {
     path: '',
-    pathMatch:"project"
+    pathMatch:"full",
+    redirectTo:'/projects'
   },  
   {
-    path: 'project',
-    component: ProjectsComponent
+    path: '',
+    component: ProjectsComponent,
   },
+  {
+    path: 'social-login',
+    component: SocialLoginComponent 
+  }
 ];
 
 @NgModule({
