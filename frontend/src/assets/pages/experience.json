@@ -205,6 +205,28 @@
         ]
       },
       {
+        "_id": "5e629090c1c216e2a5d0c188",
+        "type": "project",
+        "bg_color": "golang_web",
+        "type_two": "github",
+        "employer": "GoLang Server Kubernetes ready",
+        "employer_url": "https://github.com/vosuyak/kubernetes-example",
+        "start_date": "2020",
+        "end_date": "Present",
+        "position": "Lead Developer",
+        "team_size": 2,
+        "location": "external",
+        "description": [
+          "Go Lang",
+          "Docker",
+          "Microservice API",
+          "Kompose",
+          "Azure",
+          "Docker Compose",
+          "Kubernetes"
+        ]
+      },
+      {
         "_id": "5e629090c1c216e2a5d0c167",
         "type": "project",
         "bg_color": "golang_web",
