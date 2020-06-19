@@ -85,6 +85,14 @@
           "end":"dev-ops"     
         },
         {
+          "_id": "5e6099b8c0dd395363a37766",
+          "language": "Azure",
+          "image": "https://azurementor.files.wordpress.com/2017/10/azure-logo.jpg",
+          "background_color": "#1d69a5",
+          "years_experience": 1,
+          "end":"dev-ops"     
+        },
+        {
           "_id": "5e6099b8c0dd395363a37765",
           "language": "Jira",
           "image": "https://cdn.iconscout.com/icon/free/png-512/jira-1693573-1442614.png",

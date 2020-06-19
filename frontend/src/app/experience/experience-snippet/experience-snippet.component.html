@@ -10,6 +10,14 @@
           <p class="card-text">
             <span *ngFor="let item of description"  class="badge badge-pill badge-dark">{{item}}</span>
           </p>
+          <h4 *ngIf="shoutOuts != undefined" class="sub-title" >Awards <b><i class="fas fa-trophy"></i></b></h4>
+          <p class="card-text shoutouts">
+            <span *ngFor="let item of shoutOuts"  class="badge badge-pill badge-dark">
+              <a [href]="item.url" target="_blank">
+                {{item.name}}
+              </a>
+            </span>
+          </p>
         </div>
     </div>
 </section>

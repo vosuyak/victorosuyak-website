@@ -8,10 +8,12 @@ import { IGmailUser } from './models/social-user';
   templateUrl: './social-login.component.html',
   styleUrls: ['./social-login.component.scss']
 })
+
 export class SocialLoginComponent implements OnInit {
   user: IGmailUser; //gmail user type
   loggedIn: boolean;
- 
+  alertMsg:string;
+
   constructor(private authService: AuthService) { }
 
   ngOnInit(): void {
@@ -19,18 +21,17 @@ export class SocialLoginComponent implements OnInit {
   }
 
   getSocialMediaUser = ():void => {
+    this.alertMsg = '';
     this.authService.authState.subscribe(
       (user) => {
         this.user = user;
         this.loggedIn = (user != null);
       },
       error =>{
-        console.log('error: ', error);
+        this.alertMsg = 'Please use a secure browser starting with https://'
       },
       () =>{
-
-      }
-    );
+    });
   }
   signInWithGoogle(): void {
     this.authService.signIn(GoogleLoginProvider.PROVIDER_ID);

@@ -9,6 +9,9 @@
           <div *ngIf="!loggedIn" class="alert alert-warning" style="width: 220px;" role="alert">
             No Longer Signed In!
           </div>
+          <div *ngIf="alertMsg != ''" class="alert alert-danger" style="width: 220px;" role="alert">
+            {{alertMsg}}
+          </div>
         </div>
       </div>
       <div class="col-12 col-md-12">
