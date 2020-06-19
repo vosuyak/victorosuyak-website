@@ -19,7 +19,7 @@ export class ExperienceSnippetComponent implements OnInit {
   @Input() start_date:any;
   @Input() end_date:any;
   @Input() description:any;
-
+  @Input() shoutOuts:any;
 
   constructor(private data:DataService) { }
 

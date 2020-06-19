@@ -16,6 +16,23 @@
         "position": "Lead UI Developer",
         "team_size": 20000,
         "location": "external",
+        "shoutOuts":[
+          {
+            "icon":"fas fa-trophy",
+            "name":"Revolutionary Apps",
+            "url":"https://www.cio.com/article/3541350/verizon-calls-on-emerging-tech-to-revamp-work-experience.html"
+          },
+          {
+            "icon":"fas fa-trophy",
+            "name":"Team Award 2019",
+            "url":"https://www.cio100.com/awards/"
+          },
+          {
+            "icon":"fas fa-trophy",
+            "name":"Team Award 2019",
+            "url":"https://www.cio100.com/awards/"
+          }
+        ],
         "description": [
           "Angular 4-8",
           "Go Lang",
@@ -38,6 +55,13 @@
         "position": "Developer Intern",
         "team_size": 310,
         "location": "external",
+        "shoutOuts":[
+          {
+            "icon":"fas fa-trophy",
+            "name":"Code for the Community",
+            "url":"https://www.vsapartners.com/news/chicago-food-pantries-leverage-technology-to-eliminate-waste"
+          }
+        ],
         "description": [
           "HTML",
           "CSS",
@@ -59,6 +83,13 @@
         "position": "Web Developer Intern",
         "team_size": 10000,
         "location": "external",
+        "shoutOuts":[
+          {
+            "icon":"fas fa-trophy",
+            "name":"The million dollar web app",
+            "url":"https://www.taylorcorp.com/home/general/our-companies.aspx"
+          }
+        ],
         "description": [
           "HTML",
           "CSS",
