@@ -30,8 +30,16 @@
         },
         {
           "_id": "5e60983cc0dd395363a3775f",
-          "language": "Angular 8",
+          "language": "Angular 10",
           "image": "https://cdn.worldvectorlogo.com/logos/angular-icon.svg",
+          "background_color": "#fff",
+          "years_experience": 4,
+          "end":"front-end"      
+        },
+        {
+          "_id": "5e60983cc0dd395363a3775f",
+          "language": "NGRX",
+          "image": "https://ngrx.io/assets/images/badge.svg",
           "background_color": "#fff",
           "years_experience": 4,
           "end":"front-end"      

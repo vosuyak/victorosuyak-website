@@ -140,6 +140,24 @@
         ]
       },
       {
+        "_id": "5e6290b8c1c216e2a5d0c189",
+        "type": "project",
+        "bg_color": "angular_web",
+        "type_two": "github",
+        "employer": "Smart Table",
+        "employer_url": "https://github.com/vosuyak/smart-table",
+        "start_date": "2020",
+        "end_date": "Present",
+        "position": "Lead Developer",
+        "team_size": 1,
+        "location": "external",
+        "description": [
+          "Angular 10",
+          "API",
+          "JSON"
+        ]
+      },
+      {
         "_id": "5e628eeac1c216e2a5d0c186",
         "type": "project",
         "bg_color": "yourfounders_web",
