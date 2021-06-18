@@ -40,7 +40,7 @@
             ]
           },
           "configurations": {
-            "prod": {
+            "production": {
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
@@ -108,8 +108,8 @@
             "browserTarget": "frontend:build"
           },
           "configurations": {
-            "prod": {
-              "browserTarget": "frontend:build:prod"
+            "production": {
+              "browserTarget": "frontend:build:production"
             },
             "uat": {
               "browserTarget": "frontend:build:uat"
@@ -166,7 +166,7 @@
             "devServerTarget": "frontend:serve"
           },
           "configurations": {
-            "prod": {
+            "production": {
               "devServerTarget": "frontend:serve:prod"
             },
             "uat": {

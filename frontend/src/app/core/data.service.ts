@@ -11,7 +11,7 @@ export class DataService {
   educationUrl = '';
 
   constructor(private http:HttpClient) { 
-    this.http.get('./../../assets/pages/endpoints.json').subscribe(
+    this.http.get('/assets/pages/endpoints.json').subscribe(
       data =>{
             educationUrl = data['education']   
       }
@@ -19,17 +19,17 @@ export class DataService {
   }
 
   getEducation(){
-    let url = './../../assets/pages/education.json';
+    let url = '/assets/pages/education.json';
     return this.http.get(url)
   }
 
   getExperience(){
-    let url = './../../assets/pages/experience.json';
+    let url = '/assets/pages/experience.json';
     return this.http.get(url)
   }
 
   getSkill(){
-    let url = './../../assets/pages/skill.json';
+    let url = '/assets/pages/skill.json';
     return this.http.get(url)
   }
 }
